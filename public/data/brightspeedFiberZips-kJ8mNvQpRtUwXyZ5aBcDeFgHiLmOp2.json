@@ -1,0 +1,4660 @@
+{
+  "Sheet1": [
+    {
+      "ZIP_Code": "27587",
+      "CITY_NAME": "WAKE FOREST",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65203",
+      "CITY_NAME": "COLUMBIA",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27526",
+      "CITY_NAME": "FUQUAY VARINA",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28540",
+      "CITY_NAME": "JACKSONVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27909",
+      "CITY_NAME": "ELIZABETH CITY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "78666",
+      "CITY_NAME": "SAN MARCOS",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27893",
+      "CITY_NAME": "WILSON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28562",
+      "CITY_NAME": "NEW BERN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63366",
+      "CITY_NAME": "O FALLON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "38654",
+      "CITY_NAME": "OLIVE BRANCH",
+      "ST_ABBREV": "MS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63385",
+      "CITY_NAME": "WENTZVILLE",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27520",
+      "CITY_NAME": "CLAYTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17331",
+      "CITY_NAME": "HANOVER",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28376",
+      "CITY_NAME": "RAEFORD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65202",
+      "CITY_NAME": "COLUMBIA",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27804",
+      "CITY_NAME": "ROCKY MOUNT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28306",
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28560",
+      "CITY_NAME": "NEW BERN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "77346",
+      "CITY_NAME": "HUMBLE",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36535",
+      "CITY_NAME": "FOLEY",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28546",
+      "CITY_NAME": "JACKSONVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27834",
+      "CITY_NAME": "GREENVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27284",
+      "CITY_NAME": "KERNERSVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44691",
+      "CITY_NAME": "WOOSTER",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28314",
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "16001",
+      "CITY_NAME": "BUTLER",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37660",
+      "CITY_NAME": "KINGSPORT",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76522",
+      "CITY_NAME": "COPPERAS COVE",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27801",
+      "CITY_NAME": "ROCKY MOUNT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54601",
+      "CITY_NAME": "LA CROSSE",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24112",
+      "CITY_NAME": "MARTINSVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76542",
+      "CITY_NAME": "KILLEEN",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76549",
+      "CITY_NAME": "KILLEEN",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27540",
+      "CITY_NAME": "HOLLY SPRINGS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65807",
+      "CITY_NAME": "SPRINGFIELD",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "61554",
+      "CITY_NAME": "PEKIN",
+      "ST_ABBREV": "IL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36330",
+      "CITY_NAME": "ENTERPRISE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27870",
+      "CITY_NAME": "ROANOKE RAPIDS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63376",
+      "CITY_NAME": "SAINT PETERS",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27858",
+      "CITY_NAME": "GREENVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "77365",
+      "CITY_NAME": "PORTER",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27803",
+      "CITY_NAME": "ROCKY MOUNT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37643",
+      "CITY_NAME": "ELIZABETHTON",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27549",
+      "CITY_NAME": "LOUISBURG",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65802",
+      "CITY_NAME": "SPRINGFIELD",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36301",
+      "CITY_NAME": "DOTHAN",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27889",
+      "CITY_NAME": "WASHINGTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "78634",
+      "CITY_NAME": "HUTTO",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28348",
+      "CITY_NAME": "HOPE MILLS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27536",
+      "CITY_NAME": "HENDERSON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27527",
+      "CITY_NAME": "CLAYTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65109",
+      "CITY_NAME": "JEFFERSON CITY",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28304",
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43040",
+      "CITY_NAME": "MARYSVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65616",
+      "CITY_NAME": "BRANSON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "31313",
+      "CITY_NAME": "HINESVILLE",
+      "ST_ABBREV": "GA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37601",
+      "CITY_NAME": "JOHNSON CITY",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28311",
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65804",
+      "CITY_NAME": "SPRINGFIELD",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37659",
+      "CITY_NAME": "JONESBOROUGH",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27886",
+      "CITY_NAME": "TARBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63368",
+      "CITY_NAME": "O FALLON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65721",
+      "CITY_NAME": "OZARK",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28328",
+      "CITY_NAME": "CLINTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65775",
+      "CITY_NAME": "WEST PLAINS",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36303",
+      "CITY_NAME": "DOTHAN",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72076",
+      "CITY_NAME": "JACKSONVILLE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76401",
+      "CITY_NAME": "STEPHENVILLE",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65201",
+      "CITY_NAME": "COLUMBIA",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17013",
+      "CITY_NAME": "CARLISLE",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22630",
+      "CITY_NAME": "FRONT ROYAL",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28334",
+      "CITY_NAME": "DUNN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28303",
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "61401",
+      "CITY_NAME": "GALESBURG",
+      "ST_ABBREV": "IL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "31324",
+      "CITY_NAME": "RICHMOND HILL",
+      "ST_ABBREV": "GA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "77339",
+      "CITY_NAME": "KINGWOOD",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37604",
+      "CITY_NAME": "JOHNSON CITY",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17202",
+      "CITY_NAME": "CHAMBERSBURG",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37743",
+      "CITY_NAME": "GREENEVILLE",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29649",
+      "CITY_NAME": "GREENWOOD",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37664",
+      "CITY_NAME": "KINGSPORT",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28570",
+      "CITY_NAME": "NEWPORT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28501",
+      "CITY_NAME": "KINSTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29646",
+      "CITY_NAME": "GREENWOOD",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27205",
+      "CITY_NAME": "ASHEBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65803",
+      "CITY_NAME": "SPRINGFIELD",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63379",
+      "CITY_NAME": "TROY",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35173",
+      "CITY_NAME": "TRUSSVILLE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72023",
+      "CITY_NAME": "CABOT",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27288",
+      "CITY_NAME": "EDEN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46131",
+      "CITY_NAME": "FRANKLIN",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63367",
+      "CITY_NAME": "LAKE SAINT LOUIS",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22901",
+      "CITY_NAME": "CHARLOTTESVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27312",
+      "CITY_NAME": "PITTSBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45036",
+      "CITY_NAME": "LEBANON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70517",
+      "CITY_NAME": "BREAUX BRIDGE",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17268",
+      "CITY_NAME": "WAYNESBORO",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28390",
+      "CITY_NAME": "SPRING LAKE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44483",
+      "CITY_NAME": "WARREN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46725",
+      "CITY_NAME": "COLUMBIA CITY",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28504",
+      "CITY_NAME": "KINSTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08822",
+      "CITY_NAME": "FLEMINGTON",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28374",
+      "CITY_NAME": "PINEHURST",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29906",
+      "CITY_NAME": "BEAUFORT",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27302",
+      "CITY_NAME": "MEBANE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27565",
+      "CITY_NAME": "OXFORD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44903",
+      "CITY_NAME": "MANSFIELD",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28327",
+      "CITY_NAME": "CARTHAGE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44052",
+      "CITY_NAME": "LORAIN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27856",
+      "CITY_NAME": "NASHVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27501",
+      "CITY_NAME": "ANGIER",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70586",
+      "CITY_NAME": "VILLE PLATTE",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27577",
+      "CITY_NAME": "SMITHFIELD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27596",
+      "CITY_NAME": "YOUNGSVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27537",
+      "CITY_NAME": "HENDERSON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76543",
+      "CITY_NAME": "KILLEEN",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28532",
+      "CITY_NAME": "HAVELOCK",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28590",
+      "CITY_NAME": "WINTERVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45331",
+      "CITY_NAME": "GREENVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07860",
+      "CITY_NAME": "NEWTON",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36360",
+      "CITY_NAME": "OZARK",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "77338",
+      "CITY_NAME": "HUMBLE",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76541",
+      "CITY_NAME": "KILLEEN",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28312",
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27278",
+      "CITY_NAME": "HILLSBOROUGH",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65101",
+      "CITY_NAME": "JEFFERSON CITY",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "75143",
+      "CITY_NAME": "KEMP",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28445",
+      "CITY_NAME": "HOLLY RIDGE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17257",
+      "CITY_NAME": "SHIPPENSBURG",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27546",
+      "CITY_NAME": "LILLINGTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17201",
+      "CITY_NAME": "CHAMBERSBURG",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27948",
+      "CITY_NAME": "KILL DEVIL HILLS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28659",
+      "CITY_NAME": "NORTH WILKESBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29920",
+      "CITY_NAME": "SAINT HELENA ISLAND",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36542",
+      "CITY_NAME": "GULF SHORES",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17325",
+      "CITY_NAME": "GETTYSBURG",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72802",
+      "CITY_NAME": "RUSSELLVILLE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17022",
+      "CITY_NAME": "ELIZABETHTOWN",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43512",
+      "CITY_NAME": "DEFIANCE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22903",
+      "CITY_NAME": "CHARLOTTESVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44484",
+      "CITY_NAME": "WARREN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46563",
+      "CITY_NAME": "PLYMOUTH",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28301",
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66441",
+      "CITY_NAME": "JUNCTION CITY",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28516",
+      "CITY_NAME": "BEAUFORT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27504",
+      "CITY_NAME": "BENSON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37615",
+      "CITY_NAME": "JOHNSON CITY",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44001",
+      "CITY_NAME": "AMHERST",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72761",
+      "CITY_NAME": "SILOAM SPRINGS",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27910",
+      "CITY_NAME": "AHOSKIE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76548",
+      "CITY_NAME": "HARKER HEIGHTS",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28460",
+      "CITY_NAME": "SNEADS FERRY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37745",
+      "CITY_NAME": "GREENEVILLE",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27949",
+      "CITY_NAME": "KITTY HAWK",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54650",
+      "CITY_NAME": "ONALASKA",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24333",
+      "CITY_NAME": "GALAX",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65608",
+      "CITY_NAME": "AVA",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45805",
+      "CITY_NAME": "LIMA",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27892",
+      "CITY_NAME": "WILLIAMSTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76234",
+      "CITY_NAME": "DECATUR",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45801",
+      "CITY_NAME": "LIMA",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08844",
+      "CITY_NAME": "HILLSBOROUGH",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66030",
+      "CITY_NAME": "GARDNER",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28387",
+      "CITY_NAME": "SOUTHERN PINES",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07461",
+      "CITY_NAME": "SUSSEX",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64093",
+      "CITY_NAME": "WARRENSBURG",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44820",
+      "CITY_NAME": "BUCYRUS",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44011",
+      "CITY_NAME": "AVON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "77345",
+      "CITY_NAME": "KINGWOOD",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28584",
+      "CITY_NAME": "SWANSBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44012",
+      "CITY_NAME": "AVON LAKE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27944",
+      "CITY_NAME": "HERTFORD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28574",
+      "CITY_NAME": "RICHLANDS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65560",
+      "CITY_NAME": "SALEM",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "75751",
+      "CITY_NAME": "ATHENS",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17015",
+      "CITY_NAME": "CARLISLE",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46580",
+      "CITY_NAME": "WARSAW",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27896",
+      "CITY_NAME": "WILSON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "75142",
+      "CITY_NAME": "KAUFMAN",
+      "ST_ABBREV": " ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07871",
+      "CITY_NAME": "SPARTA",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "77868",
+      "CITY_NAME": "NAVASOTA",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54656",
+      "CITY_NAME": "SPARTA",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17552",
+      "CITY_NAME": "MOUNT JOY",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27203",
+      "CITY_NAME": "ASHEBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "77396",
+      "CITY_NAME": "HUMBLE",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27850",
+      "CITY_NAME": "LITTLETON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27592",
+      "CITY_NAME": "WILLOW SPRING",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37363",
+      "CITY_NAME": "OOLTEWAH",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44906",
+      "CITY_NAME": "MANSFIELD",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27574",
+      "CITY_NAME": "ROXBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28630",
+      "CITY_NAME": "GRANITE FALLS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "53913",
+      "CITY_NAME": "BARABOO",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44089",
+      "CITY_NAME": "VERMILION",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28539",
+      "CITY_NAME": "HUBERT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17225",
+      "CITY_NAME": "GREENCASTLE",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76528",
+      "CITY_NAME": "GATESVILLE",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22902",
+      "CITY_NAME": "CHARLOTTESVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27344",
+      "CITY_NAME": "SILER CITY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28557",
+      "CITY_NAME": "MOREHEAD CITY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28337",
+      "CITY_NAME": "ELIZABETHTOWN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46733",
+      "CITY_NAME": "DECATUR",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65810",
+      "CITY_NAME": "SPRINGFIELD",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43545",
+      "CITY_NAME": "NAPOLEON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44485",
+      "CITY_NAME": "WARREN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36037",
+      "CITY_NAME": "GREENVILLE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24055",
+      "CITY_NAME": "BASSETT",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54143",
+      "CITY_NAME": "MARINETTE",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45804",
+      "CITY_NAME": "LIMA",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29902",
+      "CITY_NAME": "BEAUFORT",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28466",
+      "CITY_NAME": "WALLACE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27524",
+      "CITY_NAME": "FOUR OAKS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24592",
+      "CITY_NAME": "SOUTH BOSTON",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27376",
+      "CITY_NAME": "WEST END",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22911",
+      "CITY_NAME": "CHARLOTTESVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24450",
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24382",
+      "CITY_NAME": "WYTHEVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23901",
+      "CITY_NAME": "FARMVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76266",
+      "CITY_NAME": "SANGER",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "75757",
+      "CITY_NAME": "BULLARD",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44055",
+      "CITY_NAME": "LORAIN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44053",
+      "CITY_NAME": "LORAIN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72455",
+      "CITY_NAME": "POCAHONTAS",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44654",
+      "CITY_NAME": "MILLERSBURG",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45320",
+      "CITY_NAME": "EATON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24354",
+      "CITY_NAME": "MARION",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28612",
+      "CITY_NAME": "CONNELLY SPRINGS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27959",
+      "CITY_NAME": "NAGS HEAD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27983",
+      "CITY_NAME": "WINDSOR",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72719",
+      "CITY_NAME": "CENTERTON",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37683",
+      "CITY_NAME": "MOUNTAIN CITY",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28551",
+      "CITY_NAME": "LA GRANGE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22963",
+      "CITY_NAME": "PALMYRA",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27525",
+      "CITY_NAME": "FRANKLINTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37617",
+      "CITY_NAME": "BLOUNTVILLE",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47960",
+      "CITY_NAME": "MONTICELLO",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27958",
+      "CITY_NAME": "MOYOCK",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37663",
+      "CITY_NAME": "KINGSPORT",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29138",
+      "CITY_NAME": "SALUDA",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63390",
+      "CITY_NAME": "WRIGHT CITY",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43338",
+      "CITY_NAME": "MOUNT GILEAD",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45891",
+      "CITY_NAME": "VAN WERT",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36561",
+      "CITY_NAME": "ORANGE BEACH",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28377",
+      "CITY_NAME": "RED SPRINGS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72801",
+      "CITY_NAME": "RUSSELLVILLE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46534",
+      "CITY_NAME": "KNOX",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54636",
+      "CITY_NAME": "HOLMEN",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46567",
+      "CITY_NAME": "SYRACUSE",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36305",
+      "CITY_NAME": "DOTHAN",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "75758",
+      "CITY_NAME": "CHANDLER",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43031",
+      "CITY_NAME": "JOHNSTOWN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17512",
+      "CITY_NAME": "COLUMBIA",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28580",
+      "CITY_NAME": "SNOW HILL",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35555",
+      "CITY_NAME": "FAYETTE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27306",
+      "CITY_NAME": "MOUNT GILEAD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54603",
+      "CITY_NAME": "LA CROSSE",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27025",
+      "CITY_NAME": "MADISON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37642",
+      "CITY_NAME": "CHURCH HILL",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35768",
+      "CITY_NAME": "SCOTTSBORO",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27573",
+      "CITY_NAME": "ROXBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44904",
+      "CITY_NAME": "MANSFIELD",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35570",
+      "CITY_NAME": "HAMILTON",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36567",
+      "CITY_NAME": "ROBERTSDALE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44875",
+      "CITY_NAME": "SHELBY",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28513",
+      "CITY_NAME": "AYDEN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36420",
+      "CITY_NAME": "ANDALUSIA",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37650",
+      "CITY_NAME": "ERWIN",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66083",
+      "CITY_NAME": "SPRING HILL",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46582",
+      "CITY_NAME": "WARSAW",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76571",
+      "CITY_NAME": "SALADO",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27542",
+      "CITY_NAME": "KENLY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27371",
+      "CITY_NAME": "TROY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35125",
+      "CITY_NAME": "PELL CITY",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44905",
+      "CITY_NAME": "MANSFIELD",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72160",
+      "CITY_NAME": "STUTTGART",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43567",
+      "CITY_NAME": "WAUSEON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "53818",
+      "CITY_NAME": "PLATTEVILLE",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "31320",
+      "CITY_NAME": "MIDWAY",
+      "ST_ABBREV": "GA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64060",
+      "CITY_NAME": "KEARNEY",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44907",
+      "CITY_NAME": "MANSFIELD",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47371",
+      "CITY_NAME": "PORTLAND",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44667",
+      "CITY_NAME": "ORRVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "16002",
+      "CITY_NAME": "BUTLER",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47978",
+      "CITY_NAME": "RENSSELAER",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45152",
+      "CITY_NAME": "MORROW",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76210",
+      "CITY_NAME": "DENTON",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36467",
+      "CITY_NAME": "OPP",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36078",
+      "CITY_NAME": "TALLASSEE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24343",
+      "CITY_NAME": "HILLSVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28594",
+      "CITY_NAME": "EMERALD ISLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17350",
+      "CITY_NAME": "NEW OXFORD",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65453",
+      "CITY_NAME": "CUBA",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46761",
+      "CITY_NAME": "LAGRANGE",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43558",
+      "CITY_NAME": "SWANTON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "75752",
+      "CITY_NAME": "ATHENS",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "53532",
+      "CITY_NAME": "DEFOREST",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65711",
+      "CITY_NAME": "MOUNTAIN GROVE",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "16057",
+      "CITY_NAME": "SLIPPERY ROCK",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35128",
+      "CITY_NAME": "PELL CITY",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28394",
+      "CITY_NAME": "VASS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28307",
+      "CITY_NAME": "FORT LIBERTY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27822",
+      "CITY_NAME": "ELM CITY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27589",
+      "CITY_NAME": "WARRENTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76634",
+      "CITY_NAME": "CLIFTON",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27823",
+      "CITY_NAME": "ENFIELD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46184",
+      "CITY_NAME": "WHITELAND",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27817",
+      "CITY_NAME": "CHOCOWINITY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36310",
+      "CITY_NAME": "ABBEVILLE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46040",
+      "CITY_NAME": "FORTVILLE",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27028",
+      "CITY_NAME": "MOCKSVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27927",
+      "CITY_NAME": "COROLLA",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36421",
+      "CITY_NAME": "ANDALUSIA",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "48723",
+      "CITY_NAME": "CARO",
+      "ST_ABBREV": "MI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27882",
+      "CITY_NAME": "SPRING HOPE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72958",
+      "CITY_NAME": "WALDRON",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54806",
+      "CITY_NAME": "ASHLAND",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28463",
+      "CITY_NAME": "TABOR CITY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28586",
+      "CITY_NAME": "VANCEBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28326",
+      "CITY_NAME": "CAMERON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28398",
+      "CITY_NAME": "WARSAW",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70525",
+      "CITY_NAME": "CHURCH POINT",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64079",
+      "CITY_NAME": "PLATTE CITY",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29059",
+      "CITY_NAME": "HOLLY HILL",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44481",
+      "CITY_NAME": "WARREN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64744",
+      "CITY_NAME": "EL DORADO SPRINGS",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36323",
+      "CITY_NAME": "ELBA",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43331",
+      "CITY_NAME": "LAKEVIEW",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27828",
+      "CITY_NAME": "FARMVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76446",
+      "CITY_NAME": "DUBLIN",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27048",
+      "CITY_NAME": "STONEVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22968",
+      "CITY_NAME": "RUCKERSVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "75147",
+      "CITY_NAME": "MABANK",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72834",
+      "CITY_NAME": "DARDANELLE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45833",
+      "CITY_NAME": "DELPHOS",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36322",
+      "CITY_NAME": "DALEVILLE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44054",
+      "CITY_NAME": "SHEFFIELD LAKE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70647",
+      "CITY_NAME": "IOWA",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46550",
+      "CITY_NAME": "NAPPANEE",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46143",
+      "CITY_NAME": "GREENWOOD",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "75065",
+      "CITY_NAME": "LAKE DALLAS",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27962",
+      "CITY_NAME": "PLYMOUTH",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43019",
+      "CITY_NAME": "FREDERICKTOWN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36551",
+      "CITY_NAME": "LOXLEY",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "71342",
+      "CITY_NAME": "JENA",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63664",
+      "CITY_NAME": "POTOSI",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "75428",
+      "CITY_NAME": "COMMERCE",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70512",
+      "CITY_NAME": "ARNAUDVILLE",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29048",
+      "CITY_NAME": "EUTAWVILLE",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28431",
+      "CITY_NAME": "CHADBOURN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54615",
+      "CITY_NAME": "BLACK RIVER FALLS",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36530",
+      "CITY_NAME": "ELBERTA",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28690",
+      "CITY_NAME": "VALDESE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35096",
+      "CITY_NAME": "LINCOLN",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47001",
+      "CITY_NAME": "AURORA",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36345",
+      "CITY_NAME": "HEADLAND",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70648",
+      "CITY_NAME": "KINDER",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44444",
+      "CITY_NAME": "NEWTON FALLS",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08889",
+      "CITY_NAME": "WHITEHOUSE STATION",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "48166",
+      "CITY_NAME": "NEWPORT",
+      "ST_ABBREV": "MI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36375",
+      "CITY_NAME": "SLOCOMB",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36350",
+      "CITY_NAME": "MIDLAND CITY",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72472",
+      "CITY_NAME": "TRUMANN",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37641",
+      "CITY_NAME": "CHUCKEY",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63362",
+      "CITY_NAME": "MOSCOW MILLS",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17340",
+      "CITY_NAME": "LITTLESTOWN",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23970",
+      "CITY_NAME": "SOUTH HILL",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28530",
+      "CITY_NAME": "GRIFTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64429",
+      "CITY_NAME": "CAMERON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28697",
+      "CITY_NAME": "WILKESBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27954",
+      "CITY_NAME": "MANTEO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "78373",
+      "CITY_NAME": "PORT ARANSAS",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65584",
+      "CITY_NAME": "SAINT ROBERT",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46795",
+      "CITY_NAME": "WOLCOTTVILLE",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27874",
+      "CITY_NAME": "SCOTLAND NECK",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63552",
+      "CITY_NAME": "MACON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07419",
+      "CITY_NAME": "HAMBURG",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76249",
+      "CITY_NAME": "KRUM",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76449",
+      "CITY_NAME": "GRAFORD",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "71667",
+      "CITY_NAME": "STAR CITY",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72751",
+      "CITY_NAME": "PEA RIDGE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64076",
+      "CITY_NAME": "ODESSA",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24590",
+      "CITY_NAME": "SCOTTSVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08502",
+      "CITY_NAME": "BELLE MEAD",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76078",
+      "CITY_NAME": "RHOME",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46037",
+      "CITY_NAME": "FISHERS",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28458",
+      "CITY_NAME": "ROSE HILL",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17020",
+      "CITY_NAME": "DUNCANNON",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22932",
+      "CITY_NAME": "CROZET",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46506",
+      "CITY_NAME": "BREMEN",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70441",
+      "CITY_NAME": "GREENSBURG",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "38310",
+      "CITY_NAME": "ADAMSVILLE",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35769",
+      "CITY_NAME": "SCOTTSBORO",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46996",
+      "CITY_NAME": "WINAMAC",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17074",
+      "CITY_NAME": "NEWPORT",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28609",
+      "CITY_NAME": "CATAWBA",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23824",
+      "CITY_NAME": "BLACKSTONE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36549",
+      "CITY_NAME": "LILLIAN",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24416",
+      "CITY_NAME": "BUENA VISTA",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54177",
+      "CITY_NAME": "WAUSAUKEE",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "71075",
+      "CITY_NAME": "SPRINGHILL",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76539",
+      "CITY_NAME": "KEMPNER",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27529",
+      "CITY_NAME": "GARNER",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27891",
+      "CITY_NAME": "WHITAKERS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70584",
+      "CITY_NAME": "SUNSET",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27807",
+      "CITY_NAME": "BAILEY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17236",
+      "CITY_NAME": "MERCERSBURG",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54153",
+      "CITY_NAME": "OCONTO",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65548",
+      "CITY_NAME": "MOUNTAIN VIEW",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63348",
+      "CITY_NAME": "FORISTELL",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72855",
+      "CITY_NAME": "PARIS",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08833",
+      "CITY_NAME": "LEBANON",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27557",
+      "CITY_NAME": "MIDDLESEX",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24319",
+      "CITY_NAME": "CHILHOWIE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46562",
+      "CITY_NAME": "PIERCETON",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17059",
+      "CITY_NAME": "MIFFLINTOWN",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72081",
+      "CITY_NAME": "JUDSONIA",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72010",
+      "CITY_NAME": "BALD KNOB",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28339",
+      "CITY_NAME": "ERWIN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36340",
+      "CITY_NAME": "GENEVA",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65809",
+      "CITY_NAME": "SPRINGFIELD",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27837",
+      "CITY_NAME": "GRIMESLAND",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44902",
+      "CITY_NAME": "MANSFIELD",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27377",
+      "CITY_NAME": "WHITSETT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "71639",
+      "CITY_NAME": "DUMAS",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27571",
+      "CITY_NAME": "ROLESVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27864",
+      "CITY_NAME": "PINETOPS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65712",
+      "CITY_NAME": "MOUNT VERNON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28621",
+      "CITY_NAME": "ELKIN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27805",
+      "CITY_NAME": "AULANDER",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45875",
+      "CITY_NAME": "OTTAWA",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43502",
+      "CITY_NAME": "ARCHBOLD",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24078",
+      "CITY_NAME": "COLLINSVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24251",
+      "CITY_NAME": "GATE CITY",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27521",
+      "CITY_NAME": "COATS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07823",
+      "CITY_NAME": "BELVIDERE",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27855",
+      "CITY_NAME": "MURFREESBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44813",
+      "CITY_NAME": "BELLVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44270",
+      "CITY_NAME": "RITTMAN",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72823",
+      "CITY_NAME": "ATKINS",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37640",
+      "CITY_NAME": "BUTLER",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65606",
+      "CITY_NAME": "ALTON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27871",
+      "CITY_NAME": "ROBERSONVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46538",
+      "CITY_NAME": "LEESBURG",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65041",
+      "CITY_NAME": "HERMANN",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36344",
+      "CITY_NAME": "HARTFORD",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36049",
+      "CITY_NAME": "LUVERNE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28555",
+      "CITY_NAME": "MAYSVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "48616",
+      "CITY_NAME": "CHESANING",
+      "ST_ABBREV": "MI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36576",
+      "CITY_NAME": "SILVERHILL",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22973",
+      "CITY_NAME": "STANARDSVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28642",
+      "CITY_NAME": "JONESVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24054",
+      "CITY_NAME": "AXTON",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43756",
+      "CITY_NAME": "MCCONNELSVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66006",
+      "CITY_NAME": "BALDWIN CITY",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36477",
+      "CITY_NAME": "SAMSON",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65791",
+      "CITY_NAME": "THAYER",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28651",
+      "CITY_NAME": "MILLERS CREEK",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36352",
+      "CITY_NAME": "NEWTON",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72176",
+      "CITY_NAME": "WARD",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35442",
+      "CITY_NAME": "ALICEVILLE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "16033",
+      "CITY_NAME": "EVANS CITY",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37681",
+      "CITY_NAME": "LIMESTONE",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17547",
+      "CITY_NAME": "MARIETTA",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64067",
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43025",
+      "CITY_NAME": "HEBRON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "16662",
+      "CITY_NAME": "MARTINSBURG",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27925",
+      "CITY_NAME": "COLUMBIA",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36580",
+      "CITY_NAME": "SUMMERDALE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65010",
+      "CITY_NAME": "ASHLAND",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "78633",
+      "CITY_NAME": "GEORGETOWN",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54848",
+      "CITY_NAME": "LADYSMITH",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17751",
+      "CITY_NAME": "MILL HALL",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72042",
+      "CITY_NAME": "DE WITT",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70591",
+      "CITY_NAME": "WELSH",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54669",
+      "CITY_NAME": "WEST SALEM",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07930",
+      "CITY_NAME": "CHESTER",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72454",
+      "CITY_NAME": "PIGGOTT",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70554",
+      "CITY_NAME": "MAMOU",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36528",
+      "CITY_NAME": "DAUPHIN ISLAND",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44047",
+      "CITY_NAME": "JEFFERSON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76559",
+      "CITY_NAME": "NOLANVILLE",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23930",
+      "CITY_NAME": "CREWE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72713",
+      "CITY_NAME": "BENTONVILLE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45732",
+      "CITY_NAME": "GLOUSTER",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46711",
+      "CITY_NAME": "BERNE",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "71082",
+      "CITY_NAME": "VIVIAN",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46366",
+      "CITY_NAME": "NORTH JUDSON",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "78665",
+      "CITY_NAME": "ROUND ROCK",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07830",
+      "CITY_NAME": "CALIFON",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23192",
+      "CITY_NAME": "MONTPELIER",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65473",
+      "CITY_NAME": "FORT LEONARD WOOD",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27970",
+      "CITY_NAME": "ROPER",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "24517",
+      "CITY_NAME": "ALTAVISTA",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66736",
+      "CITY_NAME": "FREDONIA",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27569",
+      "CITY_NAME": "PRINCETON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "53805",
+      "CITY_NAME": "BOSCOBEL",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07827",
+      "CITY_NAME": "MONTAGUE",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "48467",
+      "CITY_NAME": "PORT AUSTIN",
+      "ST_ABBREV": "MI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28673",
+      "CITY_NAME": "SHERRILLS FORD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17554",
+      "CITY_NAME": "MOUNTVILLE",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76259",
+      "CITY_NAME": "PONDER",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72762",
+      "CITY_NAME": "SPRINGDALE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37692",
+      "CITY_NAME": "UNICOI",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46106",
+      "CITY_NAME": "BARGERSVILLE",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37818",
+      "CITY_NAME": "MOSHEIM",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66436",
+      "CITY_NAME": "HOLTON",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54165",
+      "CITY_NAME": "SEYMOUR",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27810",
+      "CITY_NAME": "BELHAVEN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35054",
+      "CITY_NAME": "CROPWELL",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27809",
+      "CITY_NAME": "BATTLEBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54771",
+      "CITY_NAME": "THORP",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28544",
+      "CITY_NAME": "MIDWAY PARK",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22947",
+      "CITY_NAME": "KESWICK",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45810",
+      "CITY_NAME": "ADA",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "16673",
+      "CITY_NAME": "ROARING SPRING",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66064",
+      "CITY_NAME": "OSAWATOMIE",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66032",
+      "CITY_NAME": "GARNETT",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43731",
+      "CITY_NAME": "CROOKSVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17307",
+      "CITY_NAME": "BIGLERVILLE",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45817",
+      "CITY_NAME": "BLUFFTON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27614",
+      "CITY_NAME": "RALEIGH",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63461",
+      "CITY_NAME": "PALMYRA",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29332",
+      "CITY_NAME": "CROSS HILL",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37658",
+      "CITY_NAME": "HAMPTON",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72422",
+      "CITY_NAME": "CORNING",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28694",
+      "CITY_NAME": "WEST JEFFERSON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28453",
+      "CITY_NAME": "MAGNOLIA",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72442",
+      "CITY_NAME": "MANILA",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28323",
+      "CITY_NAME": "BUNNLEVEL",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65806",
+      "CITY_NAME": "SPRINGFIELD",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37665",
+      "CITY_NAME": "KINGSPORT",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43324",
+      "CITY_NAME": "HUNTSVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "53530",
+      "CITY_NAME": "DARLINGTON",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65360",
+      "CITY_NAME": "WINDSOR",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37616",
+      "CITY_NAME": "AFTON",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43143",
+      "CITY_NAME": "MOUNT STERLING",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44606",
+      "CITY_NAME": "APPLE CREEK",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72007",
+      "CITY_NAME": "AUSTIN",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63445",
+      "CITY_NAME": "KAHOKA",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07416",
+      "CITY_NAME": "FRANKLIN",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35592",
+      "CITY_NAME": "VERNON",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63456",
+      "CITY_NAME": "MONROE CITY",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47043",
+      "CITY_NAME": "VEVAY",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08801",
+      "CITY_NAME": "ANNANDALE",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "61074",
+      "CITY_NAME": "SAVANNA",
+      "ST_ABBREV": "IL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27883",
+      "CITY_NAME": "STANTONSBURG",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28571",
+      "CITY_NAME": "ORIENTAL",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54545",
+      "CITY_NAME": "MANITOWISH WATERS",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08809",
+      "CITY_NAME": "CLINTON",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27209",
+      "CITY_NAME": "BISCOE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72718",
+      "CITY_NAME": "CAVE SPRINGS",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72046",
+      "CITY_NAME": "ENGLAND",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47390",
+      "CITY_NAME": "UNION CITY",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47040",
+      "CITY_NAME": "RISING SUN",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46555",
+      "CITY_NAME": "NORTH WEBSTER",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23974",
+      "CITY_NAME": "VICTORIA",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28382",
+      "CITY_NAME": "ROSEBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "71465",
+      "CITY_NAME": "OLLA",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17007",
+      "CITY_NAME": "BOILING SPRINGS",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08826",
+      "CITY_NAME": "GLEN GARDNER",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45308",
+      "CITY_NAME": "BRADFORD",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22936",
+      "CITY_NAME": "EARLYSVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72040",
+      "CITY_NAME": "DES ARC",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36351",
+      "CITY_NAME": "NEW BROCKTON",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27325",
+      "CITY_NAME": "ROBBINS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43310",
+      "CITY_NAME": "BELLE CENTER",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07848",
+      "CITY_NAME": "LAFAYETTE",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37690",
+      "CITY_NAME": "TELFORD",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46148",
+      "CITY_NAME": "KNIGHTSTOWN",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43532",
+      "CITY_NAME": "LIBERTY CENTER",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54534",
+      "CITY_NAME": "HURLEY",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27229",
+      "CITY_NAME": "CANDOR",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27027",
+      "CITY_NAME": "MAYODAN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46554",
+      "CITY_NAME": "NORTH LIBERTY",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "67544",
+      "CITY_NAME": "HOISINGTON",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35447",
+      "CITY_NAME": "CARROLLTON",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17053",
+      "CITY_NAME": "MARYSVILLE",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27924",
+      "CITY_NAME": "COLERAIN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76544",
+      "CITY_NAME": "FORT CAVAZOS",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65619",
+      "CITY_NAME": "BROOKLINE",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27832",
+      "CITY_NAME": "GASTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27243",
+      "CITY_NAME": "EFLAND",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27041",
+      "CITY_NAME": "PILOT MOUNTAIN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "71227",
+      "CITY_NAME": "CHOUDRANT",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72461",
+      "CITY_NAME": "RECTOR",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72064",
+      "CITY_NAME": "HAZEN",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27890",
+      "CITY_NAME": "WELDON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27812",
+      "CITY_NAME": "BETHEL",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66523",
+      "CITY_NAME": "OSAGE CITY",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07462",
+      "CITY_NAME": "VERNON",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "48453",
+      "CITY_NAME": "MARLETTE",
+      "ST_ABBREV": "MI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "16053",
+      "CITY_NAME": "RENFREW",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08825",
+      "CITY_NAME": "FRENCHTOWN",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54512",
+      "CITY_NAME": "BOULDER JUNCTION",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27939",
+      "CITY_NAME": "GRANDY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17264",
+      "CITY_NAME": "THREE SPRINGS",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08827",
+      "CITY_NAME": "HAMPTON",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "71770",
+      "CITY_NAME": "WALDO",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27816",
+      "CITY_NAME": "CASTALIA",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72024",
+      "CITY_NAME": "CARLISLE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27281",
+      "CITY_NAME": "JACKSON SPRINGS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "53956",
+      "CITY_NAME": "RANDOLPH",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28547",
+      "CITY_NAME": "CAMP LEJEUNE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72101",
+      "CITY_NAME": "MC CRORY",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63435",
+      "CITY_NAME": "CANTON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43551",
+      "CITY_NAME": "PERRYSBURG",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72366",
+      "CITY_NAME": "MARVELL",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22923",
+      "CITY_NAME": "BARBOURSVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63341",
+      "CITY_NAME": "DEFIANCE",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28610",
+      "CITY_NAME": "CLAREMONT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46571",
+      "CITY_NAME": "TOPEKA",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47562",
+      "CITY_NAME": "ODON",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43348",
+      "CITY_NAME": "RUSSELLS POINT",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66062",
+      "CITY_NAME": "OLATHE",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17084",
+      "CITY_NAME": "REEDSVILLE",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27806",
+      "CITY_NAME": "AURORA",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28526",
+      "CITY_NAME": "DOVER",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22974",
+      "CITY_NAME": "TROY",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28315",
+      "CITY_NAME": "ABERDEEN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44430",
+      "CITY_NAME": "LEAVITTSBURG",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27976",
+      "CITY_NAME": "SOUTH MILLS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28523",
+      "CITY_NAME": "COVE CITY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17063",
+      "CITY_NAME": "MILROY",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36009",
+      "CITY_NAME": "BRANTLEY",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07863",
+      "CITY_NAME": "OXFORD",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44637",
+      "CITY_NAME": "KILLBUCK",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43758",
+      "CITY_NAME": "MALTA",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "31315",
+      "CITY_NAME": "FORT STEWART",
+      "ST_ABBREV": "GA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27957",
+      "CITY_NAME": "MERRY HILL",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17252",
+      "CITY_NAME": "SAINT THOMAS",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43516",
+      "CITY_NAME": "DESHLER",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "38672",
+      "CITY_NAME": "SOUTHAVEN",
+      "ST_ABBREV": "MS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54630",
+      "CITY_NAME": "GALESVILLE",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27597",
+      "CITY_NAME": "ZEBULON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64016",
+      "CITY_NAME": "BUCKNER",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "67063",
+      "CITY_NAME": "HILLSBORO",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54661",
+      "CITY_NAME": "TREMPEALEAU",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47923",
+      "CITY_NAME": "BROOKSTON",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29163",
+      "CITY_NAME": "VANCE",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "71378",
+      "CITY_NAME": "WISNER",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44473",
+      "CITY_NAME": "VIENNA",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27880",
+      "CITY_NAME": "SIMS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29935",
+      "CITY_NAME": "PORT ROYAL",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46747",
+      "CITY_NAME": "HUDSON",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46787",
+      "CITY_NAME": "SOUTH WHITLEY",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28450",
+      "CITY_NAME": "LAKE WACCAMAW",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28464",
+      "CITY_NAME": "TEACHEY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72944",
+      "CITY_NAME": "MANSFIELD",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46740",
+      "CITY_NAME": "GENEVA",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66439",
+      "CITY_NAME": "HORTON",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36319",
+      "CITY_NAME": "COLUMBIA",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72437",
+      "CITY_NAME": "LAKE CITY",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44822",
+      "CITY_NAME": "BUTLER",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27980",
+      "CITY_NAME": "TYNER",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70582",
+      "CITY_NAME": "SAINT MARTINVILLE",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28510",
+      "CITY_NAME": "ARAPAHOE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17065",
+      "CITY_NAME": "MOUNT HOLLY SPRINGS",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46732",
+      "CITY_NAME": "CROMWELL",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66061",
+      "CITY_NAME": "OLATHE",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46051",
+      "CITY_NAME": "LAPEL",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "67526",
+      "CITY_NAME": "ELLINWOOD",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "67579",
+      "CITY_NAME": "STERLING",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28538",
+      "CITY_NAME": "HOOKERTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17304",
+      "CITY_NAME": "ASPERS",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27928",
+      "CITY_NAME": "CRESWELL",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "29692",
+      "CITY_NAME": "WARE SHOALS",
+      "ST_ABBREV": "SC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "65081",
+      "CITY_NAME": "TIPTON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27808",
+      "CITY_NAME": "BATH",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "16066",
+      "CITY_NAME": "CRANBERRY TOWNSHIP",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08829",
+      "CITY_NAME": "HIGH BRIDGE",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "70543",
+      "CITY_NAME": "IOTA",
+      "ST_ABBREV": "LA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46784",
+      "CITY_NAME": "ROME CITY",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72940",
+      "CITY_NAME": "HUNTINGTON",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27829",
+      "CITY_NAME": "FOUNTAIN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64644",
+      "CITY_NAME": "HAMILTON",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72029",
+      "CITY_NAME": "CLARENDON",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72438",
+      "CITY_NAME": "LEACHVILLE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43527",
+      "CITY_NAME": "HOLGATE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47977",
+      "CITY_NAME": "REMINGTON",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "31316",
+      "CITY_NAME": "LUDOWICI",
+      "ST_ABBREV": "GA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23922",
+      "CITY_NAME": "BURKEVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43469",
+      "CITY_NAME": "WOODVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28529",
+      "CITY_NAME": "GRANTSBORO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46929",
+      "CITY_NAME": "FLORA",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66021",
+      "CITY_NAME": "EDGERTON",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17344",
+      "CITY_NAME": "MC SHERRYSTOWN",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17601",
+      "CITY_NAME": "LANCASTER",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47951",
+      "CITY_NAME": "KENTLAND",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23146",
+      "CITY_NAME": "ROCKVILLE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64491",
+      "CITY_NAME": "TARKIO",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27824",
+      "CITY_NAME": "ENGELHARD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "15545",
+      "CITY_NAME": "HYNDMAN",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27317",
+      "CITY_NAME": "RANDLEMAN",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23950",
+      "CITY_NAME": "LA CROSSE",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35135",
+      "CITY_NAME": "RIVERSIDE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64454",
+      "CITY_NAME": "GOWER",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "44843",
+      "CITY_NAME": "LUCAS",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "54616",
+      "CITY_NAME": "BLAIR",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27559",
+      "CITY_NAME": "MONCURE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17224",
+      "CITY_NAME": "FORT LOUDON",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35235",
+      "CITY_NAME": "BIRMINGHAM",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47018",
+      "CITY_NAME": "DILLSBORO",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43557",
+      "CITY_NAME": "STRYKER",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47946",
+      "CITY_NAME": "FRANCESVILLE",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "53598",
+      "CITY_NAME": "WINDSOR",
+      "ST_ABBREV": "WI",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27986",
+      "CITY_NAME": "WINTON",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37694",
+      "CITY_NAME": "WATAUGA",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27576",
+      "CITY_NAME": "SELMA",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28682",
+      "CITY_NAME": "TERRELL",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28635",
+      "CITY_NAME": "HAYS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45812",
+      "CITY_NAME": "ALGER",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17502",
+      "CITY_NAME": "BAINBRIDGE",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27981",
+      "CITY_NAME": "WANCHESE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27947",
+      "CITY_NAME": "JARVISBURG",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47995",
+      "CITY_NAME": "WOLCOTT",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43320",
+      "CITY_NAME": "EDISON",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27843",
+      "CITY_NAME": "HOBGOOD",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76554",
+      "CITY_NAME": "LITTLE RIVER ACADEMY",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27235",
+      "CITY_NAME": "COLFAX",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72055",
+      "CITY_NAME": "GILLETT",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72036",
+      "CITY_NAME": "COTTON PLANT",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66013",
+      "CITY_NAME": "BUCYRUS",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27966",
+      "CITY_NAME": "POWELLS POINT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72082",
+      "CITY_NAME": "KENSETT",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63332",
+      "CITY_NAME": "AUGUSTA",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "47948",
+      "CITY_NAME": "GOODLAND",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27884",
+      "CITY_NAME": "STOKES",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "23047",
+      "CITY_NAME": "DOSWELL",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "76513",
+      "CITY_NAME": "BELTON",
+      "ST_ABBREV": "TX",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27517",
+      "CITY_NAME": "CHAPEL HILL",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27979",
+      "CITY_NAME": "SUNBURY",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27926",
+      "CITY_NAME": "CORAPEAKE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27885",
+      "CITY_NAME": "SWANQUARTER",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46705",
+      "CITY_NAME": "ASHLEY",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43443",
+      "CITY_NAME": "LUCKEY",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27929",
+      "CITY_NAME": "CURRITUCK",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37809",
+      "CITY_NAME": "MIDWAY",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27818",
+      "CITY_NAME": "COMO",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72745",
+      "CITY_NAME": "LOWELL",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "07439",
+      "CITY_NAME": "OGDENSBURG",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28556",
+      "CITY_NAME": "MERRITT",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "72102",
+      "CITY_NAME": "MC RAE",
+      "ST_ABBREV": "AR",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46048",
+      "CITY_NAME": "INGALLS",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36321",
+      "CITY_NAME": "COWARTS",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43413",
+      "CITY_NAME": "CYGNET",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "38327",
+      "CITY_NAME": "CRUMP",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "22969",
+      "CITY_NAME": "SCHUYLER",
+      "ST_ABBREV": "VA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45390",
+      "CITY_NAME": "UNION CITY",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "37691",
+      "CITY_NAME": "TRADE",
+      "ST_ABBREV": "TN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17237",
+      "CITY_NAME": "MONT ALTO",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "16045",
+      "CITY_NAME": "LYNDORA",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36071",
+      "CITY_NAME": "RUTLEDGE",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "15534",
+      "CITY_NAME": "BUFFALO MILLS",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "64668",
+      "CITY_NAME": "NORBORNE",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27964",
+      "CITY_NAME": "POINT HARBOR",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27942",
+      "CITY_NAME": "HARRELLSVILLE",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45321",
+      "CITY_NAME": "ELDORADO",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17214",
+      "CITY_NAME": "BLUE RIDGE SUMMIT",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "66442",
+      "CITY_NAME": "FORT RILEY",
+      "ST_ABBREV": "KS",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28579",
+      "CITY_NAME": "SMYRNA",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28528",
+      "CITY_NAME": "GLOUCESTER",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "08540",
+      "CITY_NAME": "PRINCETON",
+      "ST_ABBREV": "NJ",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "27941",
+      "CITY_NAME": "HARBINGER",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45740",
+      "CITY_NAME": "JACKSONVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17582",
+      "CITY_NAME": "WASHINGTON BORO",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17603",
+      "CITY_NAME": "LANCASTER",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17550",
+      "CITY_NAME": "MAYTOWN",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "35178",
+      "CITY_NAME": "VINCENT",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "28524",
+      "CITY_NAME": "DAVIS",
+      "ST_ABBREV": "NC",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43076",
+      "CITY_NAME": "THORNVILLE",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "17235",
+      "CITY_NAME": "MARION",
+      "ST_ABBREV": "PA",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "36034",
+      "CITY_NAME": "GLENWOOD",
+      "ST_ABBREV": "AL",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45328",
+      "CITY_NAME": "GETTYSBURG",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "46913",
+      "CITY_NAME": "BRINGHURST",
+      "ST_ABBREV": "IN",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "63304",
+      "CITY_NAME": "SAINT CHARLES",
+      "ST_ABBREV": "MO",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "43437",
+      "CITY_NAME": "JERRY CITY",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    },
+    {
+      "ZIP_Code": "45381",
+      "CITY_NAME": "WEST ALEXANDRIA",
+      "ST_ABBREV": "OH",
+      "SERVICE_Avail": "Fiber"
+    }
+  ]
+}

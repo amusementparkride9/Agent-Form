@@ -22,7 +22,6 @@ export default function InternetOrderForm() {
   const [zipResult, setZipResult] = useState<ZipResult | null>(null)
   const [selectedProvider, setSelectedProvider] = useState<string>("")
   const [selectedPackage, setSelectedPackage] = useState<string>("")
-  const [selectedDirectvPackage, setSelectedDirectvPackage] = useState<string>("")
   const [showProviderDetails, setShowProviderDetails] = useState(false)
 
   // Dynamic package options based on selected provider
@@ -60,42 +59,10 @@ export default function InternetOrderForm() {
         { value: "kinetic-25", label: "Internet 25", speed: "25 Mbps", price: "$45/mo" },
         { value: "kinetic-100", label: "Internet 100", speed: "100 Mbps", price: "$65/mo" },
         { value: "kinetic-gig", label: "Gig", speed: "1 Gbps", price: "$85/mo" }
-      ],
-      "BrightSpeed Fiber": [
-        { value: "brightspeed-fiber-100", label: "Fiber 100", speed: "100 Mbps", price: "$39.99/mo" },
-        { value: "brightspeed-fiber-500", label: "Fiber 500", speed: "500 Mbps", price: "$59.99/mo" },
-        { value: "brightspeed-fiber-1gig", label: "Fiber 1 Gig", speed: "1 Gbps", price: "$79.99/mo" },
-        { value: "brightspeed-fiber-2gig", label: "Fiber 2 Gig", speed: "2 Gbps", price: "$99.99/mo" }
-      ],
-      "BrightSpeed Copper": [
-        { value: "brightspeed-copper-25", label: "DSL 25", speed: "25 Mbps", price: "$29.99/mo" },
-        { value: "brightspeed-copper-50", label: "DSL 50", speed: "50 Mbps", price: "$39.99/mo" },
-        { value: "brightspeed-copper-100", label: "DSL 100", speed: "100 Mbps", price: "$49.99/mo" }
-      ],
-      "Spectrum": [
-        { value: "spectrum-internet", label: "Internet", speed: "300 Mbps", price: "$49.99/mo" },
-        { value: "spectrum-internet-ultra", label: "Internet Ultra", speed: "500 Mbps", price: "$69.99/mo" },
-        { value: "spectrum-internet-gig", label: "Internet Gig", speed: "1 Gbps", price: "$89.99/mo" }
-      ],
-      "Altafiber": [
-        { value: "altafiber-gig", label: "Gig Service", speed: "1 Gbps", price: "$65/mo" },
-        { value: "altafiber-2gig", label: "2 Gig Service", speed: "2 Gbps", price: "$85/mo" },
-        { value: "altafiber-5gig", label: "5 Gig Service", speed: "5 Gbps", price: "$125/mo" },
-        { value: "altafiber-10gig", label: "10 Gig Service", speed: "10 Gbps", price: "$175/mo" }
       ]
     }
     
     return packagesByProvider[selectedProvider] || []
-  }
-
-  const getDirectvPackageDetails = (packageType: string) => {
-    const directvPackages: { [key: string]: { label: string, price: string, channels: string } } = {
-      "entertainment": { label: "ENTERTAINMENT", price: "$64.99/mo", channels: "75+ channels" },
-      "choice": { label: "CHOICE", price: "$84.99/mo", channels: "90+ channels" },
-      "ultimate": { label: "ULTIMATE", price: "$104.99/mo", channels: "130+ channels" },
-      "premier": { label: "PREMIER", price: "$139.99/mo", channels: "140+ channels + Premium" }
-    }
-    return directvPackages[packageType] || null
   }
 
   const handleAddOnChange = (addOn: string, checked: boolean) => {
@@ -118,7 +85,6 @@ export default function InternetOrderForm() {
       zipResult,
       selectedProvider,
       selectedPackage,
-      selectedDirectvPackage,
       selectedAddOns
     })
     alert("Order submitted successfully!")
@@ -132,10 +98,6 @@ export default function InternetOrderForm() {
       "Optimum": "bg-green-100 border-green-300 text-green-800",
       "Metronet": "bg-purple-100 border-purple-300 text-purple-800",
       "Kinetic": "bg-indigo-100 border-indigo-300 text-indigo-800",
-      "BrightSpeed Fiber": "bg-cyan-100 border-cyan-300 text-cyan-800",
-      "BrightSpeed Copper": "bg-amber-100 border-amber-300 text-amber-800",
-      "Spectrum": "bg-slate-100 border-slate-300 text-slate-800",
-      "Altafiber": "bg-emerald-100 border-emerald-300 text-emerald-800",
       "EarthLink": "bg-gray-100 border-gray-300 text-gray-800",
       "DirecTV": "bg-yellow-100 border-yellow-300 text-yellow-800"
     }
@@ -411,12 +373,6 @@ export default function InternetOrderForm() {
                         <CheckCircle className="w-5 h-5" />
                         <span className="font-medium">Selected Provider: {selectedProvider}</span>
                       </div>
-                      {selectedDirectvPackage && selectedDirectvPackage !== "none" && (
-                        <div className="flex items-center gap-2 text-blue-800 mt-2">
-                          <CheckCircle className="w-4 h-4" />
-                          <span className="text-sm">DirecTV {getDirectvPackageDetails(selectedDirectvPackage)?.label} added</span>
-                        </div>
-                      )}
                     </div>
 
                     <div className="space-y-3">
@@ -445,60 +401,6 @@ export default function InternetOrderForm() {
                           ))}
                         </SelectContent>
                       </Select>
-                    </div>
-
-                    {/* DirecTV TV Service */}
-                    <div className="space-y-3">
-                      <Label htmlFor="directv-package" className="text-sm font-semibold text-gray-700">
-                        DirecTV Package (Optional)
-                      </Label>
-                      <Select value={selectedDirectvPackage} onValueChange={setSelectedDirectvPackage}>
-                        <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-purple-500">
-                          <SelectValue placeholder="Add DirecTV to your order (optional)" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="none">No DirecTV Service</SelectItem>
-                          <SelectItem value="entertainment">
-                            <div className="flex justify-between items-center w-full">
-                              <div className="flex flex-col">
-                                <span className="font-medium">ENTERTAINMENT</span>
-                                <span className="text-sm text-gray-500">75+ channels</span>
-                              </div>
-                              <Badge variant="outline" className="ml-4">$64.99/mo</Badge>
-                            </div>
-                          </SelectItem>
-                          <SelectItem value="choice">
-                            <div className="flex justify-between items-center w-full">
-                              <div className="flex flex-col">
-                                <span className="font-medium">CHOICE</span>
-                                <span className="text-sm text-gray-500">90+ channels</span>
-                              </div>
-                              <Badge variant="outline" className="ml-4">$84.99/mo</Badge>
-                            </div>
-                          </SelectItem>
-                          <SelectItem value="ultimate">
-                            <div className="flex justify-between items-center w-full">
-                              <div className="flex flex-col">
-                                <span className="font-medium">ULTIMATE</span>
-                                <span className="text-sm text-gray-500">130+ channels</span>
-                              </div>
-                              <Badge variant="outline" className="ml-4">$104.99/mo</Badge>
-                            </div>
-                          </SelectItem>
-                          <SelectItem value="premier">
-                            <div className="flex justify-between items-center w-full">
-                              <div className="flex flex-col">
-                                <span className="font-medium">PREMIER</span>
-                                <span className="text-sm text-gray-500">140+ channels + Premium</span>
-                              </div>
-                              <Badge variant="outline" className="ml-4">$139.99/mo</Badge>
-                            </div>
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <p className="text-xs text-gray-500">
-                        DirecTV can be bundled with any internet package for additional savings
-                      </p>
                     </div>
 
                     {/* Add-Ons */}
@@ -629,19 +531,6 @@ export default function InternetOrderForm() {
                       {getPackageOptions().find(pkg => pkg.value === selectedPackage)?.price}
                     </span>
                   </div>
-                  {selectedDirectvPackage && selectedDirectvPackage !== "none" && (
-                    <div className="flex justify-between items-center">
-                      <span className="font-medium">DirecTV Package:</span>
-                      <div className="text-right">
-                        <div className="font-semibold text-blue-600">
-                          {getDirectvPackageDetails(selectedDirectvPackage)?.price}
-                        </div>
-                        <div className="text-sm text-gray-500">
-                          {getDirectvPackageDetails(selectedDirectvPackage)?.label}
-                        </div>
-                      </div>
-                    </div>
-                  )}
                   {selectedAddOns.length > 0 && (
                     <div className="pt-3 border-t">
                       <span className="font-medium">Add-ons:</span>

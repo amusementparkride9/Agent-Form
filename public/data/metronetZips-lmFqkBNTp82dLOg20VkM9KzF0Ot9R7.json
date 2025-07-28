@@ -1,0 +1,1994 @@
+{
+  "Sheet1": [
+    {
+      "ZIP_Code": 80915,
+      "CITY_NAME": "COLORADO SPRINGS",
+      "ST_ABBREV": "CO"
+    },
+    {
+      "ZIP_Code": 80917,
+      "CITY_NAME": "COLORADO SPRINGS",
+      "ST_ABBREV": "CO"
+    },
+    {
+      "ZIP_Code": 80918,
+      "CITY_NAME": "COLORADO SPRINGS",
+      "ST_ABBREV": "CO"
+    },
+    {
+      "ZIP_Code": 80920,
+      "CITY_NAME": "COLORADO SPRINGS",
+      "ST_ABBREV": "CO"
+    },
+    {
+      "ZIP_Code": 80922,
+      "CITY_NAME": "COLORADO SPRINGS",
+      "ST_ABBREV": "CO"
+    },
+    {
+      "ZIP_Code": 80923,
+      "CITY_NAME": "COLORADO SPRINGS",
+      "ST_ABBREV": "CO"
+    },
+    {
+      "ZIP_Code": 80951,
+      "CITY_NAME": "COLORADO SPRINGS",
+      "ST_ABBREV": "CO"
+    },
+    {
+      "ZIP_Code": 32114,
+      "CITY_NAME": "DAYTONA BEACH",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32117,
+      "CITY_NAME": "DAYTONA BEACH",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32119,
+      "CITY_NAME": "SOUTH DAYTONA",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32127,
+      "CITY_NAME": "PORT ORANGE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32129,
+      "CITY_NAME": "PORT ORANGE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32136,
+      "CITY_NAME": "FLAGLER BEACH",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32137,
+      "CITY_NAME": "PALM COAST",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32164,
+      "CITY_NAME": "PALM COAST",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32174,
+      "CITY_NAME": "ORMOND BEACH",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32301,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32303,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32304,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32305,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32308,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32309,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32310,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32311,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32312,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32317,
+      "CITY_NAME": "TALLAHASSEE",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32701,
+      "CITY_NAME": "MAITLAND",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32703,
+      "CITY_NAME": "APOPKA",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32712,
+      "CITY_NAME": "APOPKA",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32714,
+      "CITY_NAME": "ALTAMONTE SPRINGS",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32750,
+      "CITY_NAME": "LONGWOOD",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32751,
+      "CITY_NAME": "MAITLAND",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32779,
+      "CITY_NAME": "LONGWOOD",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 32818,
+      "CITY_NAME": "ORLANDO",
+      "ST_ABBREV": "FL"
+    },
+    {
+      "ZIP_Code": 50009,
+      "CITY_NAME": "ALTOONA",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50010,
+      "CITY_NAME": "AMES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50014,
+      "CITY_NAME": "AMES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50021,
+      "CITY_NAME": "ANKENY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50023,
+      "CITY_NAME": "ANKENY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50047,
+      "CITY_NAME": "CARLISLE",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50105,
+      "CITY_NAME": "GILBERT",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50111,
+      "CITY_NAME": "GRIMES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50126,
+      "CITY_NAME": "IOWA FALLS",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50130,
+      "CITY_NAME": "JEWELL",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50131,
+      "CITY_NAME": "JOHNSTON",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50158,
+      "CITY_NAME": "MARSHALLTOWN",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50201,
+      "CITY_NAME": "NEVADA",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50211,
+      "CITY_NAME": "NORWALK",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50226,
+      "CITY_NAME": "POLK CITY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50265,
+      "CITY_NAME": "WEST DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50266,
+      "CITY_NAME": "WEST DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50309,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50310,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50311,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50312,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50313,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50314,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50315,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50316,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50317,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50320,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50321,
+      "CITY_NAME": "DES MOINES",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50322,
+      "CITY_NAME": "URBANDALE",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50323,
+      "CITY_NAME": "URBANDALE",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50324,
+      "CITY_NAME": "CLIVE",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50325,
+      "CITY_NAME": "CLIVE",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50327,
+      "CITY_NAME": "PLEASANT HILL",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50401,
+      "CITY_NAME": "MASON CITY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50441,
+      "CITY_NAME": "HAMPTON",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50475,
+      "CITY_NAME": "SHEFFIELD",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50701,
+      "CITY_NAME": "WATERLOO",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50702,
+      "CITY_NAME": "WATERLOO",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50703,
+      "CITY_NAME": "WATERLOO",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 50707,
+      "CITY_NAME": "ELK RUN HEIGHTS",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 51103,
+      "CITY_NAME": "SIOUX CITY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 51104,
+      "CITY_NAME": "SIOUX CITY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 51105,
+      "CITY_NAME": "SIOUX CITY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 51106,
+      "CITY_NAME": "SIOUX CITY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 51108,
+      "CITY_NAME": "SIOUX CITY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 51109,
+      "CITY_NAME": "SIOUX CITY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52241,
+      "CITY_NAME": "CORALVILLE",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52246,
+      "CITY_NAME": "IOWA CITY",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52722,
+      "CITY_NAME": "BETTENDORF",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52753,
+      "CITY_NAME": "LE CLAIRE",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52801,
+      "CITY_NAME": "DAVENPORT",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52802,
+      "CITY_NAME": "DAVENPORT",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52803,
+      "CITY_NAME": "DAVENPORT",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52804,
+      "CITY_NAME": "DAVENPORT",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52806,
+      "CITY_NAME": "DAVENPORT",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 52807,
+      "CITY_NAME": "DAVENPORT",
+      "ST_ABBREV": "IA"
+    },
+    {
+      "ZIP_Code": 60112,
+      "CITY_NAME": "CORTLAND",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60115,
+      "CITY_NAME": "DEKALB",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60119,
+      "CITY_NAME": "ELBURN",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60124,
+      "CITY_NAME": "ELGIN",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60134,
+      "CITY_NAME": "GENEVA",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60135,
+      "CITY_NAME": "GENOA",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60174,
+      "CITY_NAME": "ST CHARLES",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60175,
+      "CITY_NAME": "ST CHARLES",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60177,
+      "CITY_NAME": "ELGIN",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60178,
+      "CITY_NAME": "SYCAMORE",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60446,
+      "CITY_NAME": "ROMEOVILLE",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60506,
+      "CITY_NAME": "NORTH AURORA",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60510,
+      "CITY_NAME": "BATAVIA",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60512,
+      "CITY_NAME": "BRISTOL",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60538,
+      "CITY_NAME": "MONTGOMERY",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60542,
+      "CITY_NAME": "NORTH AURORA",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60543,
+      "CITY_NAME": "OSWEGO",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60544,
+      "CITY_NAME": "NAPERVILLE",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60545,
+      "CITY_NAME": "PLANO",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60548,
+      "CITY_NAME": "SANDWICH",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60554,
+      "CITY_NAME": "SUGAR GROVE",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60560,
+      "CITY_NAME": "YORKVILLE",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60585,
+      "CITY_NAME": "PLAINFIELD",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 60586,
+      "CITY_NAME": "PLAINFIELD",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61115,
+      "CITY_NAME": "LOVES PARK",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61201,
+      "CITY_NAME": "ROCK ISLAND",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61239,
+      "CITY_NAME": "CARBON CLIFF",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61241,
+      "CITY_NAME": "COLONA",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61244,
+      "CITY_NAME": "EAST MOLINE",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61256,
+      "CITY_NAME": "HAMPTON",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61264,
+      "CITY_NAME": "MILAN",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61265,
+      "CITY_NAME": "MOLINE",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61282,
+      "CITY_NAME": "EAST MOLINE",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61701,
+      "CITY_NAME": "BLOOMINGTON",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61704,
+      "CITY_NAME": "BLOOMINGTON",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61705,
+      "CITY_NAME": "BLOOMINGTON",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61752,
+      "CITY_NAME": "LE ROY",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61761,
+      "CITY_NAME": "NORMAL",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 61776,
+      "CITY_NAME": "TOWANDA",
+      "ST_ABBREV": "IL"
+    },
+    {
+      "ZIP_Code": 46032,
+      "CITY_NAME": "CARMEL",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46033,
+      "CITY_NAME": "CARMEL",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46037,
+      "CITY_NAME": "FISHERS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46038,
+      "CITY_NAME": "FISHERS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46052,
+      "CITY_NAME": "LEBANON",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46060,
+      "CITY_NAME": "NOBLESVILLE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46062,
+      "CITY_NAME": "NOBLESVILLE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46064,
+      "CITY_NAME": "PENDLETON",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46071,
+      "CITY_NAME": "THORNTOWN",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46074,
+      "CITY_NAME": "WESTFIELD",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46077,
+      "CITY_NAME": "ZIONSVILLE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46106,
+      "CITY_NAME": "BARGERSVILLE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46131,
+      "CITY_NAME": "FRANKLIN",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46135,
+      "CITY_NAME": "GREENCASTLE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46142,
+      "CITY_NAME": "GREENWOOD",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46143,
+      "CITY_NAME": "GREENWOOD",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46184,
+      "CITY_NAME": "NEW WHITELAND",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46216,
+      "CITY_NAME": "BARGERSVILLE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46217,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46226,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46227,
+      "CITY_NAME": "GREENWOOD",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46228,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46235,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46236,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46240,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46250,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46256,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46260,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46268,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46278,
+      "CITY_NAME": "INDIANAPOLIS",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46280,
+      "CITY_NAME": "CARMEL",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46530,
+      "CITY_NAME": "GRANGER",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46545,
+      "CITY_NAME": "OSCEOLA",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46561,
+      "CITY_NAME": "OSCEOLA",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46582,
+      "CITY_NAME": "WARSAW",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46635,
+      "CITY_NAME": "SOUTH BEND",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46750,
+      "CITY_NAME": "HUNTINGTON",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46783,
+      "CITY_NAME": "ROANOKE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46940,
+      "CITY_NAME": "LA FONTAINE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46947,
+      "CITY_NAME": "LOGANSPORT",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46952,
+      "CITY_NAME": "MARION",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46962,
+      "CITY_NAME": "NORTH MANCHESTER",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 46992,
+      "CITY_NAME": "WABASH",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47243,
+      "CITY_NAME": "HANOVER",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47250,
+      "CITY_NAME": "MADISON",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47265,
+      "CITY_NAME": "NORTH VERNON",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47274,
+      "CITY_NAME": "SEYMOUR",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47331,
+      "CITY_NAME": "CONNERSVILLE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47362,
+      "CITY_NAME": "NEW CASTLE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47591,
+      "CITY_NAME": "VINCENNES",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47901,
+      "CITY_NAME": "LAFAYETTE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47904,
+      "CITY_NAME": "LAFAYETTE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47905,
+      "CITY_NAME": "LAFAYETTE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47906,
+      "CITY_NAME": "WEST LAFAYETTE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47909,
+      "CITY_NAME": "LAFAYETTE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 47933,
+      "CITY_NAME": "CRAWFORDSVILLE",
+      "ST_ABBREV": "IN"
+    },
+    {
+      "ZIP_Code": 40347,
+      "CITY_NAME": "MIDWAY",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40356,
+      "CITY_NAME": "NICHOLASVILLE",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40383,
+      "CITY_NAME": "VERSAILLES",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40390,
+      "CITY_NAME": "WILMORE",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40403,
+      "CITY_NAME": "BEREA",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40461,
+      "CITY_NAME": "PAINT LICK",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40475,
+      "CITY_NAME": "RICHMOND",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40502,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40503,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40504,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40505,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40507,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40508,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40509,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40510,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40511,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40513,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40514,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40515,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40516,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 40517,
+      "CITY_NAME": "LEXINGTON",
+      "ST_ABBREV": "KY"
+    },
+    {
+      "ZIP_Code": 48070,
+      "CITY_NAME": "HUNTINGTON WOODS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48108,
+      "CITY_NAME": "ANN ARBOR",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48197,
+      "CITY_NAME": "YPSILANTI",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48198,
+      "CITY_NAME": "YPSILANTI",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48226,
+      "CITY_NAME": "DETROIT",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48821,
+      "CITY_NAME": "DIMONDALE",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48823,
+      "CITY_NAME": "EAST LANSING",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48837,
+      "CITY_NAME": "GRAND LEDGE",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48840,
+      "CITY_NAME": "HASLETT",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48842,
+      "CITY_NAME": "HOLT",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48864,
+      "CITY_NAME": "OKEMOS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48906,
+      "CITY_NAME": "LANSING",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48910,
+      "CITY_NAME": "LANSING",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48911,
+      "CITY_NAME": "LANSING",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48912,
+      "CITY_NAME": "LANSING",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48915,
+      "CITY_NAME": "LANSING",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48917,
+      "CITY_NAME": "LANSING",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 48933,
+      "CITY_NAME": "LANSING",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49001,
+      "CITY_NAME": "KALAMAZOO",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49002,
+      "CITY_NAME": "PORTAGE",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49006,
+      "CITY_NAME": "KALAMAZOO",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49008,
+      "CITY_NAME": "KALAMAZOO",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49009,
+      "CITY_NAME": "KALAMAZOO",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49024,
+      "CITY_NAME": "PORTAGE",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49034,
+      "CITY_NAME": "CLIMAX",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49053,
+      "CITY_NAME": "GALESBURG",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49071,
+      "CITY_NAME": "MATTAWAN",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49088,
+      "CITY_NAME": "SCOTTS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49426,
+      "CITY_NAME": "HUDSONVILLE",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49428,
+      "CITY_NAME": "JENISON",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49503,
+      "CITY_NAME": "GRAND RAPIDS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49504,
+      "CITY_NAME": "GRAND RAPIDS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49506,
+      "CITY_NAME": "GRAND RAPIDS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49507,
+      "CITY_NAME": "GRAND RAPIDS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49508,
+      "CITY_NAME": "GRAND RAPIDS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49509,
+      "CITY_NAME": "GRAND RAPIDS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49512,
+      "CITY_NAME": "GRAND RAPIDS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49519,
+      "CITY_NAME": "WYOMING",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49546,
+      "CITY_NAME": "GRAND RAPIDS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 49548,
+      "CITY_NAME": "GRAND RAPIDS",
+      "ST_ABBREV": "MI"
+    },
+    {
+      "ZIP_Code": 55009,
+      "CITY_NAME": "CANNON FALLS",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55019,
+      "CITY_NAME": "DUNDAS",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55020,
+      "CITY_NAME": "ELKO NEW MARKET",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55021,
+      "CITY_NAME": "FARIBAULT",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55044,
+      "CITY_NAME": "LAKEVILLE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55049,
+      "CITY_NAME": "OWATONNA CITY",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55053,
+      "CITY_NAME": "NERSTRAND",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55054,
+      "CITY_NAME": "ELKO NEW MARKET",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55057,
+      "CITY_NAME": "NORTHFIELD",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55060,
+      "CITY_NAME": "OWATONNA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55068,
+      "CITY_NAME": "ROSEMOUNT",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55122,
+      "CITY_NAME": "SAINT PAUL",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55124,
+      "CITY_NAME": "SAINT PAUL",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55301,
+      "CITY_NAME": "ALBERTVILLE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55315,
+      "CITY_NAME": "CARVER",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55317,
+      "CITY_NAME": "CHANHASSEN",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55318,
+      "CITY_NAME": "VICTORIA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55322,
+      "CITY_NAME": "COLOGNE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55328,
+      "CITY_NAME": "DELANO",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55331,
+      "CITY_NAME": "EXCELSIOR",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55339,
+      "CITY_NAME": "HAMBURG",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55352,
+      "CITY_NAME": "JORDAN",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55360,
+      "CITY_NAME": "MAYER",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55367,
+      "CITY_NAME": "NEW GERMANY",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55368,
+      "CITY_NAME": "NORWOOD YOUNG AMERICA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55372,
+      "CITY_NAME": "PRIOR LAKE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55375,
+      "CITY_NAME": "ST BONIFACIUS",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55379,
+      "CITY_NAME": "SHAKOPEE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55386,
+      "CITY_NAME": "VICTORIA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55387,
+      "CITY_NAME": "WACONIA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55388,
+      "CITY_NAME": "WATERTOWN",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55395,
+      "CITY_NAME": "WINSTED",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55397,
+      "CITY_NAME": "NORWOOD YOUNG AMERICA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55402,
+      "CITY_NAME": "MINNEAPOLIS",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55901,
+      "CITY_NAME": "ROCHESTER",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55902,
+      "CITY_NAME": "ROCHESTER",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55904,
+      "CITY_NAME": "ROCHESTER",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55906,
+      "CITY_NAME": "ROCHESTER",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55909,
+      "CITY_NAME": "ADAMS",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55912,
+      "CITY_NAME": "AUSTIN",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55917,
+      "CITY_NAME": "BLOOMING PRAIRIE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55918,
+      "CITY_NAME": "BROWNSDALE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55920,
+      "CITY_NAME": "BYRON",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55924,
+      "CITY_NAME": "OWATONNA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55926,
+      "CITY_NAME": "DEXTER",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55934,
+      "CITY_NAME": "EYOTA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55940,
+      "CITY_NAME": "HAYFIELD",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55946,
+      "CITY_NAME": "KENYON",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55951,
+      "CITY_NAME": "LE ROY",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55953,
+      "CITY_NAME": "LYLE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55970,
+      "CITY_NAME": "ADAMS",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55976,
+      "CITY_NAME": "STEWARTVILLE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55985,
+      "CITY_NAME": "WEST CONCORD",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 55991,
+      "CITY_NAME": "ZUMBRO FALLS",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56001,
+      "CITY_NAME": "MANKATO",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56007,
+      "CITY_NAME": "OAKLAND",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56011,
+      "CITY_NAME": "BELLE PLAINE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56016,
+      "CITY_NAME": "CLARKS GROVE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56017,
+      "CITY_NAME": "CLEVELAND",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56024,
+      "CITY_NAME": "EAGLE LAKE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56026,
+      "CITY_NAME": "ELLENDALE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56028,
+      "CITY_NAME": "ELYSIAN",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56035,
+      "CITY_NAME": "GENEVA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56036,
+      "CITY_NAME": "GLENVILLE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56043,
+      "CITY_NAME": "HAYWARD",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56044,
+      "CITY_NAME": "HENDERSON",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56045,
+      "CITY_NAME": "HOLLANDALE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56050,
+      "CITY_NAME": "KASOTA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56052,
+      "CITY_NAME": "KILKENNY",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56057,
+      "CITY_NAME": "LE CENTER",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56058,
+      "CITY_NAME": "LE SUEUR",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56063,
+      "CITY_NAME": "MADISON LAKE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56072,
+      "CITY_NAME": "NEW RICHLAND",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56082,
+      "CITY_NAME": "SAINT PETER",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56093,
+      "CITY_NAME": "WASECA",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 56096,
+      "CITY_NAME": "WATERVILLE",
+      "ST_ABBREV": "MN"
+    },
+    {
+      "ZIP_Code": 64501,
+      "CITY_NAME": "SAINT JOSEPH",
+      "ST_ABBREV": "MO"
+    },
+    {
+      "ZIP_Code": 64503,
+      "CITY_NAME": "SAINT JOSEPH",
+      "ST_ABBREV": "MO"
+    },
+    {
+      "ZIP_Code": 64505,
+      "CITY_NAME": "SAINT JOSEPH",
+      "ST_ABBREV": "MO"
+    },
+    {
+      "ZIP_Code": 64506,
+      "CITY_NAME": "SAINT JOSEPH",
+      "ST_ABBREV": "MO"
+    },
+    {
+      "ZIP_Code": 64507,
+      "CITY_NAME": "SAINT JOSEPH",
+      "ST_ABBREV": "MO"
+    },
+    {
+      "ZIP_Code": 27803,
+      "CITY_NAME": "ROCKY MOUNT",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 27804,
+      "CITY_NAME": "ROCKY MOUNT",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 27834,
+      "CITY_NAME": "GREENVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 27837,
+      "CITY_NAME": "GRIMESLAND",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 27858,
+      "CITY_NAME": "GREENVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28301,
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28303,
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28304,
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28305,
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28306,
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28311,
+      "CITY_NAME": "LINDEN",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28312,
+      "CITY_NAME": "EASTOVER",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28314,
+      "CITY_NAME": "FAYETTEVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28348,
+      "CITY_NAME": "HOPE MILLS",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28371,
+      "CITY_NAME": "PARKTON",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28376,
+      "CITY_NAME": "RAEFORD",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28513,
+      "CITY_NAME": "AYDEN",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28532,
+      "CITY_NAME": "HAVELOCK",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28540,
+      "CITY_NAME": "JACKSONVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28544,
+      "CITY_NAME": "MIDWAY PARK",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28546,
+      "CITY_NAME": "JACKSONVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28560,
+      "CITY_NAME": "NEW BERN",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28562,
+      "CITY_NAME": "NEW BERN",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28590,
+      "CITY_NAME": "WINTERVILLE",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28601,
+      "CITY_NAME": "HICKORY",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 28602,
+      "CITY_NAME": "HICKORY",
+      "ST_ABBREV": "NC"
+    },
+    {
+      "ZIP_Code": 68007,
+      "CITY_NAME": "BENNINGTON",
+      "ST_ABBREV": "NE"
+    },
+    {
+      "ZIP_Code": 68022,
+      "CITY_NAME": "ELKHORN",
+      "ST_ABBREV": "NE"
+    },
+    {
+      "ZIP_Code": 68116,
+      "CITY_NAME": "OMAHA",
+      "ST_ABBREV": "NE"
+    },
+    {
+      "ZIP_Code": 68118,
+      "CITY_NAME": "OMAHA",
+      "ST_ABBREV": "NE"
+    },
+    {
+      "ZIP_Code": 68142,
+      "CITY_NAME": "OMAHA",
+      "ST_ABBREV": "NE"
+    },
+    {
+      "ZIP_Code": 43604,
+      "CITY_NAME": "TOLEDO",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45305,
+      "CITY_NAME": "BELLBROOK",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45309,
+      "CITY_NAME": "BROOKVILLE",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45315,
+      "CITY_NAME": "CLAYTON",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45322,
+      "CITY_NAME": "ENGLEWOOD",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45324,
+      "CITY_NAME": "FAIRBORN",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45341,
+      "CITY_NAME": "MEDWAY",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45344,
+      "CITY_NAME": "NEW CARLISLE",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45356,
+      "CITY_NAME": "PIQUA",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45371,
+      "CITY_NAME": "TIPP CITY",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45373,
+      "CITY_NAME": "TROY",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45377,
+      "CITY_NAME": "VANDALIA",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45383,
+      "CITY_NAME": "WEST MILTON",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45385,
+      "CITY_NAME": "BEAVERCRK TWP",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45414,
+      "CITY_NAME": "DAYTON",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45415,
+      "CITY_NAME": "DAYTON",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45424,
+      "CITY_NAME": "DAYTON",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45426,
+      "CITY_NAME": "DAYTON",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45430,
+      "CITY_NAME": "BEAVERCREEK",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45431,
+      "CITY_NAME": "BEAVERCREEK",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45432,
+      "CITY_NAME": "BEAVERCREEK",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45434,
+      "CITY_NAME": "BEAVERCREEK",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45440,
+      "CITY_NAME": "BEAVERCREEK",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 45840,
+      "CITY_NAME": "FINDLAY",
+      "ST_ABBREV": "OH"
+    },
+    {
+      "ZIP_Code": 76522,
+      "CITY_NAME": "COPPERAS COVE",
+      "ST_ABBREV": "TX"
+    },
+    {
+      "ZIP_Code": 77801,
+      "CITY_NAME": "BRYAN",
+      "ST_ABBREV": "TX"
+    },
+    {
+      "ZIP_Code": 77802,
+      "CITY_NAME": "BRYAN",
+      "ST_ABBREV": "TX"
+    },
+    {
+      "ZIP_Code": 77803,
+      "CITY_NAME": "BRYAN",
+      "ST_ABBREV": "TX"
+    },
+    {
+      "ZIP_Code": 77807,
+      "CITY_NAME": "BRYAN",
+      "ST_ABBREV": "TX"
+    },
+    {
+      "ZIP_Code": 77808,
+      "CITY_NAME": "BRYAN",
+      "ST_ABBREV": "TX"
+    },
+    {
+      "ZIP_Code": 77845,
+      "CITY_NAME": "BRYAN",
+      "ST_ABBREV": "TX"
+    },
+    {
+      "ZIP_Code": 23502,
+      "CITY_NAME": "NORFOLK",
+      "ST_ABBREV": "VA"
+    },
+    {
+      "ZIP_Code": 23503,
+      "CITY_NAME": "NORFOLK",
+      "ST_ABBREV": "VA"
+    },
+    {
+      "ZIP_Code": 23505,
+      "CITY_NAME": "NORFOLK",
+      "ST_ABBREV": "VA"
+    },
+    {
+      "ZIP_Code": 23509,
+      "CITY_NAME": "NORFOLK",
+      "ST_ABBREV": "VA"
+    },
+    {
+      "ZIP_Code": 23513,
+      "CITY_NAME": "NORFOLK",
+      "ST_ABBREV": "VA"
+    },
+    {
+      "ZIP_Code": 23518,
+      "CITY_NAME": "NORFOLK",
+      "ST_ABBREV": "VA"
+    },
+    {
+      "ZIP_Code": 54601,
+      "CITY_NAME": "LA CROSSE",
+      "ST_ABBREV": "WI"
+    },
+    {
+      "ZIP_Code": 54603,
+      "CITY_NAME": "LA CROSSE",
+      "ST_ABBREV": "WI"
+    },
+    {
+      "ZIP_Code": 54650,
+      "CITY_NAME": "ONALASKA",
+      "ST_ABBREV": "WI"
+    }
+  ]
+}

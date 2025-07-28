@@ -1,0 +1,2479 @@
+{
+  "Sheet1": [
+    {
+      "ZIP_Code": 41001,
+      "CITY_NAME": "Alexandria",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41001,
+      "CITY_NAME": "Claryville",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41001,
+      "CITY_NAME": "Grants Lick",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41005,
+      "CITY_NAME": "Bullittsville",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41005,
+      "CITY_NAME": "Camp Ernest",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41005,
+      "CITY_NAME": "Idlewild",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41005,
+      "CITY_NAME": "Belleview",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41005,
+      "CITY_NAME": "Limaburg",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41005,
+      "CITY_NAME": "McVille",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41005,
+      "CITY_NAME": "Burlington",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41005,
+      "CITY_NAME": "Rabbit Hash",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41006,
+      "CITY_NAME": "Carntown",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41006,
+      "CITY_NAME": "Mount Auburn",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41006,
+      "CITY_NAME": "Peachgrove",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41006,
+      "CITY_NAME": "Pleasant Hill",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41006,
+      "CITY_NAME": "Butler",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41007,
+      "CITY_NAME": "Carthage",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41007,
+      "CITY_NAME": "California",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41007,
+      "CITY_NAME": "Flagg Spring",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41007,
+      "CITY_NAME": "Mentor",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41007,
+      "CITY_NAME": "Gubser Mill",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41010,
+      "CITY_NAME": "Blanchet",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41010,
+      "CITY_NAME": "Owen",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41010,
+      "CITY_NAME": "Corinth",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41011,
+      "CITY_NAME": "Cov",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41011,
+      "CITY_NAME": "Covington",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41011,
+      "CITY_NAME": "Decoursey",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41011,
+      "CITY_NAME": "Fort Mitchell",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41011,
+      "CITY_NAME": "Fort Wright",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41011,
+      "CITY_NAME": "Park Hills",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41011,
+      "CITY_NAME": "Lookout Heights",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41011,
+      "CITY_NAME": "Kenton Hills",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41012,
+      "CITY_NAME": "Covington",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41014,
+      "CITY_NAME": "Covington",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41014,
+      "CITY_NAME": "Rouse",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Rosedale",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Taylor Mill",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Kentonvale",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Covington",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Latonia",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Ryland Hgts",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Ryland Hght",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Latonia Lakes",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Ryland",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Latonia Lks",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41015,
+      "CITY_NAME": "Ryland Heights",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41016,
+      "CITY_NAME": "Bromley",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41016,
+      "CITY_NAME": "Covington",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41016,
+      "CITY_NAME": "Ludlow",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Crescent Springs",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Dixie",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Crestview Hls",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Crestview Hills",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Villa Hills",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "South Ft Mitchell",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "South Fort Mitchell",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "So Fort Mitchell",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Lakeside Park",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Fort Wright",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Edgewood",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Erlanger",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Bromley",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Covington",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Crescent Park",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41017,
+      "CITY_NAME": "Fort Mitchell",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41018,
+      "CITY_NAME": "Erlanger",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41018,
+      "CITY_NAME": "Covington",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41018,
+      "CITY_NAME": "Edgewood",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41018,
+      "CITY_NAME": "Elsmere",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41019,
+      "CITY_NAME": "Internal Revenue",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41019,
+      "CITY_NAME": "Covington",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41022,
+      "CITY_NAME": "Florence",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41030,
+      "CITY_NAME": "Bracht",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41030,
+      "CITY_NAME": "Crittenden",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41030,
+      "CITY_NAME": "Flingsville",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41033,
+      "CITY_NAME": "De Mossville",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41033,
+      "CITY_NAME": "Demossville",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41033,
+      "CITY_NAME": "Fiskburg",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41033,
+      "CITY_NAME": "Gardnersville",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41033,
+      "CITY_NAME": "Portland",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41035,
+      "CITY_NAME": "Dry Ridge",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41035,
+      "CITY_NAME": "Sherman",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Locust Grove",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Neave",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Morgan",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "McKinneysburg",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Pendletn County",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Lenoxburg",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Goforth",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Four Oaks",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Falmouth",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Brownings Corner",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41040,
+      "CITY_NAME": "Pendleton County",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41042,
+      "CITY_NAME": "Devon",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41042,
+      "CITY_NAME": "Florence",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41042,
+      "CITY_NAME": "Hopeful Heights",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41046,
+      "CITY_NAME": "Glencoe",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41048,
+      "CITY_NAME": "Francisville",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41048,
+      "CITY_NAME": "Hebron",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41048,
+      "CITY_NAME": "Taylorsport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41051,
+      "CITY_NAME": "Nicholson",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41051,
+      "CITY_NAME": "White Tower",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41051,
+      "CITY_NAME": "Independence",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41052,
+      "CITY_NAME": "Jonesville",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41053,
+      "CITY_NAME": "Kenton",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41054,
+      "CITY_NAME": "Mason",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41059,
+      "CITY_NAME": "Campsprings",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41059,
+      "CITY_NAME": "Melbourne",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41059,
+      "CITY_NAME": "Ross",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41063,
+      "CITY_NAME": "Atwood",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41063,
+      "CITY_NAME": "Morning View",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41063,
+      "CITY_NAME": "Visalia",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41063,
+      "CITY_NAME": "Piner",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41071,
+      "CITY_NAME": "Southgate",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41071,
+      "CITY_NAME": "So Newport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41071,
+      "CITY_NAME": "Fort Thomas",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41071,
+      "CITY_NAME": "South Newport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41071,
+      "CITY_NAME": "Spence",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41071,
+      "CITY_NAME": "Wilder",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41071,
+      "CITY_NAME": "Woodlawn",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41071,
+      "CITY_NAME": "Newport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41072,
+      "CITY_NAME": "Newport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41073,
+      "CITY_NAME": "Dayton",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41073,
+      "CITY_NAME": "Newport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41073,
+      "CITY_NAME": "Bellevue",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41074,
+      "CITY_NAME": "Dayton",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41074,
+      "CITY_NAME": "Bellevue",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41074,
+      "CITY_NAME": "Newport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41075,
+      "CITY_NAME": "Fort Thomas",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41075,
+      "CITY_NAME": "Newport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Cold Spring Highland Heights",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Highland Heights",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Fort Thomas",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Crestview",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Cold Sprgs-Highland Heights",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Cold Spring",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Wilder",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Highland Hgts",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Cold Sprgs Hi",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Cold Sprgs Highland Heights",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41076,
+      "CITY_NAME": "Newport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41080,
+      "CITY_NAME": "Petersburg",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41085,
+      "CITY_NAME": "Silver Grove",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41086,
+      "CITY_NAME": "Sparta",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41091,
+      "CITY_NAME": "Hamilton",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41091,
+      "CITY_NAME": "Union",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41092,
+      "CITY_NAME": "Verona",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41094,
+      "CITY_NAME": "Richwood",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41094,
+      "CITY_NAME": "Walton",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41094,
+      "CITY_NAME": "Beaverlick",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41095,
+      "CITY_NAME": "Warsaw",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41095,
+      "CITY_NAME": "Napoleon",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41097,
+      "CITY_NAME": "Williamstown",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41099,
+      "CITY_NAME": "Highland Heights",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41099,
+      "CITY_NAME": "Northern Kentucky University",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 41099,
+      "CITY_NAME": "Newport",
+      "ST_ABBREV": "Kentucky - KY"
+    },
+    {
+      "ZIP_Code": 45001,
+      "CITY_NAME": "Addyston",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45002,
+      "CITY_NAME": "Cleves",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45005,
+      "CITY_NAME": "Blue Ball",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45005,
+      "CITY_NAME": "Carlisle",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45005,
+      "CITY_NAME": "Franklin",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45030,
+      "CITY_NAME": "Crosby",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45030,
+      "CITY_NAME": "Fort Scott Camps",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45030,
+      "CITY_NAME": "New Baltimore",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45030,
+      "CITY_NAME": "New Haven",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45030,
+      "CITY_NAME": "Harrison",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45032,
+      "CITY_NAME": "Massie",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45032,
+      "CITY_NAME": "Harveysburg",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45033,
+      "CITY_NAME": "Hooven",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45034,
+      "CITY_NAME": "Kings Island",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45034,
+      "CITY_NAME": "Kings Mills",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45036,
+      "CITY_NAME": "Lebanon",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45036,
+      "CITY_NAME": "Liberty Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45039,
+      "CITY_NAME": "Maineville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45039,
+      "CITY_NAME": "Foster",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45039,
+      "CITY_NAME": "Hamilton Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45039,
+      "CITY_NAME": "Landon",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45040,
+      "CITY_NAME": "Mason",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45041,
+      "CITY_NAME": "Miamitown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45051,
+      "CITY_NAME": "North Bend",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45051,
+      "CITY_NAME": "Mount Saint Joseph",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45051,
+      "CITY_NAME": "Mount St Joseph",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45052,
+      "CITY_NAME": "North Bend",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45052,
+      "CITY_NAME": "Elizabethtown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45054,
+      "CITY_NAME": "Oregonia",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45065,
+      "CITY_NAME": "South Lebanon",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45066,
+      "CITY_NAME": "Springboro",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45068,
+      "CITY_NAME": "Waynesville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45068,
+      "CITY_NAME": "Corwin",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45068,
+      "CITY_NAME": "Lytle",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45068,
+      "CITY_NAME": "Mount Holly",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45101,
+      "CITY_NAME": "Ellsberry",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45101,
+      "CITY_NAME": "Aberdeen",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45102,
+      "CITY_NAME": "Hamlet",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45102,
+      "CITY_NAME": "Lindale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45102,
+      "CITY_NAME": "Amelia",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45103,
+      "CITY_NAME": "Stonelick",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45103,
+      "CITY_NAME": "Batavia",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45106,
+      "CITY_NAME": "Mount Olive",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45106,
+      "CITY_NAME": "Bethel",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45111,
+      "CITY_NAME": "Loveland",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45111,
+      "CITY_NAME": "Camp Dennison",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45112,
+      "CITY_NAME": "Chilo",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45115,
+      "CITY_NAME": "Decatur",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45115,
+      "CITY_NAME": "Byrd",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45118,
+      "CITY_NAME": "Fayetteville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45118,
+      "CITY_NAME": "Saint Martin",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45119,
+      "CITY_NAME": "Feesburg",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45120,
+      "CITY_NAME": "Felicity",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45120,
+      "CITY_NAME": "Stringtown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45121,
+      "CITY_NAME": "Ash Ridge",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45121,
+      "CITY_NAME": "Browntown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45121,
+      "CITY_NAME": "Clermont County",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45121,
+      "CITY_NAME": "Georgetown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45121,
+      "CITY_NAME": "Hillman",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45121,
+      "CITY_NAME": "Utopia",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45121,
+      "CITY_NAME": "Brown County",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45122,
+      "CITY_NAME": "Cozaddale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45122,
+      "CITY_NAME": "Edenton",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45122,
+      "CITY_NAME": "Goshen",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45130,
+      "CITY_NAME": "Hamersville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45130,
+      "CITY_NAME": "Poetown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45130,
+      "CITY_NAME": "Yankeetown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45131,
+      "CITY_NAME": "Higginsport",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45140,
+      "CITY_NAME": "Symmes Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45140,
+      "CITY_NAME": "Loveland",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45140,
+      "CITY_NAME": "Murdock",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45140,
+      "CITY_NAME": "Seilcrest Acres",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45140,
+      "CITY_NAME": "Springvale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45140,
+      "CITY_NAME": "Epworth Heights",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45140,
+      "CITY_NAME": "Steelville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45140,
+      "CITY_NAME": "Twightwee",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45140,
+      "CITY_NAME": "Twenty Mile Stand",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45145,
+      "CITY_NAME": "Marathon",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45147,
+      "CITY_NAME": "Miamiville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45150,
+      "CITY_NAME": "Day Heights",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45150,
+      "CITY_NAME": "Milford",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45150,
+      "CITY_NAME": "Mount Repose",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45152,
+      "CITY_NAME": "Morrow",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45153,
+      "CITY_NAME": "Moscow",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45154,
+      "CITY_NAME": "Five Mile",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45154,
+      "CITY_NAME": "Mount Orab",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45154,
+      "CITY_NAME": "Bardwell",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45156,
+      "CITY_NAME": "Neville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45157,
+      "CITY_NAME": "Mount Pisgah",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45157,
+      "CITY_NAME": "Laurel",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45157,
+      "CITY_NAME": "New Richmond",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45158,
+      "CITY_NAME": "Newtonsville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45160,
+      "CITY_NAME": "Owensville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45162,
+      "CITY_NAME": "Butlerville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45162,
+      "CITY_NAME": "Edenton",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45162,
+      "CITY_NAME": "Pleasant Plain",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45162,
+      "CITY_NAME": "Pleasant Pln",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45167,
+      "CITY_NAME": "Ripley",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45167,
+      "CITY_NAME": "Redoak",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45168,
+      "CITY_NAME": "Russellville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45171,
+      "CITY_NAME": "Sardinia",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45174,
+      "CITY_NAME": "Terrace Park",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45176,
+      "CITY_NAME": "New Harmony",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45176,
+      "CITY_NAME": "Williamsburg",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45176,
+      "CITY_NAME": "Eastwood",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45176,
+      "CITY_NAME": "Crosstown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45201,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45202,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45203,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45203,
+      "CITY_NAME": "Queen City",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45204,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45204,
+      "CITY_NAME": "Queen City",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45205,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45205,
+      "CITY_NAME": "Price Hill",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45206,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45206,
+      "CITY_NAME": "Walnut Hills",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45207,
+      "CITY_NAME": "Evanston",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45207,
+      "CITY_NAME": "Norwood",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45207,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45208,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45208,
+      "CITY_NAME": "Mount Lookout",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45208,
+      "CITY_NAME": "Hyde Park",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45209,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45209,
+      "CITY_NAME": "Oakley",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45211,
+      "CITY_NAME": "Bridgetown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45211,
+      "CITY_NAME": "Cheviot",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45211,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45211,
+      "CITY_NAME": "Fairmont",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45211,
+      "CITY_NAME": "Mack",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45212,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45212,
+      "CITY_NAME": "Norwood",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45213,
+      "CITY_NAME": "Pleasant Ridge",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45213,
+      "CITY_NAME": "Kennedy Heights",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45213,
+      "CITY_NAME": "Taft",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45213,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45214,
+      "CITY_NAME": "Queen City",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45214,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45214,
+      "CITY_NAME": "Fairmount",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45215,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45215,
+      "CITY_NAME": "Arlington Heights",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45215,
+      "CITY_NAME": "Evendale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45215,
+      "CITY_NAME": "Wyoming",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45215,
+      "CITY_NAME": "Woodlawn",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45215,
+      "CITY_NAME": "Lincoln Heights",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45215,
+      "CITY_NAME": "Lockland",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45215,
+      "CITY_NAME": "Reading",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45216,
+      "CITY_NAME": "Saint Bernard",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45216,
+      "CITY_NAME": "Carthage",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45216,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45216,
+      "CITY_NAME": "Valleydale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45217,
+      "CITY_NAME": "Saint Bernard",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45217,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45217,
+      "CITY_NAME": "Ivorydale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45218,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45218,
+      "CITY_NAME": "Parkdale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45219,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45219,
+      "CITY_NAME": "Clifton",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45219,
+      "CITY_NAME": "Mount Auburn",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45219,
+      "CITY_NAME": "Corryville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45220,
+      "CITY_NAME": "Burnet Woods",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45220,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45220,
+      "CITY_NAME": "Clifton",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45221,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45221,
+      "CITY_NAME": "University of Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45222,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45222,
+      "CITY_NAME": "Roselawn Finance",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45222,
+      "CITY_NAME": "Roselawn",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45223,
+      "CITY_NAME": "Cumminsville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45223,
+      "CITY_NAME": "Northside",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45223,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45224,
+      "CITY_NAME": "North College Hl",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45224,
+      "CITY_NAME": "Colg Hill Station",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45224,
+      "CITY_NAME": "College Hl",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45224,
+      "CITY_NAME": "Finneytown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45224,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45225,
+      "CITY_NAME": "Camp Washington",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45225,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45226,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45226,
+      "CITY_NAME": "East End",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45227,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45227,
+      "CITY_NAME": "Mariemont",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45227,
+      "CITY_NAME": "Fairfax",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45228,
+      "CITY_NAME": "California",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45228,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45229,
+      "CITY_NAME": "Avondale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45229,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45230,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45230,
+      "CITY_NAME": "Mount Washington",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45230,
+      "CITY_NAME": "Mount Washing",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45231,
+      "CITY_NAME": "Mount Healthy",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45231,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45231,
+      "CITY_NAME": "Finneytown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45231,
+      "CITY_NAME": "Wyoming",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45231,
+      "CITY_NAME": "North College Hl",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45232,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45232,
+      "CITY_NAME": "Saint Bernard",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45233,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45233,
+      "CITY_NAME": "Sayler Park Finance",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45233,
+      "CITY_NAME": "Sayler Park",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45234,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45234,
+      "CITY_NAME": "U S P S Pm Msc Ofc",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45235,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45236,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45236,
+      "CITY_NAME": "Deer Park",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45236,
+      "CITY_NAME": "Reading",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45236,
+      "CITY_NAME": "Kenwood",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45236,
+      "CITY_NAME": "Rossmoyne",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45236,
+      "CITY_NAME": "Blue Ash",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45236,
+      "CITY_NAME": "Silverton",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45236,
+      "CITY_NAME": "Sycamore Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45236,
+      "CITY_NAME": "Taft",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45237,
+      "CITY_NAME": "Bond Hill",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45237,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45237,
+      "CITY_NAME": "Golf Manor",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45237,
+      "CITY_NAME": "Losantiville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45237,
+      "CITY_NAME": "Roselawn",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45238,
+      "CITY_NAME": "Covedale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45238,
+      "CITY_NAME": "Delhi",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45238,
+      "CITY_NAME": "Del Fair",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45238,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45239,
+      "CITY_NAME": "White Oak",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45239,
+      "CITY_NAME": "Brookwood",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45239,
+      "CITY_NAME": "North College Hl",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45239,
+      "CITY_NAME": "Groesbeck",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45239,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45239,
+      "CITY_NAME": "Colerain Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45240,
+      "CITY_NAME": "Pleasant Run Farms",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45240,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45240,
+      "CITY_NAME": "Parkdale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45240,
+      "CITY_NAME": "Forest Park",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45241,
+      "CITY_NAME": "Blue Ash",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45241,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45241,
+      "CITY_NAME": "Evendale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45241,
+      "CITY_NAME": "Sharonville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45242,
+      "CITY_NAME": "Hazelwood",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45242,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45242,
+      "CITY_NAME": "Montgomery",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45242,
+      "CITY_NAME": "Reed Hartman",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45242,
+      "CITY_NAME": "Sycamore Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45242,
+      "CITY_NAME": "Blue Ash",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45243,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45243,
+      "CITY_NAME": "Indian Hill",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45243,
+      "CITY_NAME": "Madeira",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45244,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45244,
+      "CITY_NAME": "Anderson",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45244,
+      "CITY_NAME": "Shademore",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45244,
+      "CITY_NAME": "Mount Carmel",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45244,
+      "CITY_NAME": "Newtown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45245,
+      "CITY_NAME": "Cherry Grove",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45245,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45245,
+      "CITY_NAME": "Withamsville",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45245,
+      "CITY_NAME": "Newtown",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45245,
+      "CITY_NAME": "Anderson",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45246,
+      "CITY_NAME": "Glendale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45246,
+      "CITY_NAME": "Parkdale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45246,
+      "CITY_NAME": "Springdale",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45246,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45247,
+      "CITY_NAME": "Colerain Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45247,
+      "CITY_NAME": "Dunlap",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45247,
+      "CITY_NAME": "Green Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45247,
+      "CITY_NAME": "White Oak",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45247,
+      "CITY_NAME": "Dent",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45247,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45247,
+      "CITY_NAME": "Bevis",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45247,
+      "CITY_NAME": "Groesbeck",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45248,
+      "CITY_NAME": "Westwood",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45248,
+      "CITY_NAME": "Mack",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45248,
+      "CITY_NAME": "Westwood Area 2",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45248,
+      "CITY_NAME": "Dent",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45248,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45248,
+      "CITY_NAME": "Green Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45249,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45249,
+      "CITY_NAME": "Sycamore Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45249,
+      "CITY_NAME": "Symmes",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45249,
+      "CITY_NAME": "Symmes Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45249,
+      "CITY_NAME": "Sycamore",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45250,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45251,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45251,
+      "CITY_NAME": "Groesbeck",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45251,
+      "CITY_NAME": "Colerain",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45251,
+      "CITY_NAME": "Colerain Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45252,
+      "CITY_NAME": "Colerain",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45252,
+      "CITY_NAME": "Colerain Township",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45252,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45253,
+      "CITY_NAME": "Groesbeck",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45253,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45254,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45254,
+      "CITY_NAME": "Anderson",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45255,
+      "CITY_NAME": "Anderson",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45255,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45258,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45262,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45263,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45263,
+      "CITY_NAME": "Fifth Third Bank",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45264,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45264,
+      "CITY_NAME": "The First National Bank",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45267,
+      "CITY_NAME": "University Hospital",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45267,
+      "CITY_NAME": "University Cinc Med Sciences",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45267,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45268,
+      "CITY_NAME": "Envir Pro Agency",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45268,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45269,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45269,
+      "CITY_NAME": "Provident Bank",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45270,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45270,
+      "CITY_NAME": "Huntington National Bank",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45271,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45271,
+      "CITY_NAME": "Key Bank",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45273,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45273,
+      "CITY_NAME": "Business Reply",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45274,
+      "CITY_NAME": "Commercial Accounts",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45274,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45275,
+      "CITY_NAME": "Amf",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45275,
+      "CITY_NAME": "Cin Airport Annex",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45275,
+      "CITY_NAME": "Cincinnati Airport Annex",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45275,
+      "CITY_NAME": "Cincy amf",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45275,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45277,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45277,
+      "CITY_NAME": "Fidelity Investments",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45280,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45296,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45296,
+      "CITY_NAME": "The Central Trust Co",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45298,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45298,
+      "CITY_NAME": "Internal Revenue Service",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45299,
+      "CITY_NAME": "Pg Contest Mail",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45299,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45999,
+      "CITY_NAME": "Cincinnati",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 45999,
+      "CITY_NAME": "IRS Service Center",
+      "ST_ABBREV": "Ohio - OH"
+    },
+    {
+      "ZIP_Code": 47001,
+      "CITY_NAME": "Aurora",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47018,
+      "CITY_NAME": "Dillsboro",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47018,
+      "CITY_NAME": "Elrod",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47018,
+      "CITY_NAME": "Farmers Retreat",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47022,
+      "CITY_NAME": "Dover",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47022,
+      "CITY_NAME": "Guilford",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47022,
+      "CITY_NAME": "New Alsace",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47025,
+      "CITY_NAME": "Greendale",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47025,
+      "CITY_NAME": "Lawrenceburg",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47032,
+      "CITY_NAME": "Moores Hill",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47040,
+      "CITY_NAME": "Rising Sun",
+      "ST_ABBREV": "Indiana - IN"
+    },
+    {
+      "ZIP_Code": 47060,
+      "CITY_NAME": "West Harrison",
+      "ST_ABBREV": "Indiana - IN"
+    }
+  ]
+}
