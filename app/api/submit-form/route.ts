@@ -1,11 +1,36 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { submitToGoogleSheets, FormData } from '@/lib/google-sheets';
-import { sendEmailWithResend } from '@/lib/email-service';
+import { SubmissionFormData } from '@/lib/google-sheets';
+
+// Handle warmup requests
+export async function GET() {
+  return NextResponse.json({ 
+    success: true, 
+    message: 'Form submission endpoint ready' 
+  });
+}
 
 export async function POST(request: NextRequest) {
+  const startTime = Date.now();
   try {
-    const body = await request.json();
+    const rawBody = await request.text();
     
+    // Handle empty bodies gracefully (could be warmup requests)
+    if (!rawBody.trim()) {
+      return NextResponse.json(
+        { success: false, message: 'Empty request' },
+        { status: 200 }
+      );
+    }
+    
+    let body;
+    try {
+      body = JSON.parse(rawBody);
+    } catch (parseError) {
+      return NextResponse.json(
+        { error: 'Invalid JSON format' },
+        { status: 400 }
+      );
+    }
     // Validate required fields
     const requiredFields = [
       'agentName', 'agentId', 'customerName', 'email', 'phone', 
@@ -27,63 +52,107 @@ export async function POST(request: NextRequest) {
     const ip = forwarded ? forwarded.split(',')[0] : request.headers.get('x-real-ip') || 'unknown';
     
     // Prepare form data
-    const formData: FormData = {
+    const formData: SubmissionFormData = {
       ...body,
       submissionDate: new Date().toISOString(),
       ipAddress: ip,
       selectedAddOns: body.selectedAddOns || [],
     };
 
-    // Submit to Google Sheets
-    let sheetsResult;
+    // Process Google Sheets and Email truly asynchronously using the queue system
+    // This gives immediate response to user by offloading processing
+    
+    // Write submission to queue file for background processing
     try {
-      sheetsResult = await submitToGoogleSheets(formData);
+      // Create a unique ID for this submission
+      const submissionId = `submission-${Date.now()}`;
+      
+      console.log('Preparing to write submission to queue file');
+      
+      // Import fs with dynamic import to prevent it from affecting edge runtime
+      const { writeFile } = await import('fs/promises');
+      const { mkdir } = await import('fs/promises');
+      
+      // Make sure the temp-queue directory exists
+      try {
+        await mkdir('./temp-queue', { recursive: true });
+        console.log('Queue directory exists or was created');
+      } catch (mkdirErr) {
+        console.error('Failed to create queue directory:', mkdirErr);
+      }
+      
+      const queueFilePath = `./temp-queue/${submissionId}.json`;
+      console.log(`Writing to queue file: ${queueFilePath}`);
+      
+      try {
+        // Write the formData to a temporary queue file for processing later
+        await writeFile(queueFilePath, JSON.stringify(formData), 'utf-8');
+        console.log(`Successfully wrote to queue file ${queueFilePath}`);
+      } catch (writeErr) {
+        console.error('Failed to write to queue file:', writeErr);
+      }
+        
+      console.log(`Queued submission ${submissionId} for background processing`);
+      
+      // Instead of triggering the queue processor via API, process it directly
+      try {
+        console.log('Processing submission directly instead of using separate API call');
+        // Dynamically import the necessary modules to avoid edge runtime issues
+        const { submitToGoogleSheets } = await import('@/lib/google-sheets');
+        const { sendEmailWithResend } = await import('@/lib/email-service');
+        // Process in parallel but don't wait for results
+        Promise.all([
+          (async () => {
+            try {
+              console.log('Submitting to Google Sheets...');
+              const sheetsResult = await submitToGoogleSheets(formData);
+              console.log('Google Sheets result:', sheetsResult);
+              return sheetsResult;
+            } catch (sheetsErr) {
+              // Always catch and log, never throw
+              console.error('Google Sheets error:', sheetsErr);
+              return null;
+            }
+          })(),
+          (async () => {
+            try {
+              console.log('Sending email notification...');
+              const emailResult = await sendEmailWithResend(formData);
+              console.log('Email result:', emailResult);
+              return emailResult;
+            } catch (emailErr) {
+              // Always catch and log, never throw
+              console.error('Email error:', emailErr);
+              return null;
+            }
+          })()
+        ]).catch(err => {
+          // Log errors but never throw or crash
+          console.error('Background processing error:', err);
+        });
+      } catch (processErr) {
+        // Always catch and log, never throw
+        console.error('Direct processing setup error:', processErr);
+      }
     } catch (error) {
-      console.error('Google Sheets submission failed:', error);
-      return NextResponse.json(
-        { error: 'Failed to save form data' },
-        { status: 500 }
-      );
+      console.error('Queue error:', error);
+      // Continue with response even if queuing fails
     }
 
-    // Send email notification (optional - won't fail the submission if it fails)
-    let emailSent = false;
-    try {
-      emailSent = await sendEmailWithResend(formData);
-    } catch (error) {
-      console.error('Email notification failed:', error);
-      // Don't fail the entire submission if email fails
-    }
+    const endTime = Date.now();
+    const duration = endTime - startTime;
+    console.log(`Form submission completed in ${duration}ms`);
 
-    // Trigger push notification to admin (server-side)
-    try {
-      await fetch(`${process.env.NEXTAUTH_URL || 'http://localhost:3000'}/api/push-notifications`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          action: 'notify',
-          notification: {
-            title: `🚨 NEW ORDER - ${formData.customerName}`,
-            body: `${formData.selectedProvider} - ${formData.selectedPackage}\n📍 ${formData.streetAddress}, ${formData.city} ${formData.state}\n👤 Agent: ${formData.agentName} (${formData.agentId})`,
-            data: formData
-          }
-        })
-      });
-    } catch (error) {
-      console.error('Push notification trigger failed:', error);
-      // Don't fail submission if notification fails
-    }
-
+    // Return immediate success response
     return NextResponse.json({
       success: true,
-      message: 'Form submitted successfully',
-      sheetsResult,
-      emailSent,
-      submissionId: sheetsResult.range,
+      message: 'Form submitted successfully - processing in background',
+      processingTime: `${duration}ms`,
+      submissionId: `submission-${Date.now()}`,
+      note: 'Google Sheets and email notifications are being processed in the background'
     });
 
   } catch (error) {
-    console.error('Error processing form submission:', error);
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }

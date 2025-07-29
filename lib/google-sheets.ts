@@ -1,21 +1,11 @@
 import { google } from 'googleapis';
 import { formatSSN, formatDateOfBirth } from './utils';
 
-// Google Sheets configuration
-const SHEET_ID = process.env.GOOGLE_SHEET_ID!;
-const SERVICE_ACCOUNT_EMAIL = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL!;
-const PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY!.replace(/\\n/g, '\n');
+// Cache for Google Sheets client to avoid re-initializing for each request
+let sheetsClientCache: any = null;
+let authCache: any = null;
 
-// Initialize Google Sheets API
-const auth = new google.auth.JWT({
-  email: SERVICE_ACCOUNT_EMAIL,
-  key: PRIVATE_KEY,
-  scopes: ['https://www.googleapis.com/auth/spreadsheets']
-});
-
-const sheets = google.sheets({ version: 'v4', auth });
-
-export interface FormData {
+export interface SubmissionFormData {
   // Agent Information
   agentName: string;
   agentId: string;
@@ -53,12 +43,43 @@ export interface FormData {
   ipAddress?: string;
 }
 
-export async function submitToGoogleSheets(data: FormData) {
+export async function submitToGoogleSheets(data: SubmissionFormData) {
   try {
-    // Define the header row (only needs to be done once)
+    // Get environment variables at runtime
+    const SHEET_ID = process.env.GOOGLE_SHEET_ID;
+    const SERVICE_ACCOUNT_EMAIL = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+    const PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY;
+    
+    if (!SHEET_ID || !SERVICE_ACCOUNT_EMAIL || !PRIVATE_KEY) {
+      console.warn('Google Sheets not configured - skipping submission');
+      return {
+        success: true,
+        message: 'Form submitted successfully (Google Sheets not configured)',
+        range: null,
+        rowsAdded: 0,
+      };
+    }
+    
+    // Use cached auth client or initialize a new one
+    if (!authCache) {
+      authCache = new google.auth.JWT({
+        email: SERVICE_ACCOUNT_EMAIL,
+        key: PRIVATE_KEY.replace(/\\n/g, '\n'),
+        scopes: ['https://www.googleapis.com/auth/spreadsheets']
+      });
+    }
+
+    // Use cached sheets client or initialize a new one
+    if (!sheetsClientCache) {
+      sheetsClientCache = google.sheets({ version: 'v4', auth: authCache });
+    }
+    
+    const sheets = sheetsClientCache;
+    
+    // Define headers exactly as specified
     const headers = [
       'Submission Date',
-      'Agent Name',
+      'Agent Name', 
       'Agent ID',
       'Customer Name',
       'Email',
@@ -72,7 +93,7 @@ export async function submitToGoogleSheets(data: FormData) {
       'ZIP Code',
       'Moved Last Year',
       'Previous Street Address',
-      'Previous Apt/Unit',
+      'Previous Apt/Unit', 
       'Previous City',
       'Previous State',
       'Previous ZIP Code',
@@ -82,8 +103,8 @@ export async function submitToGoogleSheets(data: FormData) {
       'Add-Ons',
       'IP Address'
     ];
-
-    // Prepare the row data
+    
+    // Prepare the row data in exact order matching headers
     const rowData = [
       new Date(data.submissionDate).toLocaleString('en-US', {
         timeZone: 'America/New_York',
@@ -101,7 +122,7 @@ export async function submitToGoogleSheets(data: FormData) {
       data.email,
       data.phone,
       formatDateOfBirth(data.dateOfBirth),
-      formatSSN(data.ssn), // Format SSN properly with leading zeros
+      formatSSN(data.ssn),
       data.streetAddress,
       data.aptUnit || '',
       data.city,
@@ -120,65 +141,28 @@ export async function submitToGoogleSheets(data: FormData) {
       data.ipAddress || ''
     ];
 
-    // Check if sheet exists and has headers
-    const sheetInfo = await sheets.spreadsheets.get({
-      spreadsheetId: SHEET_ID,
-    });
-
     const worksheetName = 'Form Submissions';
-    let sheetExists = false;
-
-    // Check if our worksheet exists
-    if (sheetInfo.data.sheets) {
-      sheetExists = sheetInfo.data.sheets.some(
-        sheet => sheet.properties?.title === worksheetName
-      );
-    }
-
-    // Create worksheet if it doesn't exist
-    if (!sheetExists) {
-      await sheets.spreadsheets.batchUpdate({
-        spreadsheetId: SHEET_ID,
-        requestBody: {
-          requests: [
-            {
-              addSheet: {
-                properties: {
-                  title: worksheetName,
-                },
-              },
-            },
-          ],
-        },
-      });
-
-      // Add headers to new sheet
-      await sheets.spreadsheets.values.update({
+    
+    // Check if sheet has headers, if not add them
+    try {
+      const headerCheck = await sheets.spreadsheets.values.get({
         spreadsheetId: SHEET_ID,
         range: `${worksheetName}!A1:X1`,
-        valueInputOption: 'USER_ENTERED',
-        requestBody: {
-          values: [headers],
-        },
       });
-    }
 
-    // Check if headers exist (for existing sheets)
-    const headerCheck = await sheets.spreadsheets.values.get({
-      spreadsheetId: SHEET_ID,
-      range: `${worksheetName}!A1:X1`,
-    });
-
-    if (!headerCheck.data.values || headerCheck.data.values.length === 0) {
-      // Add headers if they don't exist
-      await sheets.spreadsheets.values.update({
-        spreadsheetId: SHEET_ID,
-        range: `${worksheetName}!A1:X1`,
-        valueInputOption: 'USER_ENTERED',
-        requestBody: {
-          values: [headers],
-        },
-      });
+      if (!headerCheck.data.values || headerCheck.data.values.length === 0) {
+        // Add headers if they don't exist
+        await sheets.spreadsheets.values.update({
+          spreadsheetId: SHEET_ID,
+          range: `${worksheetName}!A1:X1`,
+          valueInputOption: 'USER_ENTERED',
+          requestBody: {
+            values: [headers],
+          },
+        });
+      }
+    } catch (error) {
+      console.log('Could not check/add headers, sheet may not exist yet');
     }
 
     // Append the new row

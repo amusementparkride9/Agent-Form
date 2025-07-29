@@ -2,6 +2,25 @@ import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import './globals.css'
+import { warmupServices } from '@/lib/warmup'
+
+// Warm up backend services during app initialization
+if (typeof process !== 'undefined') {
+  warmupServices().catch(console.error);
+  
+  // Add global error handlers only once
+  if (!process.listenerCount('unhandledRejection')) {
+    process.on('unhandledRejection', (reason, promise) => {
+      console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+    });
+  }
+  
+  if (!process.listenerCount('uncaughtException')) {
+    process.on('uncaughtException', (err) => {
+      console.error('Uncaught Exception:', err);
+    });
+  }
+}
 
 export const metadata: Metadata = {
   title: 'v0 App',
