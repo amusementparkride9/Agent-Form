@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { getEnabledProviders, filterProvidersByZip } from "@/lib/provider-management"
 
 export interface ProviderData {
   name: string
@@ -116,9 +117,16 @@ const useZipData = () => {
       }
     });
 
-    // Add nationwide providers
-    providers.push("EarthLink");
-    providers.push("DirecTV");
+    // Add nationwide providers only if they're enabled
+    const enabledProviders = getEnabledProviders();
+    const enabledProviderNames = new Set(enabledProviders.map(p => p.name));
+    
+    if (enabledProviderNames.has("EarthLink")) {
+      providers.push("EarthLink");
+    }
+    if (enabledProviderNames.has("DirecTV")) {
+      providers.push("DirecTV");
+    }
 
     if (providers.length === 0) {
       return null;
@@ -208,20 +216,70 @@ const useZipData = () => {
       }
     }
 
-    loadJSONData("/data/xfinityZips-siSQcj7UKeMQ0DrMXzmRUmWIK7haNr.json", "Xfinity", setXfinityData)
-    loadJSONData("/data/frontierFiberZips-xrIRFmUmIGQ94TZYoP0LF23R9WcXPN.json", "Frontier Fiber", setFrontierFiberData)
-    loadJSONData(
-      "/data/frontierCopperZips-OiL98fvOfxmGgE6s5UvT7LeQa4fbfJ.json",
-      "Frontier Copper",
-      setFrontierCopperData,
-    )
-    loadJSONData("/data/optimumZips-Lb2XsvLAOwfpZV9sKn69EBo6njkFlq.json", "Optimum", setOptimumData)
-    loadJSONData("/data/metronetZips-lmFqkBNTp82dLOg20VkM9KzF0Ot9R7.json", "Metronet", setMetronetData)
-    loadJSONData("/data/kineticZips-wn2vjsrpVBWRx2PTpbHibqjBv2XgPv.json", "Kinetic", setKineticData)
-    loadJSONData("/data/brightspeedFiberZips-kJ8mNvQpRtUwXyZ5aBcDeFgHiLmOp2.json", "BrightSpeed Fiber", setBrightspeedFiberData)
-    loadJSONData("/data/brightspeedCopperZips-mP9nQwRsXyA1bCdEfG2hIjKlMnOpQr.json", "BrightSpeed Copper", setBrightspeedCopperData)
-    loadJSONData("/data/spectrumCableZips-tZ3wQvBnMxL5yE8rF9gHjK2pAsD4eC.json", "Spectrum", setSpectrumData)
-    loadJSONData("/data/altafiberZips-aF7bGhK9mNpQrStV2wXyZ5cEdF8jLn.json", "Altafiber", setAltafiberData)
+    // Get enabled providers to determine which files to load
+    const enabledProviders = getEnabledProviders();
+    const enabledProviderNames = new Set(enabledProviders.map(p => p.name));
+
+    // Only load data for enabled providers
+    if (enabledProviderNames.has("Xfinity")) {
+      loadJSONData("/data/xfinityZips-siSQcj7UKeMQ0DrMXzmRUmWIK7haNr.json", "Xfinity", setXfinityData)
+    } else {
+      setXfinityData({ name: "Xfinity", city: null, state: null, service: null, zipCodes: [] })
+    }
+
+    if (enabledProviderNames.has("Frontier Fiber")) {
+      loadJSONData("/data/frontierFiberZips-xrIRFmUmIGQ94TZYoP0LF23R9WcXPN.json", "Frontier Fiber", setFrontierFiberData)
+    } else {
+      setFrontierFiberData({ name: "Frontier Fiber", city: null, state: null, service: "Fiber", zipCodes: [] })
+    }
+
+    if (enabledProviderNames.has("Frontier Copper")) {
+      loadJSONData("/data/frontierCopperZips-OiL98fvOfxmGgE6s5UvT7LeQa4fbfJ.json", "Frontier Copper", setFrontierCopperData)
+    } else {
+      setFrontierCopperData({ name: "Frontier Copper", city: null, state: null, service: "Copper", zipCodes: [] })
+    }
+
+    if (enabledProviderNames.has("Optimum")) {
+      loadJSONData("/data/optimumZips-Lb2XsvLAOwfpZV9sKn69EBo6njkFlq.json", "Optimum", setOptimumData)
+    } else {
+      setOptimumData({ name: "Optimum", city: null, state: null, service: null, zipCodes: [] })
+    }
+
+    if (enabledProviderNames.has("Metronet")) {
+      loadJSONData("/data/metronetZips-lmFqkBNTp82dLOg20VkM9KzF0Ot9R7.json", "Metronet", setMetronetData)
+    } else {
+      setMetronetData({ name: "Metronet", city: null, state: null, service: null, zipCodes: [] })
+    }
+
+    if (enabledProviderNames.has("Kinetic")) {
+      loadJSONData("/data/kineticZips-wn2vjsrpVBWRx2PTpbHibqjBv2XgPv.json", "Kinetic", setKineticData)
+    } else {
+      setKineticData({ name: "Kinetic", city: null, state: null, service: null, zipCodes: [] })
+    }
+
+    if (enabledProviderNames.has("BrightSpeed Fiber")) {
+      loadJSONData("/data/brightspeedFiberZips-kJ8mNvQpRtUwXyZ5aBcDeFgHiLmOp2.json", "BrightSpeed Fiber", setBrightspeedFiberData)
+    } else {
+      setBrightspeedFiberData({ name: "BrightSpeed Fiber", city: null, state: null, service: "Fiber", zipCodes: [] })
+    }
+
+    if (enabledProviderNames.has("BrightSpeed Copper")) {
+      loadJSONData("/data/brightspeedCopperZips-mP9nQwRsXyA1bCdEfG2hIjKlMnOpQr.json", "BrightSpeed Copper", setBrightspeedCopperData)
+    } else {
+      setBrightspeedCopperData({ name: "BrightSpeed Copper", city: null, state: null, service: "Copper", zipCodes: [] })
+    }
+
+    if (enabledProviderNames.has("Spectrum")) {
+      loadJSONData("/data/spectrumCableZips-tZ3wQvBnMxL5yE8rF9gHjK2pAsD4eC.json", "Spectrum", setSpectrumData)
+    } else {
+      setSpectrumData({ name: "Spectrum", city: null, state: null, service: "Cable", zipCodes: [] })
+    }
+
+    if (enabledProviderNames.has("Altafiber")) {
+      loadJSONData("/data/altafiberZips-aF7bGhK9mNpQrStV2wXyZ5cEdF8jLn.json", "Altafiber", setAltafiberData)
+    } else {
+      setAltafiberData({ name: "Altafiber", city: null, state: null, service: "Fiber", zipCodes: [] })
+    }
   }, [])
 
   return { xfinityData, frontierFiberData, frontierCopperData, optimumData, metronetData, kineticData, brightspeedFiberData, brightspeedCopperData, spectrumData, altafiberData, checkZip }

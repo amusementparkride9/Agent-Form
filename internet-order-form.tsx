@@ -13,9 +13,10 @@ import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { User, MapPin, Wifi, Calendar, Phone, Mail, CreditCard, Settings, CheckCircle, AlertTriangle, Info } from "lucide-react"
+import { User, MapPin, Wifi, Calendar, Phone, Mail, CreditCard, Settings, CheckCircle, AlertTriangle, Info, Loader2 } from "lucide-react"
 import ZipCodeSection from "./components/zip-code-section"
 import type { ZipResult } from "./hooks/use-zip-data"
+import { useFormSubmission } from "./hooks/use-form-submission"
 
 export default function InternetOrderForm() {
   const [movedLastYear, setMovedLastYear] = useState(false)
@@ -28,6 +29,34 @@ export default function InternetOrderForm() {
   const [showProviderDetails, setShowProviderDetails] = useState(false)
   const [showPricingModal, setShowPricingModal] = useState(false)
   const [modalProvider, setModalProvider] = useState<string>("")
+
+  // Form submission hook
+  const { submitForm, isSubmitting, submissionResult, resetSubmission } = useFormSubmission()
+
+  // Form data state
+  const [formData, setFormData] = useState({
+    agentName: '',
+    agentId: '',
+    customerName: '',
+    email: '',
+    phone: '',
+    dateOfBirth: '',
+    ssn: '',
+    streetAddress: '',
+    aptUnit: '',
+    city: '',
+    state: '',
+    zipCode: '',
+    prevStreetAddress: '',
+    prevAptUnit: '',
+    prevCity: '',
+    prevState: '',
+    prevZipCode: '',
+  })
+
+  const updateFormData = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }))
+  }
 
   // Dynamic package options based on selected provider
   const getPackageOptions = () => {
@@ -420,16 +449,90 @@ export default function InternetOrderForm() {
     }
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted with:", {
-      zipResult,
+    
+    // Validate required fields
+    if (!selectedProvider || !selectedPackage) {
+      alert("Please select a provider and package before submitting.")
+      return
+    }
+
+    if (!zipResult) {
+      alert("Please enter a valid ZIP code first.")
+      return
+    }
+
+    // Collect all form data
+    const submissionData = {
+      // Agent Information
+      agentName: formData.agentName,
+      agentId: formData.agentId,
+      
+      // Customer Information
+      customerName: formData.customerName,
+      email: formData.email,
+      phone: formData.phone,
+      dateOfBirth: formData.dateOfBirth,
+      ssn: formData.ssn,
+      
+      // Service Address
+      streetAddress: formData.streetAddress,
+      aptUnit: formData.aptUnit,
+      city: formData.city || zipResult?.city || '',
+      state: formData.state || zipResult?.state || '',
+      zipCode: formData.zipCode || zipResult?.zipCode || '',
+      
+      // Previous Address (if moved)
+      movedLastYear,
+      prevStreetAddress: movedLastYear ? formData.prevStreetAddress : '',
+      prevAptUnit: movedLastYear ? formData.prevAptUnit : '',
+      prevCity: movedLastYear ? formData.prevCity : '',
+      prevState: movedLastYear ? formData.prevState : '',
+      prevZipCode: movedLastYear ? formData.prevZipCode : '',
+      
+      // Service Information
       selectedProvider,
       selectedPackage,
       selectedDirectvPackage,
-      selectedAddOns
-    })
-    alert("Order submitted successfully!")
+      selectedAddOns,
+    }
+
+    try {
+      const result = await submitForm(submissionData)
+      
+      if (result.success) {
+        // Reset form on successful submission
+        setFormData({
+          agentName: '',
+          agentId: '',
+          customerName: '',
+          email: '',
+          phone: '',
+          dateOfBirth: '',
+          ssn: '',
+          streetAddress: '',
+          aptUnit: '',
+          city: '',
+          state: '',
+          zipCode: '',
+          prevStreetAddress: '',
+          prevAptUnit: '',
+          prevCity: '',
+          prevState: '',
+          prevZipCode: '',
+        })
+        setSelectedProvider('')
+        setSelectedPackage('')
+        setSelectedDirectvPackage('')
+        setSelectedAddOns([])
+        setMovedLastYear(false)
+        setZipResult(null)
+        setShowProviderDetails(false)
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+    }
   }
 
   const getProviderColor = (provider: string) => {
@@ -532,6 +635,8 @@ export default function InternetOrderForm() {
                     id="agent-name"
                     placeholder="Enter your full name"
                     className="h-12 border-2 border-gray-200 focus:border-blue-500 transition-colors"
+                    value={formData.agentName}
+                    onChange={(e) => updateFormData('agentName', e.target.value)}
                     required
                   />
                 </div>
@@ -543,6 +648,8 @@ export default function InternetOrderForm() {
                     id="agent-id"
                     placeholder="Enter your agent ID"
                     className="h-12 border-2 border-gray-200 focus:border-blue-500 transition-colors"
+                    value={formData.agentId}
+                    onChange={(e) => updateFormData('agentId', e.target.value)}
                     required
                   />
                 </div>
@@ -568,6 +675,8 @@ export default function InternetOrderForm() {
                     id="customer-name"
                     placeholder="Enter customer's full name"
                     className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                    value={formData.customerName}
+                    onChange={(e) => updateFormData('customerName', e.target.value)}
                     required
                   />
                 </div>
@@ -581,6 +690,8 @@ export default function InternetOrderForm() {
                     type="email"
                     placeholder="customer@example.com"
                     className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                    value={formData.email}
+                    onChange={(e) => updateFormData('email', e.target.value)}
                     required
                   />
                 </div>
@@ -597,6 +708,8 @@ export default function InternetOrderForm() {
                     type="tel"
                     placeholder="(555) 123-4567"
                     className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                    value={formData.phone}
+                    onChange={(e) => updateFormData('phone', e.target.value)}
                     required
                   />
                 </div>
@@ -608,6 +721,8 @@ export default function InternetOrderForm() {
                     id="dob"
                     type="date"
                     className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                    value={formData.dateOfBirth}
+                    onChange={(e) => updateFormData('dateOfBirth', e.target.value)}
                     required
                   />
                 </div>
@@ -624,6 +739,8 @@ export default function InternetOrderForm() {
                   placeholder="XXX-XX-XXXX"
                   maxLength={11}
                   className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors max-w-md"
+                  value={formData.ssn}
+                  onChange={(e) => updateFormData('ssn', e.target.value)}
                   required
                 />
                 <p className="text-xs text-gray-500">This information is encrypted and secure</p>
@@ -656,6 +773,8 @@ export default function InternetOrderForm() {
                       id="street-address"
                       placeholder="123 Main Street"
                       className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                      value={formData.streetAddress}
+                      onChange={(e) => updateFormData('streetAddress', e.target.value)}
                       required
                     />
                   </div>
@@ -668,6 +787,8 @@ export default function InternetOrderForm() {
                       id="apt-unit"
                       placeholder="Apt 4B, Unit 205, etc."
                       className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                      value={formData.aptUnit}
+                      onChange={(e) => updateFormData('aptUnit', e.target.value)}
                     />
                   </div>
                   
@@ -679,7 +800,8 @@ export default function InternetOrderForm() {
                       <Input
                         id="city"
                         placeholder="City"
-                        defaultValue={zipResult?.city || ""}
+                        value={formData.city || zipResult?.city || ""}
+                        onChange={(e) => updateFormData('city', e.target.value)}
                         className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
                         required
                       />
@@ -692,7 +814,8 @@ export default function InternetOrderForm() {
                       <Input
                         id="state"
                         placeholder="State"
-                        defaultValue={zipResult?.state || ""}
+                        value={formData.state || zipResult?.state || ""}
+                        onChange={(e) => updateFormData('state', e.target.value)}
                         className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
                         required
                       />
@@ -705,7 +828,8 @@ export default function InternetOrderForm() {
                       <Input
                         id="zip-code"
                         placeholder="12345"
-                        defaultValue={zipResult?.zipCode || ""}
+                        value={formData.zipCode || zipResult?.zipCode || ""}
+                        onChange={(e) => updateFormData('zipCode', e.target.value)}
                         className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
                         required
                       />
@@ -744,6 +868,8 @@ export default function InternetOrderForm() {
                         id="prev-street-address"
                         placeholder="123 Previous Street"
                         className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                        value={formData.prevStreetAddress}
+                        onChange={(e) => updateFormData('prevStreetAddress', e.target.value)}
                         required
                       />
                     </div>
@@ -756,6 +882,8 @@ export default function InternetOrderForm() {
                         id="prev-apt-unit"
                         placeholder="Apt 4B, Unit 205, etc."
                         className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                        value={formData.prevAptUnit}
+                        onChange={(e) => updateFormData('prevAptUnit', e.target.value)}
                       />
                     </div>
                     
@@ -768,6 +896,8 @@ export default function InternetOrderForm() {
                           id="prev-city"
                           placeholder="City"
                           className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                          value={formData.prevCity}
+                          onChange={(e) => updateFormData('prevCity', e.target.value)}
                           required
                         />
                       </div>
@@ -780,6 +910,8 @@ export default function InternetOrderForm() {
                           id="prev-state"
                           placeholder="State"
                           className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                          value={formData.prevState}
+                          onChange={(e) => updateFormData('prevState', e.target.value)}
                           required
                         />
                       </div>
@@ -792,6 +924,8 @@ export default function InternetOrderForm() {
                           id="prev-zip-code"
                           placeholder="12345"
                           className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                          value={formData.prevZipCode}
+                          onChange={(e) => updateFormData('prevZipCode', e.target.value)}
                           required
                         />
                       </div>
@@ -1140,44 +1274,94 @@ export default function InternetOrderForm() {
             <h3 className="text-xl font-semibold text-gray-900">Ready to Submit Order</h3>
             <p className="text-gray-600">Please review all information before submitting the order.</p>
             
-            {!zipResult && (
-              <Alert>
-                <AlertTriangle className="h-4 w-4" />
-                <AlertDescription>
-                  Please check ZIP code availability first.
+            {/* Submission Result */}
+            {submissionResult && (
+              <Alert className={submissionResult.success ? "border-green-200 bg-green-50" : "border-red-200 bg-red-50"}>
+                {submissionResult.success ? (
+                  <CheckCircle className="h-4 w-4 text-green-600" />
+                ) : (
+                  <AlertTriangle className="h-4 w-4 text-red-600" />
+                )}
+                <AlertDescription className={submissionResult.success ? "text-green-700" : "text-red-700"}>
+                  {submissionResult.message}
+                  {submissionResult.success && submissionResult.emailSent && (
+                    <span className="block mt-1 text-sm">Email notification sent successfully!</span>
+                  )}
+                  {submissionResult.success && !submissionResult.emailSent && (
+                    <span className="block mt-1 text-sm text-yellow-600">Note: Email notification could not be sent.</span>
+                  )}
                 </AlertDescription>
               </Alert>
             )}
             
-            {zipResult && !selectedProvider && (
-              <Alert>
-                <AlertTriangle className="h-4 w-4" />
-                <AlertDescription>
-                  Please select a service provider.
-                </AlertDescription>
-              </Alert>
-            )}
-            
-            {selectedProvider && !selectedPackage && (
-              <Alert>
-                <AlertTriangle className="h-4 w-4" />
-                <AlertDescription>
-                  Please select an internet package.
-                </AlertDescription>
-              </Alert>
+            {!submissionResult && (
+              <>
+                {!zipResult && (
+                  <Alert>
+                    <AlertTriangle className="h-4 w-4" />
+                    <AlertDescription>
+                      Please check ZIP code availability first.
+                    </AlertDescription>
+                  </Alert>
+                )}
+                
+                {zipResult && !selectedProvider && (
+                  <Alert>
+                    <AlertTriangle className="h-4 w-4" />
+                    <AlertDescription>
+                      Please select a service provider.
+                    </AlertDescription>
+                  </Alert>
+                )}
+                
+                {selectedProvider && !selectedPackage && (
+                  <Alert>
+                    <AlertTriangle className="h-4 w-4" />
+                    <AlertDescription>
+                      Please select an internet package.
+                    </AlertDescription>
+                  </Alert>
+                )}
+              </>
             )}
 
-            <Button
-              type="submit"
-              size="lg"
-              disabled={!zipResult || !selectedProvider || !selectedPackage}
-              className="px-12 py-4 text-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              Submit Order
-            </Button>
-            <p className="text-xs text-gray-500 mt-2">
-              By submitting this form, you confirm that all information is accurate and complete.
-            </p>
+            <div className="flex gap-4 justify-center">
+              {submissionResult && (
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="lg"
+                  onClick={resetSubmission}
+                  className="px-8 py-4"
+                >
+                  Submit Another Order
+                </Button>
+              )}
+              
+              {!submissionResult && (
+                <Button
+                  type="submit"
+                  size="lg"
+                  disabled={!zipResult || !selectedProvider || !selectedPackage || isSubmitting}
+                  className="px-12 py-4 text-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                      Submitting...
+                    </>
+                  ) : (
+                    "Submit Order"
+                  )}
+                </Button>
+              )}
+            </div>
+            
+            {!submissionResult && (
+              <p className="text-xs text-gray-500 mt-2">
+                By submitting this form, you confirm that all information is accurate and complete.
+              </p>
+            )}
           </div>
         </form>
 
