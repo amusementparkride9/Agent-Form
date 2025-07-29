@@ -1,4 +1,4 @@
-import { FormData } from './google-sheets';
+import { SubmissionFormData } from './google-sheets';
 import { formatSSN, formatDateOfBirth } from './utils';
 
 interface EmailData {
@@ -7,7 +7,7 @@ interface EmailData {
   html: string;
 }
 
-export async function sendEmailNotification(formData: FormData): Promise<boolean> {
+export async function sendEmailNotification(formData: SubmissionFormData): Promise<boolean> {
   try {
     // Using EmailJS free service - no server needed
     // This will be handled on the client side
@@ -17,7 +17,7 @@ export async function sendEmailNotification(formData: FormData): Promise<boolean
       user_id: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
       template_params: {
         to_email: process.env.NEXT_PUBLIC_NOTIFICATION_EMAIL,
-        subject: `New Internet Order Form Submission - ${formData.customerName}`,
+        subject: `New Internet Order - Agent: ${formData.agentName}`,
         agent_name: formData.agentName,
         agent_id: formData.agentId,
         customer_name: formData.customerName,
@@ -45,7 +45,7 @@ export async function sendEmailNotification(formData: FormData): Promise<boolean
 }
 
 // Alternative free email service using Resend (server-side)
-export async function sendEmailWithResend(formData: FormData): Promise<boolean> {
+export async function sendEmailWithResend(formData: SubmissionFormData): Promise<boolean> {
   try {
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
     const TO_EMAIL = process.env.NOTIFICATION_EMAIL;
@@ -128,7 +128,7 @@ export async function sendEmailWithResend(formData: FormData): Promise<boolean> 
       body: JSON.stringify({
         from: 'onboarding@resend.dev', // Use Resend's test domain
         to: [TO_EMAIL],
-        subject: `New Internet Order - ${formData.customerName}`,
+        subject: `New Internet Order - Agent: ${formData.agentName}`,
         html: emailHtml,
       }),
     });

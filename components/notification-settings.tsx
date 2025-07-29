@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Bell, BellOff, Smartphone, AlertCircle } from 'lucide-react';
-import { initializePushNotifications, isPushNotificationsEnabled, requestNotificationPermission } from '@/lib/push-notification';
+import { initializePushNotifications, isPushNotificationsEnabled, requestNotificationPermission, sendLocalNotification } from '@/lib/push-notification';
 
 export default function NotificationSettings() {
   const [isEnabled, setIsEnabled] = useState(false);
@@ -43,11 +43,29 @@ export default function NotificationSettings() {
 
   const sendTestNotification = () => {
     if (isEnabled) {
-      new Notification('🧪 Test Notification', {
-        body: 'Your order notifications are working! You\'ll receive alerts like this when new orders are submitted.',
-        icon: '/favicon.ico',
-        tag: 'test-notification'
-      });
+      // Create a test form data to simulate a real notification with sound
+      const testFormData = {
+        agentName: 'Test Agent',
+        agentId: 'TEST001',
+        customerName: 'John Test Customer',
+        email: 'test@example.com',
+        phone: '(555) 123-4567',
+        dateOfBirth: '1990-01-01',
+        ssn: '123-45-6789',
+        streetAddress: '123 Test Street',
+        city: 'Test City',
+        state: 'TS',
+        zipCode: '12345',
+        movedLastYear: false,
+        selectedProvider: 'Test Provider',
+        selectedPackage: 'Test Package',
+        selectedAddOns: ['Test Add-on'],
+        submissionDate: new Date().toISOString(),
+        ipAddress: '127.0.0.1'
+      };
+      
+      // Use the full notification with sound
+      sendLocalNotification(testFormData);
     }
   };
 
@@ -131,7 +149,7 @@ export default function NotificationSettings() {
         <div className="pt-3 border-t">
           <h4 className="text-sm font-medium mb-2">Features:</h4>
           <ul className="text-xs text-muted-foreground space-y-1">
-            <li>• Instant mobile notifications</li>
+            <li>• Instant mobile notifications with sound</li>
             <li>• Works even when browser is closed</li>
             <li>• Customer name and provider info</li>
             <li>• Click to open order details</li>

@@ -1,5 +1,5 @@
 // Push notification service for order notifications
-import { FormData } from './google-sheets';
+import { SubmissionFormData } from './google-sheets';
 
 interface PushSubscription {
   endpoint: string;
@@ -38,19 +38,67 @@ export async function initializePushNotifications(): Promise<boolean> {
   }
 }
 
+// Generate alert beep sound programmatically
+function playNotificationSound(): void {
+  try {
+    // Create audio context for programmatic sound generation
+    const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+    
+    // Create a longer, more distinctive alert pattern
+    const alertPattern = [
+      { freq: 800, duration: 0.4, volume: 0.3 },   // Low beep
+      { freq: 1200, duration: 0.4, volume: 0.4 },  // High beep  
+      { freq: 800, duration: 0.4, volume: 0.3 },   // Low beep
+      { freq: 1200, duration: 0.6, volume: 0.5 },  // Longer high beep
+      { freq: 1000, duration: 0.8, volume: 0.4 },  // Medium sustained tone
+    ];
+    
+    let startTime = audioContext.currentTime;
+
+    alertPattern.forEach((tone, index) => {
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+      
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+      
+      oscillator.frequency.setValueAtTime(tone.freq, startTime);
+      oscillator.type = 'sine';
+      
+      // Configure tone with fade in/out for smoother sound
+      gainNode.gain.setValueAtTime(0, startTime);
+      gainNode.gain.linearRampToValueAtTime(tone.volume, startTime + 0.05);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, startTime + tone.duration - 0.05);
+      
+      oscillator.start(startTime);
+      oscillator.stop(startTime + tone.duration);
+      
+      startTime += tone.duration + 0.2; // Gap between tones
+    });
+    
+    console.log('🔊 Playing notification alert sound');
+  } catch (error) {
+    console.log('Audio not supported, using silent notification');
+  }
+}
+
 // Send local notification (fallback for development)
-export function sendLocalNotification(formData: FormData): void {
+export function sendLocalNotification(formData: SubmissionFormData): void {
   if (!('Notification' in window)) {
     console.log('Notifications not supported');
     return;
   }
 
   if (Notification.permission === 'granted') {
+    // Play notification sound immediately
+    playNotificationSound();
+
     const notification = new Notification(`🚨 NEW ORDER - ${formData.customerName}`, {
       body: `${formData.selectedProvider} - ${formData.selectedPackage}\n📍 ${formData.streetAddress}, ${formData.city} ${formData.state}\n👤 Agent: ${formData.agentName} (${formData.agentId})`,
       icon: '/favicon.ico',
       tag: 'new-order',
-      requireInteraction: true // Keeps notification visible until clicked
+      requireInteraction: true, // Keeps notification visible until clicked
+      silent: false // Allow system notification sound (if available)
     });
 
     notification.onclick = function() {

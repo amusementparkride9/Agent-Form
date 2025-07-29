@@ -39,7 +39,6 @@ interface FormSubmissionData {
 interface SubmissionResult {
   success: boolean;
   message: string;
-  emailSent?: boolean;
   submissionId?: string;
 }
 
@@ -52,19 +51,49 @@ export function useFormSubmission() {
     setSubmissionResult(null);
 
     try {
+      console.log('Form submission started with data:', formData);
+      
+      // Try to serialize the data first to catch any issues
+      let serializedData;
+      try {
+        serializedData = JSON.stringify(formData);
+        console.log('JSON serialization successful, length:', serializedData.length);
+        console.log('Serialized data preview:', serializedData.substring(0, 200));
+      } catch (serializationError) {
+        console.error('JSON serialization failed:', serializationError);
+        throw new Error('Failed to serialize form data');
+      }
+      
+      console.log('Making fetch request to /api/submit-form');
+      
       // Submit to your API endpoint
       const response = await fetch('/api/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: serializedData,
       });
 
+      console.log('Response status:', response.status);
+      console.log('Response headers:', Object.fromEntries(response.headers.entries()));
+      
       const result = await response.json();
+      console.log('Response result:', result);
 
       if (!response.ok) {
         throw new Error(result.error || 'Submission failed');
+      }
+
+      // Send client-side push notification immediately after successful submission
+      if (isPushNotificationsEnabled()) {
+        // Create complete form data for notification
+        const notificationData = {
+          ...formData,
+          submissionDate: new Date().toISOString(),
+          ipAddress: 'client'
+        };
+        sendLocalNotification(notificationData);
       }
 
       // Send email notification using EmailJS (client-side)
@@ -78,7 +107,7 @@ export function useFormSubmission() {
         ) {
           const emailParams = {
             to_email: process.env.NEXT_PUBLIC_NOTIFICATION_EMAIL,
-            subject: `New Internet Order Form Submission - ${formData.customerName}`,
+            subject: `New Internet Order - Agent: ${formData.agentName}`,
             agent_name: formData.agentName,
             agent_id: formData.agentId,
             customer_name: formData.customerName,
@@ -112,7 +141,6 @@ export function useFormSubmission() {
       const finalResult: SubmissionResult = {
         success: true,
         message: 'Form submitted successfully!',
-        emailSent: emailSent || result.emailSent,
         submissionId: result.submissionId,
       };
 
