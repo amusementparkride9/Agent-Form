@@ -12,6 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { User, MapPin, Wifi, Calendar, Phone, Mail, CreditCard, Settings, CheckCircle, AlertTriangle, Info } from "lucide-react"
 import ZipCodeSection from "./components/zip-code-section"
 import type { ZipResult } from "./hooks/use-zip-data"
@@ -23,7 +24,10 @@ export default function InternetOrderForm() {
   const [selectedProvider, setSelectedProvider] = useState<string>("")
   const [selectedPackage, setSelectedPackage] = useState<string>("")
   const [selectedDirectvPackage, setSelectedDirectvPackage] = useState<string>("")
+  const [directvWithDevice, setDirectvWithDevice] = useState<boolean>(true)
   const [showProviderDetails, setShowProviderDetails] = useState(false)
+  const [showPricingModal, setShowPricingModal] = useState(false)
+  const [modalProvider, setModalProvider] = useState<string>("")
 
   // Dynamic package options based on selected provider
   const getPackageOptions = () => {
@@ -31,41 +35,50 @@ export default function InternetOrderForm() {
     
     const packagesByProvider: { [key: string]: Array<{value: string, label: string, speed: string, price: string}> } = {
       "Xfinity": [
-        { value: "xfinity-connect", label: "Connect", speed: "75 Mbps", price: "$30/mo" },
-        { value: "xfinity-fast", label: "Fast", speed: "400 Mbps", price: "$60/mo" },
-        { value: "xfinity-superfast", label: "Superfast", speed: "800 Mbps", price: "$80/mo" },
-        { value: "xfinity-gigabit", label: "Gigabit", speed: "1.2 Gbps", price: "$100/mo" }
+        { value: "xfinity-400-1yr", label: "400 Mbps (1-Year Deal)", speed: "400 Mbps", price: "$40/mo" },
+        { value: "xfinity-400-5yr", label: "400 Mbps (5-Year Guarantee)", speed: "400 Mbps", price: "$55/mo" },
+        { value: "xfinity-600-1yr", label: "600 Mbps (1-Year Deal)", speed: "600 Mbps", price: "$45/mo" },
+        { value: "xfinity-600-5yr", label: "600 Mbps (5-Year Guarantee)", speed: "600 Mbps", price: "$60/mo" },
+        { value: "xfinity-1100-1yr", label: "1100 Mbps (1-Year Deal)", speed: "1100 Mbps", price: "$50/mo" },
+        { value: "xfinity-1100-5yr", label: "1100 Mbps (5-Year Guarantee)", speed: "1100 Mbps", price: "$65/mo" },
+        { value: "xfinity-1300-1yr", label: "1300+ Mbps (1-Year Deal)", speed: "1300+ Mbps", price: "$70/mo" },
+        { value: "xfinity-1300-5yr", label: "1300+ Mbps (5-Year Guarantee)", speed: "1300+ Mbps", price: "$85/mo" }
       ],
       "Frontier Fiber": [
-        { value: "frontier-fiber-200", label: "Fiber 200", speed: "200 Mbps", price: "$50/mo" },
-        { value: "frontier-fiber-500", label: "Fiber 500", speed: "500 Mbps", price: "$70/mo" },
-        { value: "frontier-fiber-gig", label: "Fiber Gig", speed: "1 Gbps", price: "$90/mo" },
-        { value: "frontier-fiber-2gig", label: "Fiber 2 Gig", speed: "2 Gbps", price: "$150/mo" }
+        { value: "frontier-fiber-200", label: "Fiber 200", speed: "200/200 Mbps", price: "$29.99/mo" },
+        { value: "frontier-fiber-500", label: "Fiber 500", speed: "500/500 Mbps", price: "$39.99/mo" },
+        { value: "frontier-fiber-1gig", label: "Fiber 1 Gig", speed: "1000/1000 Mbps", price: "$59.99/mo" },
+        { value: "frontier-fiber-2gig", label: "Fiber 2 Gig", speed: "2000/2000 Mbps", price: "$64.99/mo" },
+        { value: "frontier-fiber-5gig", label: "Fiber 5 Gig", speed: "5000/5000 Mbps", price: "$99.99/mo" },
+        { value: "frontier-fiber-7gig", label: "Fiber 7 Gig", speed: "7000/7000 Mbps", price: "$109.99/mo" }
       ],
       "Frontier Copper": [
         { value: "frontier-copper-basic", label: "DSL Basic", speed: "25 Mbps", price: "$40/mo" },
         { value: "frontier-copper-plus", label: "DSL Plus", speed: "50 Mbps", price: "$55/mo" }
       ],
       "Optimum": [
-        { value: "optimum-core", label: "Core", speed: "300 Mbps", price: "$40/mo" },
-        { value: "optimum-1gig", label: "1 Gig", speed: "1 Gbps", price: "$70/mo" },
-        { value: "optimum-8gig", label: "8 Gig", speed: "8 Gbps", price: "$180/mo" }
+        { value: "optimum-300", label: "Internet 300", speed: "300 Mbps", price: "$40/mo" },
+        { value: "optimum-500", label: "Internet 500", speed: "500 Mbps", price: "$60/mo" },
+        { value: "optimum-1gig", label: "Internet 1 Gig", speed: "1 Gbps", price: "$70/mo" }
       ],
       "Metronet": [
-        { value: "metronet-100", label: "100 Mbps", speed: "100 Mbps", price: "$50/mo" },
-        { value: "metronet-500", label: "500 Mbps", speed: "500 Mbps", price: "$70/mo" },
-        { value: "metronet-gig", label: "Gig", speed: "1 Gbps", price: "$80/mo" }
+        { value: "metronet-100-student", label: "100 Mb (Student)", speed: "100 Mbps", price: "$29.95/mo" },
+        { value: "metronet-500", label: "500 Mb", speed: "500 Mbps", price: "$60/mo" },
+        { value: "metronet-1gig", label: "1 Gb", speed: "1 Gbps", price: "$70/mo" },
+        { value: "metronet-1gig-student", label: "1 Gb (Student)", speed: "1 Gbps", price: "$49.95/mo" },
+        { value: "metronet-2gig", label: "2 Gb/1 Gb", speed: "2 Gbps", price: "$80/mo" }
       ],
       "Kinetic": [
-        { value: "kinetic-25", label: "Internet 25", speed: "25 Mbps", price: "$45/mo" },
-        { value: "kinetic-100", label: "Internet 100", speed: "100 Mbps", price: "$65/mo" },
-        { value: "kinetic-gig", label: "Gig", speed: "1 Gbps", price: "$85/mo" }
+        { value: "kinetic-100", label: "Internet 100", speed: "100/100 Mbps", price: "$24.99/mo" },
+        { value: "kinetic-300", label: "Internet 300", speed: "300/300 Mbps", price: "$39.99/mo" },
+        { value: "kinetic-1gig", label: "Internet 1 Gig", speed: "1 Gbps", price: "$69.99/mo" },
+        { value: "kinetic-2gig", label: "Internet 2 Gig", speed: "2 Gbps", price: "$99.99/mo" }
       ],
       "BrightSpeed Fiber": [
-        { value: "brightspeed-fiber-100", label: "Fiber 100", speed: "100 Mbps", price: "$39.99/mo" },
-        { value: "brightspeed-fiber-500", label: "Fiber 500", speed: "500 Mbps", price: "$59.99/mo" },
-        { value: "brightspeed-fiber-1gig", label: "Fiber 1 Gig", speed: "1 Gbps", price: "$79.99/mo" },
-        { value: "brightspeed-fiber-2gig", label: "Fiber 2 Gig", speed: "2 Gbps", price: "$99.99/mo" }
+        { value: "brightspeed-300", label: "300M", speed: "300 Mbps", price: "$49/mo" },
+        { value: "brightspeed-600", label: "600M", speed: "600 Mbps", price: "$49/mo" },
+        { value: "brightspeed-1gig", label: "1G", speed: "1 Gbps", price: "$59/mo" },
+        { value: "brightspeed-2gig", label: "2G", speed: "2 Gbps", price: "$89/mo" }
       ],
       "BrightSpeed Copper": [
         { value: "brightspeed-copper-25", label: "DSL 25", speed: "25 Mbps", price: "$29.99/mo" },
@@ -78,22 +91,305 @@ export default function InternetOrderForm() {
         { value: "spectrum-internet-gig", label: "Internet Gig", speed: "1 Gbps", price: "$89.99/mo" }
       ],
       "Altafiber": [
-        { value: "altafiber-gig", label: "Gig Service", speed: "1 Gbps", price: "$65/mo" },
-        { value: "altafiber-2gig", label: "2 Gig Service", speed: "2 Gbps", price: "$85/mo" },
-        { value: "altafiber-5gig", label: "5 Gig Service", speed: "5 Gbps", price: "$125/mo" },
-        { value: "altafiber-10gig", label: "10 Gig Service", speed: "10 Gbps", price: "$175/mo" }
+        { value: "altafiber-50", label: "Fioptics 50Mbps", speed: "50/10 Mbps", price: "$45/mo" },
+        { value: "altafiber-100", label: "Fioptics 100Mbps", speed: "100/100 Mbps", price: "$40/mo" },
+        { value: "altafiber-250", label: "Fioptics 250Mbps", speed: "250/100 Mbps", price: "$40/mo" },
+        { value: "altafiber-400", label: "Fioptics 400Mbps", speed: "400/200 Mbps", price: "$40/mo" },
+        { value: "altafiber-600", label: "Fioptics 600Mbps", speed: "600/300 Mbps", price: "$50/mo" },
+        { value: "altafiber-800", label: "Fioptics 800Mbps", speed: "800/400 Mbps", price: "$70/mo" },
+        { value: "altafiber-1gig", label: "Fioptics 1Gb", speed: "1000/500 Mbps", price: "$70/mo" }
+      ],
+      "EarthLink": [
+        { value: "earthlink-fiber-1gig", label: "Fiber 1Gx1G", speed: "1 Gbps", price: "$89.95/mo" },
+        { value: "earthlink-wireless-max", label: "Wireless Max", speed: "Up to 375 GB", price: "$79.95/mo" },
+        { value: "earthlink-wfh-unlimited", label: "Work From Home Unlimited", speed: "300 GB high-speed", price: "$84.95/mo" }
       ]
     }
     
     return packagesByProvider[selectedProvider] || []
   }
 
+  // Helper function to get packages for any provider without changing state
+  const getPackageOptionsForProvider = (provider: string) => {
+    const packagesByProvider: { [key: string]: Array<{value: string, label: string, speed: string, price: string}> } = {
+      "Xfinity": [
+        { value: "xfinity-400-1yr", label: "400 Mbps (1-Year Deal)", speed: "400 Mbps", price: "$40/mo" },
+        { value: "xfinity-400-5yr", label: "400 Mbps (5-Year Guarantee)", speed: "400 Mbps", price: "$55/mo" },
+        { value: "xfinity-600-1yr", label: "600 Mbps (1-Year Deal)", speed: "600 Mbps", price: "$45/mo" },
+        { value: "xfinity-600-5yr", label: "600 Mbps (5-Year Guarantee)", speed: "600 Mbps", price: "$60/mo" },
+        { value: "xfinity-1100-1yr", label: "1100 Mbps (1-Year Deal)", speed: "1100 Mbps", price: "$50/mo" },
+        { value: "xfinity-1100-5yr", label: "1100 Mbps (5-Year Guarantee)", speed: "1100 Mbps", price: "$65/mo" },
+        { value: "xfinity-1300-1yr", label: "1300+ Mbps (1-Year Deal)", speed: "1300+ Mbps", price: "$70/mo" },
+        { value: "xfinity-1300-5yr", label: "1300+ Mbps (5-Year Guarantee)", speed: "1300+ Mbps", price: "$85/mo" }
+      ],
+      "Frontier Fiber": [
+        { value: "frontier-fiber-200", label: "Fiber 200", speed: "200/200 Mbps", price: "$29.99/mo" },
+        { value: "frontier-fiber-500", label: "Fiber 500", speed: "500/500 Mbps", price: "$39.99/mo" },
+        { value: "frontier-fiber-1gig", label: "Fiber 1 Gig", speed: "1000/1000 Mbps", price: "$59.99/mo" },
+        { value: "frontier-fiber-2gig", label: "Fiber 2 Gig", speed: "2000/2000 Mbps", price: "$64.99/mo" },
+        { value: "frontier-fiber-5gig", label: "Fiber 5 Gig", speed: "5000/5000 Mbps", price: "$99.99/mo" },
+        { value: "frontier-fiber-7gig", label: "Fiber 7 Gig", speed: "7000/7000 Mbps", price: "$109.99/mo" }
+      ],
+      "Frontier Copper": [
+        { value: "frontier-copper-basic", label: "DSL Basic", speed: "25 Mbps", price: "$40/mo" },
+        { value: "frontier-copper-plus", label: "DSL Plus", speed: "50 Mbps", price: "$55/mo" }
+      ],
+      "Optimum": [
+        { value: "optimum-300", label: "Internet 300", speed: "300 Mbps", price: "$40/mo" },
+        { value: "optimum-500", label: "Internet 500", speed: "500 Mbps", price: "$60/mo" },
+        { value: "optimum-1gig", label: "Internet 1 Gig", speed: "1 Gbps", price: "$70/mo" }
+      ],
+      "Metronet": [
+        { value: "metronet-100-student", label: "100 Mb (Student)", speed: "100 Mbps", price: "$29.95/mo" },
+        { value: "metronet-500", label: "500 Mb", speed: "500 Mbps", price: "$60/mo" },
+        { value: "metronet-1gig", label: "1 Gb", speed: "1 Gbps", price: "$70/mo" },
+        { value: "metronet-1gig-student", label: "1 Gb (Student)", speed: "1 Gbps", price: "$49.95/mo" },
+        { value: "metronet-2gig", label: "2 Gb/1 Gb", speed: "2 Gbps", price: "$80/mo" }
+      ],
+      "Kinetic": [
+        { value: "kinetic-100", label: "Internet 100", speed: "100/100 Mbps", price: "$24.99/mo" },
+        { value: "kinetic-300", label: "Internet 300", speed: "300/300 Mbps", price: "$39.99/mo" },
+        { value: "kinetic-1gig", label: "Internet 1 Gig", speed: "1 Gbps", price: "$69.99/mo" },
+        { value: "kinetic-2gig", label: "Internet 2 Gig", speed: "2 Gbps", price: "$99.99/mo" }
+      ],
+      "BrightSpeed Fiber": [
+        { value: "brightspeed-300", label: "300M", speed: "300 Mbps", price: "$49/mo" },
+        { value: "brightspeed-600", label: "600M", speed: "600 Mbps", price: "$49/mo" },
+        { value: "brightspeed-1gig", label: "1G", speed: "1 Gbps", price: "$59/mo" },
+        { value: "brightspeed-2gig", label: "2G", speed: "2 Gbps", price: "$89/mo" }
+      ],
+      "BrightSpeed Copper": [
+        { value: "brightspeed-copper-25", label: "DSL 25", speed: "25 Mbps", price: "$29.99/mo" },
+        { value: "brightspeed-copper-50", label: "DSL 50", speed: "50 Mbps", price: "$39.99/mo" },
+        { value: "brightspeed-copper-100", label: "DSL 100", speed: "100 Mbps", price: "$49.99/mo" }
+      ],
+      "Spectrum": [
+        { value: "spectrum-internet", label: "Internet", speed: "300 Mbps", price: "$49.99/mo" },
+        { value: "spectrum-internet-ultra", label: "Internet Ultra", speed: "500 Mbps", price: "$69.99/mo" },
+        { value: "spectrum-internet-gig", label: "Internet Gig", speed: "1 Gbps", price: "$89.99/mo" }
+      ],
+      "Altafiber": [
+        { value: "altafiber-50", label: "Fioptics 50Mbps", speed: "50/10 Mbps", price: "$45/mo" },
+        { value: "altafiber-100", label: "Fioptics 100Mbps", speed: "100/100 Mbps", price: "$40/mo" },
+        { value: "altafiber-250", label: "Fioptics 250Mbps", speed: "250/100 Mbps", price: "$40/mo" },
+        { value: "altafiber-400", label: "Fioptics 400Mbps", speed: "400/200 Mbps", price: "$40/mo" },
+        { value: "altafiber-600", label: "Fioptics 600Mbps", speed: "600/300 Mbps", price: "$50/mo" },
+        { value: "altafiber-800", label: "Fioptics 800Mbps", speed: "800/400 Mbps", price: "$70/mo" },
+        { value: "altafiber-1gig", label: "Fioptics 1Gb", speed: "1000/500 Mbps", price: "$70/mo" }
+      ],
+      "EarthLink": [
+        { value: "earthlink-fiber-1gig", label: "Fiber 1Gx1G", speed: "1 Gbps", price: "$89.95/mo" },
+        { value: "earthlink-wireless-max", label: "Wireless Max", speed: "Up to 375 GB", price: "$79.95/mo" },
+        { value: "earthlink-wfh-unlimited", label: "Work From Home Unlimited", speed: "300 GB high-speed", price: "$84.95/mo" }
+      ]
+    }
+    return packagesByProvider[provider] || []
+  }
+
+  // Helper function to get promo info for any provider
+  const getPromoInfoForProvider = (provider: string) => {
+    const promoInfo: { [key: string]: string } = {
+      "Xfinity": "5-Year Price Guarantee plans offer long-term price stability. 1-Year Deals provide lower introductory pricing. Gateway rental is free for first 12 months on promotional plans.",
+      "BrightSpeed Fiber": "300M includes $20/mo bill credit for 6 months. 600M, 1G, and 2G include 3 months of free service.",
+      "Metronet": "Student pricing includes 1-year price lock and free installation with ACH autopay enrollment.",
+      "Kinetic": "Pricing includes AutoPay discount. Reward Cards available: $100 for 1 Gig, $200 for 2 Gig customers.",
+      "Frontier Fiber": "Pricing includes $10 ACH/Debit autopay discount.",
+      "Optimum": "Pricing requires autopay & paperless billing.",
+      "EarthLink": "Professional installation required. Installation fees vary by partner network."
+    }
+    return promoInfo[provider] || null
+  }
+
+  // Helper function to get add-ons for any provider
+  const getAddOnsForProvider = (provider: string) => {
+    const addOnsByProvider: { [key: string]: Array<{id: string, label: string, price: string, value: string}> } = {
+      "Xfinity": [
+        { id: "xfinity-gateway", label: "Xfinity Gateway (Free 1st year, then $15/mo)", price: "Free/12mo", value: "xfinity-gateway" },
+        { id: "xfinity-now-tv", label: "NOW TV (125+ channels, 20hr DVR, Peacock)", price: "+$20/mo", value: "xfinity-now-tv" },
+        { id: "xfinity-now-tv-latino", label: "NOW TV Latino (100+ channels, 30+ Spanish)", price: "+$10/mo", value: "xfinity-now-tv-latino" },
+        { id: "xfinity-streamsaver", label: "StreamSaver™ (Netflix, Apple TV+, Peacock)", price: "+$15/mo", value: "xfinity-streamsaver" },
+        { id: "xfinity-now-streamsaver", label: "NOW StreamSaver™ (Combined TV + Streaming)", price: "+$30/mo", value: "xfinity-now-streamsaver" },
+        { id: "xfinity-mobile-intro", label: "Mobile Unlimited Intro (Free 1st line/12mo)", price: "+$30/mo", value: "xfinity-mobile-intro" },
+        { id: "xfinity-mobile-plus", label: "Mobile Unlimited Plus", price: "+$40/mo", value: "xfinity-mobile-plus" },
+        { id: "xfinity-mobile-premium", label: "Mobile Unlimited Premium", price: "+$50/mo", value: "xfinity-mobile-premium" },
+        { id: "xfinity-mobile-gig", label: "Mobile By the Gig (1GB)", price: "+$15/mo", value: "xfinity-mobile-gig" }
+      ],
+      "Frontier Fiber": [
+        { id: "frontier-voice", label: "Voice Service", price: "+$25/mo", value: "frontier-voice" },
+        { id: "frontier-wifi-security", label: "Wi-Fi Security", price: "+$5/mo", value: "frontier-wifi-security" },
+        { id: "frontier-identity-protection", label: "Identity Protection", price: "+$10/mo", value: "frontier-identity-protection" },
+        { id: "frontier-tech-pro", label: "My Premium Tech Pro", price: "+$10/mo", value: "frontier-tech-pro" }
+      ],
+      "Spectrum": [
+        { id: "spectrum-router", label: "Wi-Fi Router", price: "+$5/mo", value: "spectrum-router" },
+        { id: "spectrum-security-suite", label: "Spectrum Security Suite", price: "+$9.99/mo", value: "spectrum-security-suite" },
+        { id: "spectrum-tv-select", label: "TV Select (125+ channels)", price: "+$49.99/mo", value: "spectrum-tv-select" },
+        { id: "spectrum-tv-silver", label: "TV Silver (175+ channels)", price: "+$74.99/mo", value: "spectrum-tv-silver" },
+        { id: "spectrum-tv-gold", label: "TV Gold (200+ channels)", price: "+$94.99/mo", value: "spectrum-tv-gold" },
+        { id: "spectrum-voice", label: "Voice Unlimited", price: "+$29.99/mo", value: "spectrum-voice" }
+      ],
+      "Metronet": [
+        { id: "metronet-wholehome-wifi", label: "WholeHome WiFi + 1-Yr Price Lock", price: "+$5/mo", value: "metronet-wholehome-wifi" },
+        { id: "metronet-eero-plus", label: "eero Plus", price: "+$10/mo", value: "metronet-eero-plus" },
+        { id: "metronet-unlimited-phone", label: "Unlimited Phone + 1-Yr Price Lock", price: "+$15/mo", value: "metronet-unlimited-phone" },
+        { id: "metronet-student-wholehome", label: "WholeHome WiFi (Student)", price: "+$9.95/mo", value: "metronet-student-wholehome" },
+        { id: "metronet-student-phone", label: "Home Phone (Student)", price: "+$20/mo", value: "metronet-student-phone" }
+      ],
+      "BrightSpeed Fiber": [
+        { id: "brightspeed-digital-voice", label: "Digital Voice", price: "+$30/mo", value: "brightspeed-digital-voice" },
+        { id: "brightspeed-wifi-pro", label: "WiFi Pro", price: "+$10/mo", value: "brightspeed-wifi-pro" },
+        { id: "brightspeed-tech-support", label: "Premium Tech Support", price: "+$9.99/mo", value: "brightspeed-tech-support" }
+      ],
+      "BrightSpeed Copper": [
+        { id: "brightspeed-copper-voice", label: "Digital Voice", price: "+$30/mo", value: "brightspeed-copper-voice" },
+        { id: "brightspeed-copper-wifi", label: "WiFi Pro", price: "+$10/mo", value: "brightspeed-copper-wifi" },
+        { id: "brightspeed-copper-support", label: "Premium Tech Support", price: "+$9.99/mo", value: "brightspeed-copper-support" }
+      ],
+      "Optimum": [
+        { id: "optimum-entertainment-tv", label: "Entertainment TV (80+ channels)", price: "+$25/mo", value: "optimum-entertainment-tv" },
+        { id: "optimum-extra-tv", label: "Extra TV (125+ channels)", price: "+$80/mo", value: "optimum-extra-tv" },
+        { id: "optimum-everything-tv", label: "Everything TV (200+ channels)", price: "+$135/mo", value: "optimum-everything-tv" },
+        { id: "optimum-mobile-1gb", label: "Mobile 1GB", price: "+$15/mo", value: "optimum-mobile-1gb" },
+        { id: "optimum-mobile-5gb", label: "Mobile 5GB", price: "+$25/mo", value: "optimum-mobile-5gb" },
+        { id: "optimum-mobile-unlimited", label: "Mobile Unlimited", price: "+$45/mo", value: "optimum-mobile-unlimited" },
+        { id: "optimum-mobile-unlimited-max", label: "Mobile Unlimited Max", price: "+$55/mo", value: "optimum-mobile-unlimited-max" }
+      ],
+      "Kinetic": [
+        { id: "kinetic-home-phone", label: "Home Phone (VoIP)", price: "+$25/mo", value: "kinetic-home-phone" },
+        { id: "kinetic-secure", label: "Kinetic Secure", price: "+$14.99/mo", value: "kinetic-secure" },
+        { id: "kinetic-secure-home-plus", label: "Kinetic Secure Home Plus", price: "+$10/mo", value: "kinetic-secure-home-plus" }
+      ],
+      "Altafiber": [
+        { id: "altafiber-voice", label: "Digital Voice Service", price: "+$25/mo", value: "altafiber-voice" },
+        { id: "altafiber-wifi-plus", label: "WiFi Plus (Enhanced Router)", price: "+$10/mo", value: "altafiber-wifi-plus" },
+        { id: "altafiber-security", label: "Internet Security Suite", price: "+$9.99/mo", value: "altafiber-security" },
+        { id: "altafiber-tech-support", label: "Premium Tech Support", price: "+$14.99/mo", value: "altafiber-tech-support" }
+      ],
+      "EarthLink": [
+        { id: "earthlink-gateway", label: "Wireless Gateway (Required)", price: "+$12.95/mo", value: "earthlink-gateway" },
+        { id: "earthlink-easytech", label: "EasyTech Remote Support", price: "+$9.95/mo", value: "earthlink-easytech" },
+        { id: "earthlink-protect-plus", label: "Protect+ Essential (Norton 360 + LifeLock)", price: "+$9.95/mo", value: "earthlink-protect-plus" }
+      ]
+    }
+    
+    // Default add-ons for providers without specific ones
+    const defaultAddOns = [
+      { id: "wifi-router", label: "Wi-Fi Router Rental", price: "+$10/mo", value: "wifi-router" },
+      { id: "security-suite", label: "Internet Security Suite", price: "+$9.99/mo", value: "security-suite" },
+      { id: "tech-support", label: "Premium Tech Support", price: "+$14.99/mo", value: "tech-support" },
+      { id: "static-ip", label: "Static IP Address", price: "+$15/mo", value: "static-ip" },
+      { id: "unlimited-data", label: "Unlimited Data", price: "+$30/mo", value: "unlimited-data" },
+      { id: "mesh-network", label: "Mesh Network System", price: "+$25/mo", value: "mesh-network" }
+    ]
+    
+    return addOnsByProvider[provider] || defaultAddOns
+  }
+
+  // Get promotional info for selected provider
+  const getProviderPromoInfo = () => {
+    const promoInfo: { [key: string]: string } = {
+      "Xfinity": "5-Year Price Guarantee plans offer long-term price stability. 1-Year Deals provide lower introductory pricing. Gateway rental is free for first 12 months on promotional plans.",
+      "BrightSpeed Fiber": "300M includes $20/mo bill credit for 6 months. 600M, 1G, and 2G include 3 months of free service.",
+      "Metronet": "Student pricing includes 1-year price lock and free installation with ACH autopay enrollment.",
+      "Kinetic": "Pricing includes AutoPay discount. Reward Cards available: $100 for 1 Gig, $200 for 2 Gig customers.",
+      "Frontier Fiber": "Pricing includes $10 ACH/Debit autopay discount.",
+      "Optimum": "Pricing requires autopay & paperless billing.",
+      "EarthLink": "Professional installation required. Installation fees vary by partner network."
+    }
+    return promoInfo[selectedProvider] || null
+  }
+  const getProviderAddOns = () => {
+    if (!selectedProvider) return []
+    
+    const addOnsByProvider: { [key: string]: Array<{id: string, label: string, price: string, value: string}> } = {
+      "Xfinity": [
+        { id: "xfinity-gateway", label: "Xfinity Gateway (Free 1st year, then $15/mo)", price: "Free/12mo", value: "xfinity-gateway" },
+        { id: "xfinity-now-tv", label: "NOW TV (125+ channels, 20hr DVR, Peacock)", price: "+$20/mo", value: "xfinity-now-tv" },
+        { id: "xfinity-now-tv-latino", label: "NOW TV Latino (100+ channels, 30+ Spanish)", price: "+$10/mo", value: "xfinity-now-tv-latino" },
+        { id: "xfinity-streamsaver", label: "StreamSaver™ (Netflix, Apple TV+, Peacock)", price: "+$15/mo", value: "xfinity-streamsaver" },
+        { id: "xfinity-now-streamsaver", label: "NOW StreamSaver™ (Combined TV + Streaming)", price: "+$30/mo", value: "xfinity-now-streamsaver" },
+        { id: "xfinity-mobile-intro", label: "Mobile Unlimited Intro (Free 1st line/12mo)", price: "+$30/mo", value: "xfinity-mobile-intro" },
+        { id: "xfinity-mobile-plus", label: "Mobile Unlimited Plus", price: "+$40/mo", value: "xfinity-mobile-plus" },
+        { id: "xfinity-mobile-premium", label: "Mobile Unlimited Premium", price: "+$50/mo", value: "xfinity-mobile-premium" },
+        { id: "xfinity-mobile-gig", label: "Mobile By the Gig (1GB)", price: "+$15/mo", value: "xfinity-mobile-gig" }
+      ],
+      "Frontier Fiber": [
+        { id: "frontier-voice", label: "Voice Service", price: "+$25/mo", value: "frontier-voice" },
+        { id: "frontier-wifi-security", label: "Wi-Fi Security", price: "+$5/mo", value: "frontier-wifi-security" },
+        { id: "frontier-identity-protection", label: "Identity Protection", price: "+$10/mo", value: "frontier-identity-protection" },
+        { id: "frontier-tech-pro", label: "My Premium Tech Pro", price: "+$10/mo", value: "frontier-tech-pro" }
+      ],
+      "Spectrum": [
+        { id: "spectrum-router", label: "Wi-Fi Router", price: "+$5/mo", value: "spectrum-router" },
+        { id: "spectrum-security-suite", label: "Spectrum Security Suite", price: "+$9.99/mo", value: "spectrum-security-suite" },
+        { id: "spectrum-tv-select", label: "TV Select (125+ channels)", price: "+$49.99/mo", value: "spectrum-tv-select" },
+        { id: "spectrum-tv-silver", label: "TV Silver (175+ channels)", price: "+$74.99/mo", value: "spectrum-tv-silver" },
+        { id: "spectrum-tv-gold", label: "TV Gold (200+ channels)", price: "+$94.99/mo", value: "spectrum-tv-gold" },
+        { id: "spectrum-voice", label: "Voice Unlimited", price: "+$29.99/mo", value: "spectrum-voice" }
+      ],
+      "Metronet": [
+        { id: "metronet-wholehome-wifi", label: "WholeHome WiFi + 1-Yr Price Lock", price: "+$5/mo", value: "metronet-wholehome-wifi" },
+        { id: "metronet-eero-plus", label: "eero Plus", price: "+$10/mo", value: "metronet-eero-plus" },
+        { id: "metronet-unlimited-phone", label: "Unlimited Phone + 1-Yr Price Lock", price: "+$15/mo", value: "metronet-unlimited-phone" },
+        { id: "metronet-student-wholehome", label: "WholeHome WiFi (Student)", price: "+$9.95/mo", value: "metronet-student-wholehome" },
+        { id: "metronet-student-phone", label: "Home Phone (Student)", price: "+$20/mo", value: "metronet-student-phone" }
+      ],
+      "BrightSpeed Fiber": [
+        { id: "brightspeed-digital-voice", label: "Digital Voice", price: "+$30/mo", value: "brightspeed-digital-voice" },
+        { id: "brightspeed-wifi-pro", label: "WiFi Pro", price: "+$10/mo", value: "brightspeed-wifi-pro" },
+        { id: "brightspeed-tech-support", label: "Premium Tech Support", price: "+$9.99/mo", value: "brightspeed-tech-support" }
+      ],
+      "BrightSpeed Copper": [
+        { id: "brightspeed-copper-voice", label: "Digital Voice", price: "+$30/mo", value: "brightspeed-copper-voice" },
+        { id: "brightspeed-copper-wifi", label: "WiFi Pro", price: "+$10/mo", value: "brightspeed-copper-wifi" },
+        { id: "brightspeed-copper-support", label: "Premium Tech Support", price: "+$9.99/mo", value: "brightspeed-copper-support" }
+      ],
+      "Optimum": [
+        { id: "optimum-entertainment-tv", label: "Entertainment TV (80+ channels)", price: "+$25/mo", value: "optimum-entertainment-tv" },
+        { id: "optimum-extra-tv", label: "Extra TV (125+ channels)", price: "+$80/mo", value: "optimum-extra-tv" },
+        { id: "optimum-everything-tv", label: "Everything TV (200+ channels)", price: "+$135/mo", value: "optimum-everything-tv" },
+        { id: "optimum-mobile-1gb", label: "Mobile 1GB", price: "+$15/mo", value: "optimum-mobile-1gb" },
+        { id: "optimum-mobile-5gb", label: "Mobile 5GB", price: "+$25/mo", value: "optimum-mobile-5gb" },
+        { id: "optimum-mobile-unlimited", label: "Mobile Unlimited", price: "+$45/mo", value: "optimum-mobile-unlimited" },
+        { id: "optimum-mobile-unlimited-max", label: "Mobile Unlimited Max", price: "+$55/mo", value: "optimum-mobile-unlimited-max" }
+      ],
+      "Kinetic": [
+        { id: "kinetic-home-phone", label: "Home Phone (VoIP)", price: "+$25/mo", value: "kinetic-home-phone" },
+        { id: "kinetic-secure", label: "Kinetic Secure", price: "+$14.99/mo", value: "kinetic-secure" },
+        { id: "kinetic-secure-home-plus", label: "Kinetic Secure Home Plus", price: "+$10/mo", value: "kinetic-secure-home-plus" }
+      ],
+      "Altafiber": [
+        { id: "altafiber-voice", label: "Digital Voice Service", price: "+$25/mo", value: "altafiber-voice" },
+        { id: "altafiber-wifi-plus", label: "WiFi Plus (Enhanced Router)", price: "+$10/mo", value: "altafiber-wifi-plus" },
+        { id: "altafiber-security", label: "Internet Security Suite", price: "+$9.99/mo", value: "altafiber-security" },
+        { id: "altafiber-tech-support", label: "Premium Tech Support", price: "+$14.99/mo", value: "altafiber-tech-support" }
+      ],
+      "EarthLink": [
+        { id: "earthlink-gateway", label: "Wireless Gateway (Required)", price: "+$12.95/mo", value: "earthlink-gateway" },
+        { id: "earthlink-easytech", label: "EasyTech Remote Support", price: "+$9.95/mo", value: "earthlink-easytech" },
+        { id: "earthlink-protect-plus", label: "Protect+ Essential (Norton 360 + LifeLock)", price: "+$9.95/mo", value: "earthlink-protect-plus" }
+      ]
+    }
+    
+    // Default add-ons for providers without specific ones
+    const defaultAddOns = [
+      { id: "wifi-router", label: "Wi-Fi Router Rental", price: "+$10/mo", value: "wifi-router" },
+      { id: "security-suite", label: "Internet Security Suite", price: "+$9.99/mo", value: "security-suite" },
+      { id: "tech-support", label: "Premium Tech Support", price: "+$14.99/mo", value: "tech-support" },
+      { id: "static-ip", label: "Static IP Address", price: "+$15/mo", value: "static-ip" },
+      { id: "unlimited-data", label: "Unlimited Data", price: "+$30/mo", value: "unlimited-data" },
+      { id: "mesh-network", label: "Mesh Network System", price: "+$25/mo", value: "mesh-network" }
+    ]
+    
+    return addOnsByProvider[selectedProvider] || defaultAddOns
+  }
+
   const getDirectvPackageDetails = (packageType: string) => {
-    const directvPackages: { [key: string]: { label: string, price: string, channels: string } } = {
-      "entertainment": { label: "ENTERTAINMENT", price: "$64.99/mo", channels: "75+ channels" },
-      "choice": { label: "CHOICE", price: "$84.99/mo", channels: "90+ channels" },
-      "ultimate": { label: "ULTIMATE", price: "$104.99/mo", channels: "130+ channels" },
-      "premier": { label: "PREMIER", price: "$139.99/mo", channels: "140+ channels + Premium" }
+    const directvPackages: { [key: string]: { label: string, priceWithDevice: string, priceWithoutDevice: string, channels: string } } = {
+      "entertainment": { label: "ENTERTAINMENT", priceWithDevice: "$94.99/mo", priceWithoutDevice: "$84.99/mo", channels: "85+ channels" },
+      "choice": { label: "CHOICE", priceWithDevice: "$117.98/mo", priceWithoutDevice: "$107.98/mo", channels: "125+ channels" },
+      "ultimate": { label: "ULTIMATE", priceWithDevice: "$147.98/mo", priceWithoutDevice: "$137.98/mo", channels: "160+ channels" },
+      "premier": { label: "PREMIER", priceWithDevice: "$192.98/mo", priceWithoutDevice: "$182.98/mo", channels: "185+ channels" }
     }
     return directvPackages[packageType] || null
   }
@@ -107,9 +403,21 @@ export default function InternetOrderForm() {
   }
 
   const handleProviderChange = (provider: string) => {
-    setSelectedProvider(provider)
-    setSelectedPackage("") // Reset package when provider changes
-    setShowProviderDetails(true)
+    if (selectedProvider === provider) {
+      // If clicking the same provider again, show pricing modal
+      setModalProvider(provider)
+      setShowPricingModal(true)
+    } else {
+      // If selecting a new provider
+      setSelectedProvider(provider)
+      setSelectedPackage("") // Reset package when provider changes
+      setShowProviderDetails(true)
+      
+      // Clear add-ons if DirecTV is selected since they don't apply
+      if (provider === "DirecTV") {
+        setSelectedAddOns([])
+      }
+    }
   }
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -324,7 +632,7 @@ export default function InternetOrderForm() {
               <Separator className="my-6" />
 
               <div className="space-y-4">
-                <Label htmlFor="address" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
+                <Label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
                   Service Address *
                 </Label>
@@ -338,13 +646,72 @@ export default function InternetOrderForm() {
                     </div>
                   </div>
                 )}
-                <Textarea
-                  id="address"
-                  placeholder="Enter complete address including street, city, state, ZIP code"
-                  className="border-2 border-gray-200 focus:border-green-500 transition-colors resize-none"
-                  rows={3}
-                  required
-                />
+                
+                <div className="grid grid-cols-1 gap-4">
+                  <div className="space-y-3">
+                    <Label htmlFor="street-address" className="text-sm font-semibold text-gray-700">
+                      Street Address *
+                    </Label>
+                    <Input
+                      id="street-address"
+                      placeholder="123 Main Street"
+                      className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                      required
+                    />
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <Label htmlFor="apt-unit" className="text-sm font-semibold text-gray-700">
+                      Apt/Unit Number (Optional)
+                    </Label>
+                    <Input
+                      id="apt-unit"
+                      placeholder="Apt 4B, Unit 205, etc."
+                      className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                    />
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="space-y-3">
+                      <Label htmlFor="city" className="text-sm font-semibold text-gray-700">
+                        City *
+                      </Label>
+                      <Input
+                        id="city"
+                        placeholder="City"
+                        defaultValue={zipResult?.city || ""}
+                        className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <Label htmlFor="state" className="text-sm font-semibold text-gray-700">
+                        State *
+                      </Label>
+                      <Input
+                        id="state"
+                        placeholder="State"
+                        defaultValue={zipResult?.state || ""}
+                        className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <Label htmlFor="zip-code" className="text-sm font-semibold text-gray-700">
+                        ZIP Code *
+                      </Label>
+                      <Input
+                        id="zip-code"
+                        placeholder="12345"
+                        defaultValue={zipResult?.zipCode || ""}
+                        className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="bg-blue-50 p-4 rounded-lg">
@@ -362,21 +729,74 @@ export default function InternetOrderForm() {
               </div>
 
               {movedLastYear && (
-                <div className="space-y-3 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
-                  <Label
-                    htmlFor="previous-address"
-                    className="text-sm font-semibold text-gray-700 flex items-center gap-2"
-                  >
+                <div className="space-y-4 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+                  <Label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
                     Previous Address *
                   </Label>
-                  <Textarea
-                    id="previous-address"
-                    placeholder="Enter previous address including street, city, state, ZIP code"
-                    className="border-2 border-gray-200 focus:border-yellow-500 transition-colors resize-none"
-                    rows={3}
-                    required
-                  />
+                  
+                  <div className="grid grid-cols-1 gap-4">
+                    <div className="space-y-3">
+                      <Label htmlFor="prev-street-address" className="text-sm font-semibold text-gray-700">
+                        Street Address *
+                      </Label>
+                      <Input
+                        id="prev-street-address"
+                        placeholder="123 Previous Street"
+                        className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                        required
+                      />
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <Label htmlFor="prev-apt-unit" className="text-sm font-semibold text-gray-700">
+                        Apt/Unit Number (Optional)
+                      </Label>
+                      <Input
+                        id="prev-apt-unit"
+                        placeholder="Apt 4B, Unit 205, etc."
+                        className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                      />
+                    </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="space-y-3">
+                        <Label htmlFor="prev-city" className="text-sm font-semibold text-gray-700">
+                          City *
+                        </Label>
+                        <Input
+                          id="prev-city"
+                          placeholder="City"
+                          className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                          required
+                        />
+                      </div>
+                      
+                      <div className="space-y-3">
+                        <Label htmlFor="prev-state" className="text-sm font-semibold text-gray-700">
+                          State *
+                        </Label>
+                        <Input
+                          id="prev-state"
+                          placeholder="State"
+                          className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                          required
+                        />
+                      </div>
+                      
+                      <div className="space-y-3">
+                        <Label htmlFor="prev-zip-code" className="text-sm font-semibold text-gray-700">
+                          ZIP Code *
+                        </Label>
+                        <Input
+                          id="prev-zip-code"
+                          placeholder="12345"
+                          className="h-12 border-2 border-gray-200 focus:border-yellow-500 transition-colors"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
             </CardContent>
@@ -414,7 +834,18 @@ export default function InternetOrderForm() {
                       {selectedDirectvPackage && selectedDirectvPackage !== "none" && (
                         <div className="flex items-center gap-2 text-blue-800 mt-2">
                           <CheckCircle className="w-4 h-4" />
-                          <span className="text-sm">DirecTV {getDirectvPackageDetails(selectedDirectvPackage)?.label} added</span>
+                          <span className="text-sm">
+                            DirecTV {getDirectvPackageDetails(selectedDirectvPackage)?.label} 
+                            {directvWithDevice ? " (with device)" : " (app only)"} added
+                          </span>
+                        </div>
+                      )}
+                      {getProviderPromoInfo() && (
+                        <div className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                          <div className="flex items-start gap-2 text-blue-800">
+                            <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                            <span className="text-sm">{getProviderPromoInfo()}</span>
+                          </div>
                         </div>
                       )}
                     </div>
@@ -462,80 +893,113 @@ export default function InternetOrderForm() {
                             <div className="flex justify-between items-center w-full">
                               <div className="flex flex-col">
                                 <span className="font-medium">ENTERTAINMENT</span>
-                                <span className="text-sm text-gray-500">75+ channels</span>
+                                <span className="text-sm text-gray-500">85+ channels</span>
                               </div>
-                              <Badge variant="outline" className="ml-4">$64.99/mo</Badge>
+                              <Badge variant="outline" className="ml-4">
+                                {directvWithDevice ? "$94.99/mo" : "$84.99/mo"}
+                              </Badge>
                             </div>
                           </SelectItem>
                           <SelectItem value="choice">
                             <div className="flex justify-between items-center w-full">
                               <div className="flex flex-col">
                                 <span className="font-medium">CHOICE</span>
-                                <span className="text-sm text-gray-500">90+ channels</span>
+                                <span className="text-sm text-gray-500">125+ channels</span>
                               </div>
-                              <Badge variant="outline" className="ml-4">$84.99/mo</Badge>
+                              <Badge variant="outline" className="ml-4">
+                                {directvWithDevice ? "$117.98/mo" : "$107.98/mo"}
+                              </Badge>
                             </div>
                           </SelectItem>
                           <SelectItem value="ultimate">
                             <div className="flex justify-between items-center w-full">
                               <div className="flex flex-col">
                                 <span className="font-medium">ULTIMATE</span>
-                                <span className="text-sm text-gray-500">130+ channels</span>
+                                <span className="text-sm text-gray-500">160+ channels</span>
                               </div>
-                              <Badge variant="outline" className="ml-4">$104.99/mo</Badge>
+                              <Badge variant="outline" className="ml-4">
+                                {directvWithDevice ? "$147.98/mo" : "$137.98/mo"}
+                              </Badge>
                             </div>
                           </SelectItem>
                           <SelectItem value="premier">
                             <div className="flex justify-between items-center w-full">
                               <div className="flex flex-col">
                                 <span className="font-medium">PREMIER</span>
-                                <span className="text-sm text-gray-500">140+ channels + Premium</span>
+                                <span className="text-sm text-gray-500">185+ channels</span>
                               </div>
-                              <Badge variant="outline" className="ml-4">$139.99/mo</Badge>
+                              <Badge variant="outline" className="ml-4">
+                                {directvWithDevice ? "$192.98/mo" : "$182.98/mo"}
+                              </Badge>
                             </div>
                           </SelectItem>
                         </SelectContent>
                       </Select>
+                      
+                      {selectedDirectvPackage && selectedDirectvPackage !== "none" && (
+                        <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                          <div className="space-y-3">
+                            <Label className="text-sm font-semibold text-gray-700">
+                              DirecTV Device Option
+                            </Label>
+                            <div className="space-y-2">
+                              <div className="flex items-center space-x-3">
+                                <Checkbox
+                                  id="directv-with-device"
+                                  checked={directvWithDevice}
+                                  onCheckedChange={(checked) => setDirectvWithDevice(checked as boolean)}
+                                  className="border-2"
+                                />
+                                <Label htmlFor="directv-with-device" className="text-sm font-medium">
+                                  Include Gemini streaming device (+$10/mo)
+                                </Label>
+                              </div>
+                              <p className="text-xs text-gray-600 ml-6">
+                                {directvWithDevice 
+                                  ? "Monthly price includes Gemini device rental" 
+                                  : "Use DIRECTV app on your own device - $10/mo savings"
+                                }
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                      
                       <p className="text-xs text-gray-500">
                         DirecTV can be bundled with any internet package for additional savings
                       </p>
                     </div>
 
-                    {/* Add-Ons */}
-                    <div className="space-y-4">
-                      <Label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                        <Settings className="w-4 h-4" />
-                        Add-Ons (Select all that apply)
-                      </Label>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {[
-                          { id: "wifi-router", label: "Wi-Fi Router Rental", price: "+$10/mo", value: "wifi-router" },
-                          { id: "security-suite", label: "Internet Security Suite", price: "+$9.99/mo", value: "security-suite" },
-                          { id: "tech-support", label: "Premium Tech Support", price: "+$14.99/mo", value: "tech-support" },
-                          { id: "static-ip", label: "Static IP Address", price: "+$15/mo", value: "static-ip" },
-                          { id: "unlimited-data", label: "Unlimited Data", price: "+$30/mo", value: "unlimited-data" },
-                          { id: "mesh-network", label: "Mesh Network System", price: "+$25/mo", value: "mesh-network" },
-                        ].map((addOn) => (
-                          <div
-                            key={addOn.id}
-                            className="flex items-center space-x-3 p-3 border-2 border-gray-200 rounded-lg hover:border-purple-300 transition-colors"
-                          >
-                            <Checkbox
-                              id={addOn.id}
-                              checked={selectedAddOns.includes(addOn.value)}
-                              onCheckedChange={(checked) => handleAddOnChange(addOn.value, checked as boolean)}
-                              className="border-2"
-                            />
-                            <div className="flex-1">
-                              <Label htmlFor={addOn.id} className="text-sm font-medium cursor-pointer">
-                                {addOn.label}
-                              </Label>
-                              <div className="text-xs text-gray-500">{addOn.price}</div>
+                    {/* Add-Ons - Only show for non-DirecTV providers */}
+                    {selectedProvider !== "DirecTV" && (
+                      <div className="space-y-4">
+                        <Label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
+                          <Settings className="w-4 h-4" />
+                          Add-Ons (Select all that apply)
+                        </Label>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          {getProviderAddOns().map((addOn) => (
+                            <div
+                              key={addOn.id}
+                              className="flex items-center space-x-3 p-3 border-2 border-gray-200 rounded-lg hover:border-purple-300 transition-colors"
+                            >
+                              <Checkbox
+                                id={addOn.id}
+                                checked={selectedAddOns.includes(addOn.value)}
+                                onCheckedChange={(checked) => handleAddOnChange(addOn.value, checked as boolean)}
+                                className="border-2"
+                              />
+                              <div className="flex-1">
+                                <Label htmlFor={addOn.id} className="text-sm font-medium cursor-pointer">
+                                  {addOn.label}
+                                </Label>
+                                <div className="text-xs text-gray-500">{addOn.price}</div>
+                              </div>
                             </div>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </>
                 )}
               </CardContent>
@@ -611,6 +1075,7 @@ export default function InternetOrderForm() {
               </CardHeader>
               <CardContent className="p-6">
                 <div className="space-y-3">
+                  {/* Provider and base price */}
                   <div className="flex justify-between items-center">
                     <span className="font-medium">Provider:</span>
                     <span>{selectedProvider}</span>
@@ -629,28 +1094,39 @@ export default function InternetOrderForm() {
                       {getPackageOptions().find(pkg => pkg.value === selectedPackage)?.price}
                     </span>
                   </div>
+
+                  {/* DirecTV summary */}
                   {selectedDirectvPackage && selectedDirectvPackage !== "none" && (
                     <div className="flex justify-between items-center">
                       <span className="font-medium">DirecTV Package:</span>
                       <div className="text-right">
                         <div className="font-semibold text-blue-600">
-                          {getDirectvPackageDetails(selectedDirectvPackage)?.price}
+                          {directvWithDevice
+                            ? getDirectvPackageDetails(selectedDirectvPackage)?.priceWithDevice
+                            : getDirectvPackageDetails(selectedDirectvPackage)?.priceWithoutDevice}
                         </div>
                         <div className="text-sm text-gray-500">
                           {getDirectvPackageDetails(selectedDirectvPackage)?.label}
+                          {directvWithDevice ? " (with device)" : " (app only)"}
                         </div>
                       </div>
                     </div>
                   )}
-                  {selectedAddOns.length > 0 && (
+
+                  {/* VAS Add-ons summary with label and price - Only for non-DirecTV providers */}
+                  {selectedAddOns.length > 0 && selectedProvider !== "DirecTV" && (
                     <div className="pt-3 border-t">
                       <span className="font-medium">Add-ons:</span>
                       <ul className="mt-2 space-y-1">
-                        {selectedAddOns.map((addOn) => (
-                          <li key={addOn} className="text-sm text-gray-600 ml-4">
-                            • {addOn.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}
-                          </li>
-                        ))}
+                        {selectedAddOns.map((addOn) => {
+                          // Find add-on details from provider add-ons
+                          const addOnDetails = getProviderAddOns().find(a => a.value === addOn)
+                          return (
+                            <li key={addOn} className="text-sm text-gray-600 ml-4">
+                              • {addOnDetails ? `${addOnDetails.label} (${addOnDetails.price})` : addOn}
+                            </li>
+                          )
+                        })}
                       </ul>
                     </div>
                   )}
@@ -704,6 +1180,143 @@ export default function InternetOrderForm() {
             </p>
           </div>
         </form>
+
+        {/* Pricing Modal */}
+        <Dialog open={showPricingModal} onOpenChange={setShowPricingModal}>
+          <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle className="flex items-center gap-3 text-xl">
+                <Wifi className="w-6 h-6" />
+                {modalProvider} - Pricing Overview
+              </DialogTitle>
+            </DialogHeader>
+            
+            {modalProvider && (
+              <div className="space-y-6">
+                {modalProvider === "DirecTV" ? (
+                  /* DirecTV-specific modal content */
+                  <>
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3 text-gray-800">DirecTV Packages</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {[
+                          { type: "entertainment", label: "ENTERTAINMENT", channels: "85+ channels", withDevice: "$94.99/mo", withoutDevice: "$84.99/mo" },
+                          { type: "choice", label: "CHOICE", channels: "125+ channels", withDevice: "$117.98/mo", withoutDevice: "$107.98/mo" },
+                          { type: "ultimate", label: "ULTIMATE", channels: "160+ channels", withDevice: "$147.98/mo", withoutDevice: "$137.98/mo" },
+                          { type: "premier", label: "PREMIER", channels: "185+ channels", withDevice: "$192.98/mo", withoutDevice: "$182.98/mo" }
+                        ].map((pkg) => (
+                          <div key={pkg.type} className="p-4 border rounded-lg bg-yellow-50 border-yellow-200">
+                            <div className="font-semibold text-lg text-gray-900">{pkg.label}</div>
+                            <div className="text-sm text-gray-600 mb-3">{pkg.channels}</div>
+                            <div className="space-y-2">
+                              <div className="flex justify-between items-center p-2 bg-white rounded border">
+                                <span className="text-sm font-medium">With Gemini Device</span>
+                                <Badge variant="default" className="bg-blue-600">{pkg.withDevice}</Badge>
+                              </div>
+                              <div className="flex justify-between items-center p-2 bg-white rounded border">
+                                <span className="text-sm font-medium">App Only</span>
+                                <Badge variant="outline" className="border-green-500 text-green-700">{pkg.withoutDevice}</Badge>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                      <div className="flex items-start gap-2 text-blue-800">
+                        <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                        <div className="text-sm">
+                          <p className="font-medium mb-1">Device Options:</p>
+                          <p className="mb-2"><strong>With Gemini Device:</strong> Includes the DirecTV Gemini streaming device for enhanced features and functionality.</p>
+                          <p><strong>App Only:</strong> Use the DIRECTV app on your own streaming device - save $10/month.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  /* Regular provider modal content */
+                  <>
+                    {/* Internet Packages */}
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3 text-gray-800">Internet Packages</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {getPackageOptionsForProvider(modalProvider).map((pkg) => (
+                          <div key={pkg.value} className="p-3 border rounded-lg bg-gray-50">
+                            <div className="flex justify-between items-center">
+                              <div>
+                                <div className="font-medium">{pkg.label}</div>
+                                <div className="text-sm text-gray-600">{pkg.speed}</div>
+                              </div>
+                              <Badge variant="outline">{pkg.price}</Badge>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Promotional Info */}
+                    {getPromoInfoForProvider(modalProvider) && (
+                      <div>
+                        <h3 className="text-lg font-semibold mb-3 text-gray-800">Promotional Information</h3>
+                        <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                          <div className="flex items-start gap-2 text-blue-800">
+                            <Info className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                            <span className="text-sm">{getPromoInfoForProvider(modalProvider)}</span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Add-Ons */}
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3 text-gray-800">Available Add-Ons</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {getAddOnsForProvider(modalProvider).map((addOn) => (
+                          <div key={addOn.id} className="p-3 border rounded-lg bg-gray-50">
+                            <div className="flex justify-between items-center">
+                              <div>
+                                <div className="font-medium text-sm">{addOn.label}</div>
+                              </div>
+                              <Badge variant="outline" className="text-xs">{addOn.price}</Badge>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* DirecTV Options */}
+                    <div>
+                      <h3 className="text-lg font-semibold mb-3 text-gray-800">DirecTV Packages (Optional)</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        {[
+                          { type: "entertainment", label: "ENTERTAINMENT", channels: "85+ channels", withDevice: "$94.99/mo", withoutDevice: "$84.99/mo" },
+                          { type: "choice", label: "CHOICE", channels: "125+ channels", withDevice: "$117.98/mo", withoutDevice: "$107.98/mo" },
+                          { type: "ultimate", label: "ULTIMATE", channels: "160+ channels", withDevice: "$147.98/mo", withoutDevice: "$137.98/mo" },
+                          { type: "premier", label: "PREMIER", channels: "185+ channels", withDevice: "$192.98/mo", withoutDevice: "$182.98/mo" }
+                        ].map((pkg) => (
+                          <div key={pkg.type} className="p-3 border rounded-lg bg-gray-50">
+                            <div className="font-medium">{pkg.label}</div>
+                            <div className="text-sm text-gray-600">{pkg.channels}</div>
+                            <div className="text-xs text-gray-500 mt-1">
+                              With device: {pkg.withDevice} | App only: {pkg.withoutDevice}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                <div className="flex justify-end pt-4 border-t">
+                  <Button onClick={() => setShowPricingModal(false)} variant="outline">
+                    Close
+                  </Button>
+                </div>
+              </div>
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </div>
   )
