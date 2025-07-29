@@ -7,15 +7,18 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Wifi, AlertTriangle } from "lucide-react"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { MapPin, Wifi, AlertTriangle, Settings } from "lucide-react"
 import useZipData, { type ZipResult, type ProviderData } from "@/hooks/use-zip-data"
 import useZipLookup from "@/hooks/use-zip-lookup"
+import { getProviderConfig } from "@/lib/provider-management"
 
 interface ZipCodeSectionProps {
   onZipResult: (result: ZipResult | null) => void
+  onForceProviderSelect?: (provider: string) => void
 }
 
-const ZipCodeSection: React.FC<ZipCodeSectionProps> = ({ onZipResult }) => {
+const ZipCodeSection: React.FC<ZipCodeSectionProps> = ({ onZipResult, onForceProviderSelect }) => {
   const [zipCode, setZipCode] = useState("")
   const { xfinityData, frontierFiberData, frontierCopperData, optimumData, metronetData, kineticData, brightspeedFiberData, brightspeedCopperData, spectrumData, altafiberData } = useZipData()
   const { lookupZip } = useZipLookup()
@@ -69,11 +72,11 @@ const ZipCodeSection: React.FC<ZipCodeSectionProps> = ({ onZipResult }) => {
 
       // Add nationwide providers
       if (!availableProviders.some(p => p.includes("EarthLink"))) {
-        availableProviders.push("EarthLink (Nationwide)")
+        availableProviders.push("EarthLink")
         debugInfo["EarthLink"] = 1
       }
       if (!availableProviders.some(p => p.includes("DirecTV"))) {
-        availableProviders.push("DirecTV (Nationwide)")
+        availableProviders.push("DirecTV")
         debugInfo["DirecTV"] = 1
       }
 
@@ -149,15 +152,35 @@ const ZipCodeSection: React.FC<ZipCodeSectionProps> = ({ onZipResult }) => {
             )}
 
             <details className="mt-4">
-              <summary className="text-sm font-medium text-gray-700 cursor-pointer">Debug Information</summary>
-              <div className="mt-2 p-4 bg-gray-100 rounded-md text-xs">
-                <p><strong>Location Lookup:</strong> {zipResult.city && zipResult.state ? "✅ Found" : "❌ Not Found"}</p>
-                <p><strong>Provider Data Loaded:</strong></p>
-                {Object.entries(zipResult.debugInfo).map(([provider, count]) => (
-                  <p key={provider}>
-                    {provider}: {count === 1 ? "✅" : "❌"}
-                  </p>
-                ))}
+              <summary className="text-sm font-medium text-gray-700 cursor-pointer flex items-center gap-2">
+                <Settings className="w-4 h-4" />
+                Force Provider Selection
+              </summary>
+              <div className="mt-2 p-4 bg-gray-50 border rounded-md space-y-3">
+                <p className="text-sm text-gray-600">
+                  Override ZIP code results and manually select a provider that may not have been detected.
+                </p>
+                <div className="space-y-2">
+                  <Label className="text-xs font-medium text-gray-700">Select Provider:</Label>
+                  <Select onValueChange={(value) => onForceProviderSelect?.(value)}>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="Choose a provider to force enable..." />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {getProviderConfig()
+                        .filter(provider => provider.enabled)
+                        .sort((a, b) => a.displayOrder - b.displayOrder)
+                        .map((provider) => (
+                          <SelectItem key={provider.id} value={provider.name}>
+                            {provider.name}
+                          </SelectItem>
+                        ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="text-xs text-gray-500">
+                  This will enable the selected provider regardless of ZIP code availability data.
+                </div>
               </div>
             </details>
           </div>

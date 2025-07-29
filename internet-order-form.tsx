@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -29,6 +29,7 @@ export default function InternetOrderForm() {
   const [showProviderDetails, setShowProviderDetails] = useState(false)
   const [showPricingModal, setShowPricingModal] = useState(false)
   const [modalProvider, setModalProvider] = useState<string>("")
+  const [forceSelectedProvider, setForceSelectedProvider] = useState<string | null>(null)
 
   // Form submission hook
   const { submitForm, isSubmitting, submissionResult, resetSubmission } = useFormSubmission()
@@ -56,6 +57,81 @@ export default function InternetOrderForm() {
 
   const updateFormData = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
+  }
+
+  // Format SSN with dashes as user types
+  const formatSSN = (value: string) => {
+    // Remove all non-digits
+    const digits = value.replace(/\D/g, '')
+    
+    // Limit to 9 digits
+    const truncated = digits.slice(0, 9)
+    
+    // Add dashes in the right places
+    if (truncated.length >= 6) {
+      return `${truncated.slice(0, 3)}-${truncated.slice(3, 5)}-${truncated.slice(5)}`
+    } else if (truncated.length >= 4) {
+      return `${truncated.slice(0, 3)}-${truncated.slice(3)}`
+    } else if (truncated.length >= 1) {
+      return truncated
+    }
+    return ''
+  }
+
+  const handleSSNChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formatted = formatSSN(e.target.value)
+    updateFormData('ssn', formatted)
+  }
+
+  // Format phone number with formatting as user types
+  const formatPhone = (value: string) => {
+    // Remove all non-digits
+    const digits = value.replace(/\D/g, '')
+    
+    // Limit to 10 digits
+    const truncated = digits.slice(0, 10)
+    
+    // Add formatting in the right places
+    if (truncated.length >= 7) {
+      return `(${truncated.slice(0, 3)}) ${truncated.slice(3, 6)}-${truncated.slice(6)}`
+    } else if (truncated.length >= 4) {
+      return `(${truncated.slice(0, 3)}) ${truncated.slice(3)}`
+    } else if (truncated.length >= 1) {
+      return `(${truncated}`
+    }
+    return ''
+  }
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const formatted = formatPhone(e.target.value)
+    updateFormData('phone', formatted)
+  }
+
+  // Calculate age from date of birth
+  const calculateAge = (dateOfBirth: string) => {
+    if (!dateOfBirth) return 0
+    const today = new Date()
+    const birthDate = new Date(dateOfBirth)
+    let age = today.getFullYear() - birthDate.getFullYear()
+    const monthDiff = today.getMonth() - birthDate.getMonth()
+    
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--
+    }
+    
+    return age
+  }
+
+  const handleDateOfBirthChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const dateValue = e.target.value
+    updateFormData('dateOfBirth', dateValue)
+    
+    // Check if age is at least 18
+    const age = calculateAge(dateValue)
+    if (dateValue && age < 18) {
+      // You could add an error state here or show a message
+      console.warn('Customer must be at least 18 years old')
+    }
   }
 
   // Dynamic package options based on selected provider
@@ -91,11 +167,11 @@ export default function InternetOrderForm() {
         { value: "optimum-1gig", label: "Internet 1 Gig", speed: "1 Gbps", price: "$70/mo" }
       ],
       "Metronet": [
-        { value: "metronet-100-student", label: "100 Mb (Student)", speed: "100 Mbps", price: "$29.95/mo" },
         { value: "metronet-500", label: "500 Mb", speed: "500 Mbps", price: "$60/mo" },
         { value: "metronet-1gig", label: "1 Gb", speed: "1 Gbps", price: "$70/mo" },
-        { value: "metronet-1gig-student", label: "1 Gb (Student)", speed: "1 Gbps", price: "$49.95/mo" },
-        { value: "metronet-2gig", label: "2 Gb/1 Gb", speed: "2 Gbps", price: "$80/mo" }
+        { value: "metronet-2gig", label: "2 Gb/1 Gb", speed: "2 Gbps", price: "$80/mo" },
+        { value: "metronet-100-student", label: "100 Mb (Student)", speed: "100 Mbps", price: "$29.95/mo" },
+        { value: "metronet-1gig-student", label: "1 Gb (Student)", speed: "1 Gbps", price: "$49.95/mo" }
       ],
       "Kinetic": [
         { value: "kinetic-100", label: "Internet 100", speed: "100/100 Mbps", price: "$24.99/mo" },
@@ -169,11 +245,11 @@ export default function InternetOrderForm() {
         { value: "optimum-1gig", label: "Internet 1 Gig", speed: "1 Gbps", price: "$70/mo" }
       ],
       "Metronet": [
-        { value: "metronet-100-student", label: "100 Mb (Student)", speed: "100 Mbps", price: "$29.95/mo" },
         { value: "metronet-500", label: "500 Mb", speed: "500 Mbps", price: "$60/mo" },
         { value: "metronet-1gig", label: "1 Gb", speed: "1 Gbps", price: "$70/mo" },
-        { value: "metronet-1gig-student", label: "1 Gb (Student)", speed: "1 Gbps", price: "$49.95/mo" },
-        { value: "metronet-2gig", label: "2 Gb/1 Gb", speed: "2 Gbps", price: "$80/mo" }
+        { value: "metronet-2gig", label: "2 Gb/1 Gb", speed: "2 Gbps", price: "$80/mo" },
+        { value: "metronet-100-student", label: "100 Mb (Student)", speed: "100 Mbps", price: "$29.95/mo" },
+        { value: "metronet-1gig-student", label: "1 Gb (Student)", speed: "1 Gbps", price: "$49.95/mo" }
       ],
       "Kinetic": [
         { value: "kinetic-100", label: "Internet 100", speed: "100/100 Mbps", price: "$24.99/mo" },
@@ -220,7 +296,7 @@ export default function InternetOrderForm() {
     const promoInfo: { [key: string]: string } = {
       "Xfinity": "5-Year Price Guarantee plans offer long-term price stability. 1-Year Deals provide lower introductory pricing. Gateway rental is free for first 12 months on promotional plans.",
       "BrightSpeed Fiber": "300M includes $20/mo bill credit for 6 months. 600M, 1G, and 2G include 3 months of free service.",
-      "Metronet": "Student pricing includes 1-year price lock and free installation with ACH autopay enrollment.",
+      "Metronet": "Pricing includes 1-year price lock and free installation with ACH autopay enrollment.",
       "Kinetic": "Pricing includes AutoPay discount. Reward Cards available: $100 for 1 Gig, $200 for 2 Gig customers.",
       "Frontier Fiber": "Pricing includes $10 ACH/Debit autopay discount.",
       "Optimum": "Pricing requires autopay & paperless billing.",
@@ -319,7 +395,7 @@ export default function InternetOrderForm() {
     const promoInfo: { [key: string]: string } = {
       "Xfinity": "5-Year Price Guarantee plans offer long-term price stability. 1-Year Deals provide lower introductory pricing. Gateway rental is free for first 12 months on promotional plans.",
       "BrightSpeed Fiber": "300M includes $20/mo bill credit for 6 months. 600M, 1G, and 2G include 3 months of free service.",
-      "Metronet": "Student pricing includes 1-year price lock and free installation with ACH autopay enrollment.",
+      "Metronet": "Pricing includes 1-year price lock and free installation with ACH autopay enrollment.",
       "Kinetic": "Pricing includes AutoPay discount. Reward Cards available: $100 for 1 Gig, $200 for 2 Gig customers.",
       "Frontier Fiber": "Pricing includes $10 ACH/Debit autopay discount.",
       "Optimum": "Pricing requires autopay & paperless billing.",
@@ -442,10 +518,47 @@ export default function InternetOrderForm() {
       setSelectedPackage("") // Reset package when provider changes
       setShowProviderDetails(true)
       
+      // Only clear force selection if this is not the same provider
+      if (forceSelectedProvider !== provider) {
+        setForceSelectedProvider(null)
+      }
+      
       // Clear add-ons if DirecTV is selected since they don't apply
       if (provider === "DirecTV") {
         setSelectedAddOns([])
       }
+    }
+  }
+
+  // Force provider selection handler
+  const handleForceProviderSelect = (providerName: string) => {
+    setSelectedProvider(providerName)
+    setForceSelectedProvider(providerName)
+    // Clear any existing package selection when forcing a new provider
+    setSelectedPackage("")
+    setSelectedDirectvPackage("")
+    setSelectedAddOns([])
+    
+    // Create a minimal zip result if none exists
+    if (!zipResult) {
+      setZipResult({
+        zipCode: "MANUAL",
+        city: "Manual Selection",
+        state: "N/A",
+        providers: [providerName],
+        debugInfo: { [providerName]: 1 }
+      })
+    } else {
+      // Add the forced provider to existing results if not already present
+      const updatedProviders = zipResult.providers.includes(providerName) 
+        ? zipResult.providers 
+        : [...zipResult.providers, providerName]
+      
+      setZipResult({
+        ...zipResult,
+        providers: updatedProviders,
+        debugInfo: { ...zipResult.debugInfo, [providerName]: 1 }
+      })
     }
   }
 
@@ -460,6 +573,12 @@ export default function InternetOrderForm() {
 
     if (!zipResult) {
       alert("Please enter a valid ZIP code first.")
+      return
+    }
+
+    // Validate age requirement
+    if (formData.dateOfBirth && calculateAge(formData.dateOfBirth) < 18) {
+      alert("Customer must be at least 18 years old to place an order.")
       return
     }
 
@@ -574,7 +693,7 @@ export default function InternetOrderForm() {
         </div>
 
         {/* ZIP Code Checker */}
-        <ZipCodeSection onZipResult={setZipResult} />
+        <ZipCodeSection onZipResult={setZipResult} onForceProviderSelect={handleForceProviderSelect} />
 
         {/* Service Area Information */}
         {zipResult && (
@@ -604,7 +723,15 @@ export default function InternetOrderForm() {
                     onClick={() => handleProviderChange(provider.split(' (')[0])}
                   >
                     <div className="flex items-center justify-between">
-                      <span className="font-medium">{provider}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium">{provider}</span>
+                        {forceSelectedProvider === provider.split(' (')[0] && (
+                          <div className="flex items-center gap-1">
+                            <Settings className="w-3 h-3 text-orange-600" />
+                            <span className="text-xs text-orange-600 font-medium">Forced</span>
+                          </div>
+                        )}
+                      </div>
                       {selectedProvider === provider.split(' (')[0] && (
                         <CheckCircle className="w-4 h-4 text-blue-600" />
                       )}
@@ -709,22 +836,33 @@ export default function InternetOrderForm() {
                     placeholder="(555) 123-4567"
                     className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
                     value={formData.phone}
-                    onChange={(e) => updateFormData('phone', e.target.value)}
+                    onChange={handlePhoneChange}
                     required
                   />
                 </div>
                 <div className="space-y-3">
                   <Label htmlFor="dob" className="text-sm font-semibold text-gray-700">
-                    Date of Birth *
+                    Date of Birth * (Must be 18 or older)
                   </Label>
                   <Input
                     id="dob"
                     type="date"
-                    className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors"
+                    max={new Date(new Date().setFullYear(new Date().getFullYear() - 18)).toISOString().split('T')[0]}
+                    className={`h-12 border-2 transition-colors ${
+                      formData.dateOfBirth && calculateAge(formData.dateOfBirth) < 18
+                        ? 'border-red-500 focus:border-red-500'
+                        : 'border-gray-200 focus:border-green-500'
+                    }`}
                     value={formData.dateOfBirth}
-                    onChange={(e) => updateFormData('dateOfBirth', e.target.value)}
+                    onChange={handleDateOfBirthChange}
                     required
                   />
+                  {formData.dateOfBirth && calculateAge(formData.dateOfBirth) < 18 && (
+                    <p className="text-red-500 text-sm flex items-center gap-1">
+                      <AlertTriangle className="w-4 h-4" />
+                      You must be at least 18 years old to place an order
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -735,12 +873,12 @@ export default function InternetOrderForm() {
                 </Label>
                 <Input
                   id="ssn"
-                  type="password"
+                  type="text"
                   placeholder="XXX-XX-XXXX"
                   maxLength={11}
                   className="h-12 border-2 border-gray-200 focus:border-green-500 transition-colors max-w-md"
                   value={formData.ssn}
-                  onChange={(e) => updateFormData('ssn', e.target.value)}
+                  onChange={handleSSNChange}
                   required
                 />
                 <p className="text-xs text-gray-500">This information is encrypted and secure</p>
@@ -1284,12 +1422,6 @@ export default function InternetOrderForm() {
                 )}
                 <AlertDescription className={submissionResult.success ? "text-green-700" : "text-red-700"}>
                   {submissionResult.message}
-                  {submissionResult.success && submissionResult.emailSent && (
-                    <span className="block mt-1 text-sm">Email notification sent successfully!</span>
-                  )}
-                  {submissionResult.success && !submissionResult.emailSent && (
-                    <span className="block mt-1 text-sm text-yellow-600">Note: Email notification could not be sent.</span>
-                  )}
                 </AlertDescription>
               </Alert>
             )}
