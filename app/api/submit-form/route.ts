@@ -94,11 +94,12 @@ export async function POST(request: NextRequest) {
         
       console.log(`Queued submission ${submissionId} for background processing`);
       
-      // Instead of triggering the queue processor via API, process it directly
+      // Process Google Sheets and Email synchronously to ensure completion
       try {
-        console.log('Processing submission directly instead of using separate API call');
-        // Process in parallel with dynamic imports - don't wait for module loading
-        Promise.all([
+        console.log('Processing submission synchronously for Vercel compatibility');
+        
+        // Process in parallel but wait for completion
+        const results = await Promise.allSettled([
           (async () => {
             try {
               console.log('Submitting to Google Sheets...');
@@ -107,7 +108,6 @@ export async function POST(request: NextRequest) {
               console.log('Google Sheets result:', sheetsResult);
               return sheetsResult;
             } catch (sheetsErr) {
-              // Always catch and log, never throw
               console.error('Google Sheets error:', sheetsErr);
               return null;
             }
@@ -120,18 +120,17 @@ export async function POST(request: NextRequest) {
               console.log('Email result:', emailResult);
               return emailResult;
             } catch (emailErr) {
-              // Always catch and log, never throw
               console.error('Email error:', emailErr);
               return null;
             }
           })()
-        ]).catch(err => {
-          // Log errors but never throw or crash
-          console.error('Background processing error:', err);
-        });
+        ]);
+
+        const [sheetsResult, emailResult] = results;
+        console.log('Processing completed - Sheets:', sheetsResult.status, 'Email:', emailResult.status);
+        
       } catch (processErr) {
-        // Always catch and log, never throw
-        console.error('Direct processing setup error:', processErr);
+        console.error('Synchronous processing error:', processErr);
       }
     } catch (error) {
       console.error('Queue error:', error);
