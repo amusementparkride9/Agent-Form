@@ -59,95 +59,77 @@ export async function POST(request: NextRequest) {
       selectedAddOns: body.selectedAddOns || [],
     };
 
-    // Process Google Sheets and Email truly asynchronously using the queue system
-    // This gives immediate response to user by offloading processing
+    // Process Google Sheets and Email synchronously to ensure completion on Vercel
+    const submissionId = `submission-${Date.now()}`;
     
-    // Write submission to queue file for background processing
     try {
-      // Create a unique ID for this submission
-      const submissionId = `submission-${Date.now()}`;
+      console.log('🔍 DEBUG: Starting synchronous processing for Vercel');
+      console.log('🔍 DEBUG: Environment check - SHEET_ID exists:', !!process.env.GOOGLE_SHEET_ID);
+      console.log('🔍 DEBUG: Environment check - EMAIL exists:', !!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL);
+      console.log('🔍 DEBUG: Environment check - KEY exists:', !!process.env.GOOGLE_PRIVATE_KEY);
       
-      console.log('Preparing to write submission to queue file');
-      
-      // Import fs with dynamic import to prevent it from affecting edge runtime
-      const { writeFile } = await import('fs/promises');
-      const { mkdir } = await import('fs/promises');
-      
-      // Make sure the temp-queue directory exists
-      try {
-        await mkdir('./temp-queue', { recursive: true });
-        console.log('Queue directory exists or was created');
-      } catch (mkdirErr) {
-        console.error('Failed to create queue directory:', mkdirErr);
-      }
-      
-      const queueFilePath = `./temp-queue/${submissionId}.json`;
-      console.log(`Writing to queue file: ${queueFilePath}`);
-      
-      try {
-        // Write the formData to a temporary queue file for processing later
-        await writeFile(queueFilePath, JSON.stringify(formData), 'utf-8');
-        console.log(`Successfully wrote to queue file ${queueFilePath}`);
-      } catch (writeErr) {
-        console.error('Failed to write to queue file:', writeErr);
-      }
-        
-      console.log(`Queued submission ${submissionId} for background processing`);
-      
-      // Process Google Sheets and Email synchronously to ensure completion
-      try {
-        console.log('Processing submission synchronously for Vercel compatibility');
-        
-        // Process in parallel but wait for completion
-        const results = await Promise.allSettled([
-          (async () => {
-            try {
-              console.log('Submitting to Google Sheets...');
-              const { submitToGoogleSheets } = await import('@/lib/google-sheets');
-              const sheetsResult = await submitToGoogleSheets(formData);
-              console.log('Google Sheets result:', sheetsResult);
-              return sheetsResult;
-            } catch (sheetsErr) {
-              console.error('Google Sheets error:', sheetsErr);
-              return null;
-            }
-          })(),
-          (async () => {
-            try {
-              console.log('Sending email notification...');
-              const { sendEmailWithResend } = await import('@/lib/email-service');
-              const emailResult = await sendEmailWithResend(formData);
-              console.log('Email result:', emailResult);
-              return emailResult;
-            } catch (emailErr) {
-              console.error('Email error:', emailErr);
-              return null;
-            }
-          })()
-        ]);
+      // Process in parallel but wait for completion
+      const results = await Promise.allSettled([
+        (async () => {
+          try {
+            console.log('🔍 DEBUG: About to import Google Sheets module');
+            const { submitToGoogleSheets } = await import('@/lib/google-sheets');
+            console.log('🔍 DEBUG: Google Sheets module imported successfully');
+            
+            console.log('🔍 DEBUG: Calling submitToGoogleSheets with data:', JSON.stringify({
+              agentName: formData.agentName,
+              customerName: formData.customerName,
+              email: formData.email
+            }));
+            
+            const sheetsResult = await submitToGoogleSheets(formData);
+            console.log('🔍 DEBUG: Google Sheets raw result:', JSON.stringify(sheetsResult));
+            return sheetsResult;
+          } catch (sheetsErr: any) {
+            console.error('🔍 DEBUG: Google Sheets error details:', sheetsErr);
+            console.error('🔍 DEBUG: Error stack:', sheetsErr?.stack);
+            return { error: sheetsErr?.message || 'Unknown sheets error' };
+          }
+        })(),
+        (async () => {
+          try {
+            console.log('🔍 DEBUG: About to import email service module');
+            const { sendEmailWithResend } = await import('@/lib/email-service');
+            console.log('🔍 DEBUG: Email service module imported successfully');
+            
+            const emailResult = await sendEmailWithResend(formData);
+            console.log('🔍 DEBUG: Email result:', emailResult);
+            return emailResult;
+          } catch (emailErr: any) {
+            console.error('🔍 DEBUG: Email error:', emailErr);
+            return { error: emailErr?.message || 'Unknown email error' };
+          }
+        })()
+      ]);
 
-        const [sheetsResult, emailResult] = results;
-        console.log('Processing completed - Sheets:', sheetsResult.status, 'Email:', emailResult.status);
-        
-      } catch (processErr) {
-        console.error('Synchronous processing error:', processErr);
-      }
-    } catch (error) {
-      console.error('Queue error:', error);
-      // Continue with response even if queuing fails
+      const [sheetsResult, emailResult] = results;
+      console.log('🔍 DEBUG: Final processing results:');
+      console.log('🔍 DEBUG: - Sheets status:', sheetsResult.status);
+      console.log('🔍 DEBUG: - Sheets value:', sheetsResult.status === 'fulfilled' ? JSON.stringify(sheetsResult.value) : 'rejected');
+      console.log('🔍 DEBUG: - Email status:', emailResult.status);
+      console.log('🔍 DEBUG: - Email value:', emailResult.status === 'fulfilled' ? JSON.stringify(emailResult.value) : 'rejected');
+      
+    } catch (processErr: any) {
+      console.error('🔍 DEBUG: Synchronous processing error:', processErr);
+      console.error('🔍 DEBUG: Error stack:', processErr?.stack);
     }
 
     const endTime = Date.now();
     const duration = endTime - startTime;
     console.log(`Form submission completed in ${duration}ms`);
 
-    // Return immediate success response
+    // Return success response
     return NextResponse.json({
       success: true,
-      message: 'Form submitted successfully - processing in background',
+      message: 'Form submitted successfully',
       processingTime: `${duration}ms`,
-      submissionId: `submission-${Date.now()}`,
-      note: 'Google Sheets and email notifications are being processed in the background'
+      submissionId: submissionId,
+      note: 'Google Sheets and email notifications processed'
     });
 
   } catch (error) {
