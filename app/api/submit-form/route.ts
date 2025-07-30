@@ -35,13 +35,32 @@ export async function POST(request: NextRequest) {
     const requiredFields = [
       'agentName', 'agentId', 'customerName', 'email', 'phone', 
       'dateOfBirth', 'ssn', 'streetAddress', 'city', 'state', 'zipCode',
-      'selectedProvider', 'selectedPackage'
+      'selectedProvider'
     ];
     
     for (const field of requiredFields) {
       if (!body[field]) {
         return NextResponse.json(
           { error: `Missing required field: ${field}` },
+          { status: 400 }
+        );
+      }
+    }
+
+    // Validate service package selection
+    // For DirectTV provider, selectedDirectvPackage is required
+    // For other providers, selectedPackage is required
+    if (body.selectedProvider === 'DirecTV') {
+      if (!body.selectedDirectvPackage || body.selectedDirectvPackage === 'none') {
+        return NextResponse.json(
+          { error: 'Missing required field: selectedDirectvPackage' },
+          { status: 400 }
+        );
+      }
+    } else {
+      if (!body.selectedPackage) {
+        return NextResponse.json(
+          { error: 'Missing required field: selectedPackage' },
           { status: 400 }
         );
       }
@@ -104,15 +123,37 @@ export async function POST(request: NextRequest) {
             console.error('🔍 DEBUG: Email error:', emailErr);
             return { error: emailErr?.message || 'Unknown email error' };
           }
+        })(),
+        (async () => {
+          try {
+            console.log('🔍 DEBUG: About to send notifications');
+            const { sendSlackNotification } = await import('@/lib/server-notifications');
+            
+            // Send Slack notification
+            const slackWebhook = process.env.SLACK_WEBHOOK_URL;
+            let slackResult = false;
+            
+            if (slackWebhook) {
+              slackResult = await sendSlackNotification(formData, slackWebhook);
+              console.log('🔍 DEBUG: Slack notification sent:', slackResult);
+            }
+            
+            return { success: true, slackNotified: slackResult };
+          } catch (notificationErr: any) {
+            console.error('🔍 DEBUG: Notification error:', notificationErr);
+            return { error: notificationErr?.message || 'Unknown notification error' };
+          }
         })()
       ]);
 
-      const [sheetsResult, emailResult] = results;
+      const [sheetsResult, emailResult, notificationResult] = results;
       console.log('🔍 DEBUG: Final processing results:');
       console.log('🔍 DEBUG: - Sheets status:', sheetsResult.status);
       console.log('🔍 DEBUG: - Sheets value:', sheetsResult.status === 'fulfilled' ? JSON.stringify(sheetsResult.value) : 'rejected');
       console.log('🔍 DEBUG: - Email status:', emailResult.status);
       console.log('🔍 DEBUG: - Email value:', emailResult.status === 'fulfilled' ? JSON.stringify(emailResult.value) : 'rejected');
+      console.log('🔍 DEBUG: - Notification status:', notificationResult.status);
+      console.log('🔍 DEBUG: - Notification value:', notificationResult.status === 'fulfilled' ? JSON.stringify(notificationResult.value) : 'rejected');
       
     } catch (processErr: any) {
       console.error('🔍 DEBUG: Synchronous processing error:', processErr);

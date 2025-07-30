@@ -94,7 +94,7 @@ export function sendLocalNotification(formData: SubmissionFormData): void {
     playNotificationSound();
 
     const notification = new Notification(`🚨 NEW ORDER - ${formData.customerName}`, {
-      body: `${formData.selectedProvider} - ${formData.selectedPackage}\n📍 ${formData.streetAddress}, ${formData.city} ${formData.state}\n👤 Agent: ${formData.agentName} (${formData.agentId})`,
+      body: `${formData.selectedProvider} - ${formData.selectedPackage || 'DirectTV Only'}\n📍 ${formData.streetAddress}, ${formData.city} ${formData.state}\n👤 Agent: ${formData.agentName} (${formData.agentId})`,
       icon: '/favicon.ico',
       tag: 'new-order',
       requireInteraction: true, // Keeps notification visible until clicked

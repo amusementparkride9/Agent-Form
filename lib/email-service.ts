@@ -25,7 +25,7 @@ export async function sendEmailNotification(formData: SubmissionFormData): Promi
         customer_phone: formData.phone,
         service_address: `${formData.streetAddress}${formData.aptUnit ? `, ${formData.aptUnit}` : ''}, ${formData.city}, ${formData.state} ${formData.zipCode}`,
         selected_provider: formData.selectedProvider,
-        selected_package: formData.selectedPackage,
+        selected_package: formData.selectedPackage || 'DirectTV Only',
         directv_package: formData.selectedDirectvPackage || 'None',
         add_ons: formData.selectedAddOns.join(', ') || 'None',
         submission_date: formData.submissionDate,
@@ -91,7 +91,7 @@ export async function sendEmailWithResend(formData: SubmissionFormData): Promise
             <div style="background-color: #ede9fe; padding: 20px; border-radius: 8px; margin: 20px 0;">
               <h2 style="color: #7c3aed; margin-top: 0;">Service Selection</h2>
               <p><strong>Provider:</strong> ${formData.selectedProvider}</p>
-              <p><strong>Package:</strong> ${formData.selectedPackage}</p>
+              <p><strong>Package:</strong> ${formData.selectedPackage || 'DirectTV Only'}</p>
               ${formData.selectedDirectvPackage ? `<p><strong>DirecTV Package:</strong> ${formData.selectedDirectvPackage}</p>` : ''}
               ${formData.selectedAddOns.length > 0 ? `<p><strong>Add-ons:</strong> ${formData.selectedAddOns.join(', ')}</p>` : ''}
             </div>

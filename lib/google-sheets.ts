@@ -34,7 +34,7 @@ export interface SubmissionFormData {
   
   // Service Information
   selectedProvider: string;
-  selectedPackage: string;
+  selectedPackage?: string;
   selectedDirectvPackage?: string;
   selectedAddOns: string[];
   
@@ -135,7 +135,7 @@ export async function submitToGoogleSheets(data: SubmissionFormData) {
       data.prevState || '',
       data.prevZipCode || '',
       data.selectedProvider,
-      data.selectedPackage,
+      data.selectedPackage || '',
       data.selectedDirectvPackage || '',
       data.selectedAddOns.join(', '),
       data.ipAddress || ''

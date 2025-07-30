@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { getEnabledProviders, filterProvidersByZip } from "@/lib/provider-management"
+import { getProviderConfig } from "@/lib/admin-settings"
+import type { ProviderConfig } from "@/lib/supabase"
 
 export interface ProviderData {
   name: string
@@ -92,10 +93,51 @@ const useZipData = () => {
     service: "Fiber",
     zipCodes: [],
   })
+
+  // Admin settings for enabled providers
+  const [enabledProviders, setEnabledProviders] = useState<ProviderConfig[]>([])
+  const [isLoadingProviders, setIsLoadingProviders] = useState(true)
+
+  // Load enabled providers from admin settings
+  useEffect(() => {
+    const loadEnabledProviders = async () => {
+      try {
+        const providers = await getProviderConfig()
+        setEnabledProviders(providers.filter(p => p.enabled))
+      } catch (error) {
+        console.error('Error loading enabled providers:', error)
+        // Fallback to all providers enabled if there's an error
+        setEnabledProviders([
+          { id: 'xfinity', name: 'Xfinity', enabled: true, displayOrder: 1 },
+          { id: 'spectrum', name: 'Spectrum', enabled: true, displayOrder: 2 },
+          { id: 'frontier-fiber', name: 'Frontier Fiber', enabled: true, displayOrder: 3 },
+          { id: 'frontier-copper', name: 'Frontier Copper', enabled: true, displayOrder: 4 },
+          { id: 'brightspeed-fiber', name: 'BrightSpeed Fiber', enabled: true, displayOrder: 5 },
+          { id: 'brightspeed-copper', name: 'BrightSpeed Copper', enabled: true, displayOrder: 6 },
+          { id: 'altafiber', name: 'Altafiber', enabled: true, displayOrder: 7 },
+          { id: 'metronet', name: 'Metronet', enabled: true, displayOrder: 8 },
+          { id: 'optimum', name: 'Optimum', enabled: true, displayOrder: 9 },
+          { id: 'kinetic', name: 'Kinetic', enabled: true, displayOrder: 10 },
+          { id: 'earthlink', name: 'EarthLink', enabled: true, displayOrder: 11 },
+          { id: 'directv', name: 'DirecTV', enabled: true, displayOrder: 12 }
+        ])
+      } finally {
+        setIsLoadingProviders(false)
+      }
+    }
+
+    loadEnabledProviders()
+  }, [])
   // Check ZIP code against all providers
   const checkZip = (zipCode: string): ZipResult | null => {
+    // Don't process if providers are still loading
+    if (isLoadingProviders) {
+      return null;
+    }
+
     const providers: string[] = [];
     const debugInfo: { [provider: string]: number } = {};
+    const enabledProviderNames = new Set(enabledProviders.map(p => p.name));
 
     const allProviders = [
       xfinityData,
@@ -110,17 +152,15 @@ const useZipData = () => {
       altafiberData,
     ];
 
+    // Check regional providers - only include if enabled in admin settings
     allProviders.forEach((data) => {
-      if (data.zipCodes.includes(zipCode)) {
+      if (data.zipCodes.includes(zipCode) && enabledProviderNames.has(data.name)) {
         providers.push(data.name);
         debugInfo[data.name] = data.zipCodes.length;
       }
     });
 
-    // Add nationwide providers only if they're enabled
-    const enabledProviders = getEnabledProviders();
-    const enabledProviderNames = new Set(enabledProviders.map(p => p.name));
-    
+    // Add nationwide providers only if they're enabled in admin settings
     if (enabledProviderNames.has("EarthLink")) {
       providers.push("EarthLink");
     }
@@ -153,6 +193,11 @@ const useZipData = () => {
   };
 
   useEffect(() => {
+    // Don't load data until we know which providers are enabled
+    if (isLoadingProviders) {
+      return;
+    }
+
     const loadJSONData = async (url: string, provider: string, setData: (data: ProviderData) => void) => {
       try {
         const response = await fetch(url)
@@ -217,7 +262,6 @@ const useZipData = () => {
     }
 
     // Get enabled providers to determine which files to load
-    const enabledProviders = getEnabledProviders();
     const enabledProviderNames = new Set(enabledProviders.map(p => p.name));
 
     // Only load data for enabled providers
@@ -280,7 +324,7 @@ const useZipData = () => {
     } else {
       setAltafiberData({ name: "Altafiber", city: null, state: null, service: "Fiber", zipCodes: [] })
     }
-  }, [])
+  }, [enabledProviders, isLoadingProviders]) // Only run when providers are loaded
 
   return { xfinityData, frontierFiberData, frontierCopperData, optimumData, metronetData, kineticData, brightspeedFiberData, brightspeedCopperData, spectrumData, altafiberData, checkZip }
 }

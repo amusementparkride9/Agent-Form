@@ -1,14 +1,12 @@
 import NotificationSettings from "@/components/notification-settings"
-import AdminNotificationListener from "@/components/admin-notification-listener"
 import ProviderManagement from "@/components/provider-management"
+import RealTimeNotifications from "@/components/real-time-notifications"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Shield, Settings, Bell } from "lucide-react"
 
 export default function AdminPage() {
   return (
     <div className="container mx-auto p-6 max-w-6xl">
-      <AdminNotificationListener />
-      
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-2">
           <Shield className="h-6 w-6 text-blue-600" />
@@ -25,6 +23,22 @@ export default function AdminPage() {
           <ProviderManagement />
         </div>
         
+        {/* Real-Time Notifications */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Bell className="h-5 w-5" />
+              Real-Time Notifications
+            </CardTitle>
+            <CardDescription>
+              Get instant audio alerts when forms are submitted
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <RealTimeNotifications />
+          </CardContent>
+        </Card>
+
         {/* Notification Settings */}
         <div>
           <NotificationSettings />

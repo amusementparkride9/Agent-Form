@@ -566,8 +566,8 @@ export default function InternetOrderForm() {
     e.preventDefault()
     
     // Validate required fields
-    if (!selectedProvider || !selectedPackage) {
-      alert("Please select a provider and package before submitting.")
+    if (!selectedProvider || (!selectedPackage && (!selectedDirectvPackage || selectedDirectvPackage === "none"))) {
+      alert("Please select a provider and at least one service package before submitting.")
       return
     }
 
@@ -1122,45 +1122,54 @@ export default function InternetOrderForm() {
                       )}
                     </div>
 
-                    <div className="space-y-3">
-                      <Label htmlFor="internet-package" className="text-sm font-semibold text-gray-700">
-                        Internet Package *
-                      </Label>
-                      <Select 
-                        value={selectedPackage} 
-                        onValueChange={setSelectedPackage}
-                        required
-                      >
-                        <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-purple-500">
-                          <SelectValue placeholder="Select internet package" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {getPackageOptions().map((pkg) => (
-                            <SelectItem key={pkg.value} value={pkg.value}>
-                              <div className="flex justify-between items-center w-full">
-                                <div className="flex flex-col">
-                                  <span className="font-medium">{pkg.label}</span>
-                                  <span className="text-sm text-gray-500">{pkg.speed}</span>
+                    {/* Internet Package - Only show for non-DirecTV providers */}
+                    {selectedProvider !== "DirecTV" && (
+                      <div className="space-y-3">
+                        <Label htmlFor="internet-package" className="text-sm font-semibold text-gray-700">
+                          Internet Package *
+                        </Label>
+                        <Select 
+                          value={selectedPackage} 
+                          onValueChange={setSelectedPackage}
+                          required
+                        >
+                          <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-purple-500">
+                            <SelectValue placeholder="Select internet package" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {getPackageOptions().map((pkg) => (
+                              <SelectItem key={pkg.value} value={pkg.value}>
+                                <div className="flex justify-between items-center w-full">
+                                  <div className="flex flex-col">
+                                    <span className="font-medium">{pkg.label}</span>
+                                    <span className="text-sm text-gray-500">{pkg.speed}</span>
+                                  </div>
+                                  <Badge variant="outline" className="ml-4">{pkg.price}</Badge>
                                 </div>
-                                <Badge variant="outline" className="ml-4">{pkg.price}</Badge>
-                              </div>
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                    </div>
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    )}
 
                     {/* DirecTV TV Service */}
                     <div className="space-y-3">
                       <Label htmlFor="directv-package" className="text-sm font-semibold text-gray-700">
-                        DirecTV Package (Optional)
+                        {selectedProvider === "DirecTV" ? "DirecTV Package *" : "DirecTV Package (Optional)"}
                       </Label>
-                      <Select value={selectedDirectvPackage} onValueChange={setSelectedDirectvPackage}>
+                      <Select 
+                        value={selectedDirectvPackage} 
+                        onValueChange={setSelectedDirectvPackage}
+                        required={selectedProvider === "DirecTV"}
+                      >
                         <SelectTrigger className="h-12 border-2 border-gray-200 focus:border-purple-500">
-                          <SelectValue placeholder="Add DirecTV to your order (optional)" />
+                          <SelectValue placeholder={selectedProvider === "DirecTV" ? "Select DirecTV package" : "Add DirecTV to your order (optional)"} />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="none">No DirecTV Service</SelectItem>
+                          {selectedProvider !== "DirecTV" && (
+                            <SelectItem value="none">No DirecTV Service</SelectItem>
+                          )}
                           <SelectItem value="entertainment">
                             <div className="flex justify-between items-center w-full">
                               <div className="flex flex-col">
@@ -1278,8 +1287,8 @@ export default function InternetOrderForm() {
             </Card>
           )}
 
-          {/* Installation Preferences - Only show if provider and package selected */}
-          {selectedProvider && selectedPackage && (
+          {/* Installation Preferences - Only show if provider and package selected OR DirectTV selected */}
+          {selectedProvider && (selectedPackage || (selectedDirectvPackage && selectedDirectvPackage !== "none")) && (
             <Card className="shadow-lg border-0 bg-white/80 backdrop-blur-sm">
               <CardHeader className="bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-t-lg">
                 <CardTitle className="flex items-center gap-3 text-xl">
@@ -1296,9 +1305,31 @@ export default function InternetOrderForm() {
                     <Input
                       id="install-date"
                       type="date"
+                      min={(() => {
+                        const tomorrow = new Date();
+                        tomorrow.setDate(tomorrow.getDate() + 1);
+                        return tomorrow.toISOString().split('T')[0];
+                      })()}
+                      max={(() => {
+                        const twoWeeksFromNow = new Date();
+                        twoWeeksFromNow.setDate(twoWeeksFromNow.getDate() + 14);
+                        return twoWeeksFromNow.toISOString().split('T')[0];
+                      })()}
+                      onInput={(e) => {
+                        const selectedDate = new Date(e.currentTarget.value);
+                        const dayOfWeek = selectedDate.getDay(); // 0 = Sunday, 1 = Monday, etc.
+                        if (dayOfWeek === 0) { // Sunday
+                          e.currentTarget.setCustomValidity("Sunday installations are not available. Please select Monday through Saturday.");
+                        } else {
+                          e.currentTarget.setCustomValidity("");
+                        }
+                      }}
                       className="h-12 border-2 border-gray-200 focus:border-orange-500 transition-colors"
                       required
                     />
+                    <p className="text-xs text-gray-500">
+                      Available Monday-Saturday, tomorrow through next 2 weeks
+                    </p>
                   </div>
                   <div className="space-y-3">
                     <Label htmlFor="install-time" className="text-sm font-semibold text-gray-700">
@@ -1309,9 +1340,9 @@ export default function InternetOrderForm() {
                         <SelectValue placeholder="Select time window" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="8am-12pm">8:00 AM - 12:00 PM</SelectItem>
-                        <SelectItem value="12pm-4pm">12:00 PM - 4:00 PM</SelectItem>
-                        <SelectItem value="4pm-8pm">4:00 PM - 8:00 PM</SelectItem>
+                        <SelectItem value="8am-11am">8:00 AM - 11:00 AM</SelectItem>
+                        <SelectItem value="11am-2pm">11:00 AM - 2:00 PM</SelectItem>
+                        <SelectItem value="2pm-5pm">2:00 PM - 5:00 PM</SelectItem>
                         <SelectItem value="flexible">Flexible (Any time)</SelectItem>
                       </SelectContent>
                     </Select>
@@ -1474,7 +1505,7 @@ export default function InternetOrderForm() {
                 <Button
                   type="submit"
                   size="lg"
-                  disabled={!zipResult || !selectedProvider || !selectedPackage || isSubmitting}
+                  disabled={!zipResult || !selectedProvider || (!selectedPackage && (!selectedDirectvPackage || selectedDirectvPackage === "none")) || isSubmitting}
                   className="px-12 py-4 text-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (

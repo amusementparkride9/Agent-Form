@@ -107,18 +107,18 @@ const ZipCodeSection: React.FC<ZipCodeSectionProps> = ({ onZipResult, onForcePro
               <MapPin className="w-4 h-4" />
               Enter ZIP Code *
             </Label>
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-2 sm:space-y-0 sm:space-x-2">
               <Input
                 id="zip-code"
                 type="text"
                 placeholder="e.g., 40505"
-                className="h-12 border-2 border-gray-200 focus:border-blue-500 transition-colors"
+                className="h-12 border-2 border-gray-200 focus:border-blue-500 transition-colors text-lg sm:text-base min-w-0 flex-1 sm:flex-initial"
                 required
                 value={zipCode}
                 onChange={handleZipChange}
                 maxLength={5}
               />
-              <Button type="submit" className="h-12 px-6 bg-blue-600 hover:bg-blue-700 text-white" disabled={isLookingUp}>
+              <Button type="submit" className="h-12 px-6 bg-blue-600 hover:bg-blue-700 text-white whitespace-nowrap" disabled={isLookingUp}>
                 {isLookingUp ? "Looking up..." : "Check Availability"}
               </Button>
             </div>

@@ -462,9 +462,31 @@ export default function InternetOrderForm() {
                     <Input
                       id="install-date"
                       type="date"
+                      min={(() => {
+                        const tomorrow = new Date();
+                        tomorrow.setDate(tomorrow.getDate() + 1);
+                        return tomorrow.toISOString().split('T')[0];
+                      })()}
+                      max={(() => {
+                        const twoWeeksFromNow = new Date();
+                        twoWeeksFromNow.setDate(twoWeeksFromNow.getDate() + 14);
+                        return twoWeeksFromNow.toISOString().split('T')[0];
+                      })()}
+                      onInput={(e) => {
+                        const selectedDate = new Date(e.currentTarget.value);
+                        const dayOfWeek = selectedDate.getDay(); // 0 = Sunday, 1 = Monday, etc.
+                        if (dayOfWeek === 0) { // Sunday
+                          e.currentTarget.setCustomValidity("Sunday installations are not available. Please select Monday through Saturday.");
+                        } else {
+                          e.currentTarget.setCustomValidity("");
+                        }
+                      }}
                       className="h-12 border-2 border-gray-200 focus:border-orange-500 transition-colors"
                       required
                     />
+                    <p className="text-xs text-gray-500">
+                      Available Monday-Saturday, tomorrow through next 2 weeks
+                    </p>
                   </div>
                   <div className="space-y-3">
                     <Label htmlFor="install-time" className="text-sm font-semibold text-gray-700">
@@ -475,9 +497,9 @@ export default function InternetOrderForm() {
                         <SelectValue placeholder="Select time window" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="8am-12pm">8:00 AM - 12:00 PM</SelectItem>
-                        <SelectItem value="12pm-4pm">12:00 PM - 4:00 PM</SelectItem>
-                        <SelectItem value="4pm-8pm">4:00 PM - 8:00 PM</SelectItem>
+                        <SelectItem value="8am-11am">8:00 AM - 11:00 AM</SelectItem>
+                        <SelectItem value="11am-2pm">11:00 AM - 2:00 PM</SelectItem>
+                        <SelectItem value="2pm-5pm">2:00 PM - 5:00 PM</SelectItem>
                         <SelectItem value="flexible">Flexible (Any time)</SelectItem>
                       </SelectContent>
                     </Select>

@@ -31,7 +31,7 @@ interface FormSubmissionData {
   
   // Service Information
   selectedProvider: string;
-  selectedPackage: string;
+  selectedPackage?: string;
   selectedDirectvPackage?: string;
   selectedAddOns: string[];
 }
@@ -66,14 +66,18 @@ export function useFormSubmission() {
       
       console.log('Making fetch request to /api/submit-form');
       
-      // Submit to your API endpoint
+      // Submit to your API endpoint with timeout
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 120000); // 2 minute timeout
+      
       const response = await fetch('/api/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: serializedData,
-      });
+        signal: controller.signal,
+      }).finally(() => clearTimeout(timeoutId));
 
       console.log('Response status:', response.status);
       console.log('Response headers:', Object.fromEntries(response.headers.entries()));

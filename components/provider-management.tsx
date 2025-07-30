@@ -6,10 +6,7 @@ import { Switch } from '@/components/ui/switch';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Settings, RotateCcw, Eye, EyeOff, Database, Loader2 } from 'lucide-react';
-import { 
-  getProviderConfig, 
-  saveProviderConfig
-} from '@/lib/admin-settings';
+// Provider management now uses API endpoints instead of direct Supabase calls
 
 interface ProviderConfig {
   id: string;
@@ -31,8 +28,12 @@ export default function ProviderManagement() {
   const loadProviders = async () => {
     setIsLoading(true);
     try {
-      const providerConfig = await getProviderConfig();
-      setProviders(providerConfig);
+      const response = await fetch('/api/admin/providers');
+      if (!response.ok) {
+        throw new Error('Failed to fetch provider config');
+      }
+      const data = await response.json();
+      setProviders(data.providers);
     } catch (error) {
       console.error('Error loading providers:', error);
       alert('Failed to load provider settings');
@@ -52,8 +53,20 @@ export default function ProviderManagement() {
   const handleSaveChanges = async () => {
     setIsSaving(true);
     try {
-      const success = await saveProviderConfig(providers);
-      if (success) {
+      const response = await fetch('/api/admin/providers', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ providers }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to save provider config');
+      }
+
+      const data = await response.json();
+      if (data.success) {
         setHasChanges(false);
         alert('Provider settings saved! Changes will take effect for all users immediately.');
       } else {

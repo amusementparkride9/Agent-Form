@@ -41,16 +41,43 @@ async function getAdminSetting<T>(settingKey: string, defaultValue: T): Promise<
 // Generic function to save admin settings
 async function saveAdminSetting(settingKey: string, settingValue: any): Promise<boolean> {
   try {
-    const { error } = await supabase
+    // First check if the setting exists
+    const { data: existingData, error: selectError } = await supabase
       .from('admin_settings')
-      .upsert({
-        setting_key: settingKey,
-        setting_value: settingValue
-      })
+      .select('setting_key')
+      .eq('setting_key', settingKey)
+      .single()
 
-    if (error) {
-      console.error(`Error saving ${settingKey}:`, error)
+    if (selectError && selectError.code !== 'PGRST116') {
+      // PGRST116 is "not found" error, which is expected for new settings
+      console.error(`Error checking ${settingKey}:`, selectError)
       return false
+    }
+
+    if (existingData) {
+      // Record exists, update it
+      const { error: updateError } = await supabase
+        .from('admin_settings')
+        .update({ setting_value: settingValue })
+        .eq('setting_key', settingKey)
+
+      if (updateError) {
+        console.error(`Error updating ${settingKey}:`, updateError)
+        return false
+      }
+    } else {
+      // Record doesn't exist, insert it
+      const { error: insertError } = await supabase
+        .from('admin_settings')
+        .insert({
+          setting_key: settingKey,
+          setting_value: settingValue
+        })
+
+      if (insertError) {
+        console.error(`Error inserting ${settingKey}:`, insertError)
+        return false
+      }
     }
 
     // Clear cache for this setting
@@ -81,7 +108,17 @@ export async function getProviderConfig(): Promise<ProviderConfig[]> {
     { id: 'directv', name: 'DirecTV', enabled: true, displayOrder: 12 }
   ]
 
-  return await getAdminSetting('provider_config', defaultProviders)
+  const raw = await getAdminSetting('provider_config', defaultProviders)
+  // Always return a valid array and sanitize each provider
+  if (!Array.isArray(raw)) return defaultProviders
+  return raw
+    .filter(p => p && typeof p === 'object' && typeof p.id === 'string' && typeof p.name === 'string')
+    .map((p, i) => ({
+      id: p.id,
+      name: p.name,
+      enabled: typeof p.enabled === 'boolean' ? p.enabled : true,
+      displayOrder: typeof p.displayOrder === 'number' ? p.displayOrder : i + 1
+    }))
 }
 
 export async function saveProviderConfig(providers: ProviderConfig[]): Promise<boolean> {
