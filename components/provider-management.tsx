@@ -5,21 +5,41 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Switch } from '@/components/ui/switch';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Settings, RotateCcw, Eye, EyeOff } from 'lucide-react';
+import { Settings, RotateCcw, Eye, EyeOff, Database, Loader2 } from 'lucide-react';
 import { 
   getProviderConfig, 
-  saveProviderConfig, 
-  resetToDefaults, 
-  ProviderConfig 
-} from '@/lib/provider-management';
+  saveProviderConfig
+} from '@/lib/admin-settings';
+
+interface ProviderConfig {
+  id: string;
+  name: string;
+  enabled: boolean;
+  displayOrder: number;
+}
 
 export default function ProviderManagement() {
   const [providers, setProviders] = useState<ProviderConfig[]>([]);
   const [hasChanges, setHasChanges] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
-    setProviders(getProviderConfig());
+    loadProviders();
   }, []);
+
+  const loadProviders = async () => {
+    setIsLoading(true);
+    try {
+      const providerConfig = await getProviderConfig();
+      setProviders(providerConfig);
+    } catch (error) {
+      console.error('Error loading providers:', error);
+      alert('Failed to load provider settings');
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const handleToggleProvider = (providerId: string, enabled: boolean) => {
     const updatedProviders = providers.map(provider =>
@@ -29,23 +49,59 @@ export default function ProviderManagement() {
     setHasChanges(true);
   };
 
-  const handleSaveChanges = () => {
-    saveProviderConfig(providers);
-    setHasChanges(false);
-    
-    // Force a page reload to reload ZIP data with new provider settings
-    alert('Provider settings saved! Page will reload to apply changes.');
-    window.location.reload();
+  const handleSaveChanges = async () => {
+    setIsSaving(true);
+    try {
+      const success = await saveProviderConfig(providers);
+      if (success) {
+        setHasChanges(false);
+        alert('Provider settings saved! Changes will take effect for all users immediately.');
+      } else {
+        alert('Failed to save provider settings. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error saving providers:', error);
+      alert('Failed to save provider settings. Please try again.');
+    } finally {
+      setIsSaving(false);
+    }
   };
 
-  const handleReset = () => {
-    resetToDefaults();
-    setProviders(getProviderConfig());
-    setHasChanges(true);
+  const handleReset = async () => {
+    if (confirm('Reset to default provider settings? This will enable all providers.')) {
+      setIsLoading(true);
+      try {
+        // Reset by reloading the default configuration
+        await loadProviders();
+        setHasChanges(true);
+      } catch (error) {
+        console.error('Error resetting providers:', error);
+        alert('Failed to reset provider settings');
+      } finally {
+        setIsLoading(false);
+      }
+    }
   };
 
   const enabledCount = providers.filter(p => p.enabled).length;
   const totalCount = providers.length;
+
+  if (isLoading) {
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Database className="h-5 w-5" />
+            Provider Management
+          </CardTitle>
+          <CardDescription>Loading provider settings...</CardDescription>
+        </CardHeader>
+        <CardContent className="flex items-center justify-center py-8">
+          <Loader2 className="h-6 w-6 animate-spin" />
+        </CardContent>
+      </Card>
+    );
+  }
 
   return (
     <Card>
@@ -106,15 +162,25 @@ export default function ProviderManagement() {
         <div className="flex gap-2 pt-4 border-t">
           <Button
             onClick={handleSaveChanges}
-            disabled={!hasChanges}
+            disabled={!hasChanges || isSaving}
             className="flex-1"
           >
-            {hasChanges ? "Save Changes" : "No Changes"}
+            {isSaving ? (
+              <>
+                <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                Saving...
+              </>
+            ) : hasChanges ? (
+              "Save Changes"
+            ) : (
+              "No Changes"
+            )}
           </Button>
           <Button
             variant="outline"
             onClick={handleReset}
             size="sm"
+            disabled={isSaving}
           >
             <RotateCcw className="h-4 w-4 mr-1" />
             Reset
@@ -124,9 +190,9 @@ export default function ProviderManagement() {
         {/* Help Text */}
         <div className="text-xs text-gray-500 space-y-1">
           <p><strong>How it works:</strong></p>
-          <p>• Disabled providers won't appear in ZIP code search results</p>
-          <p>• Agents will only see enabled providers as options</p>
-          <p>• Changes take effect immediately after saving</p>
+          <p>• Disabled providers won't appear in ZIP code search results for ANY user</p>
+          <p>• Changes affect ALL users of the form globally</p>
+          <p>• Settings are stored in database (not browser storage)</p>
           <p>• Use this to control which services you want to offer</p>
         </div>
       </CardContent>
