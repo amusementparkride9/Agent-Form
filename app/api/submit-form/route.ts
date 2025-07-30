@@ -97,14 +97,12 @@ export async function POST(request: NextRequest) {
       // Instead of triggering the queue processor via API, process it directly
       try {
         console.log('Processing submission directly instead of using separate API call');
-        // Dynamically import the necessary modules to avoid edge runtime issues
-        const { submitToGoogleSheets } = await import('@/lib/google-sheets');
-        const { sendEmailWithResend } = await import('@/lib/email-service');
-        // Process in parallel but don't wait for results
+        // Process in parallel with dynamic imports - don't wait for module loading
         Promise.all([
           (async () => {
             try {
               console.log('Submitting to Google Sheets...');
+              const { submitToGoogleSheets } = await import('@/lib/google-sheets');
               const sheetsResult = await submitToGoogleSheets(formData);
               console.log('Google Sheets result:', sheetsResult);
               return sheetsResult;
@@ -117,6 +115,7 @@ export async function POST(request: NextRequest) {
           (async () => {
             try {
               console.log('Sending email notification...');
+              const { sendEmailWithResend } = await import('@/lib/email-service');
               const emailResult = await sendEmailWithResend(formData);
               console.log('Email result:', emailResult);
               return emailResult;
