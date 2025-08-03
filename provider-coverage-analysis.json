@@ -1,0 +1,1842 @@
+{
+  "Xfinity": {
+    "totalZipCodes": 9152,
+    "totalUniqueCities": 16,
+    "topCities": [
+      {
+        "city": "Miami, FL",
+        "zipCount": 55
+      },
+      {
+        "city": "Denver, CO",
+        "zipCount": 39
+      },
+      {
+        "city": "Indianapolis, IN",
+        "zipCount": 36
+      },
+      {
+        "city": "Seattle, WA",
+        "zipCount": 34
+      },
+      {
+        "city": "Portland, OR",
+        "zipCount": 33
+      },
+      {
+        "city": "Chicago, IL",
+        "zipCount": 30
+      },
+      {
+        "city": "Houston, TX",
+        "zipCount": 29
+      },
+      {
+        "city": "Philadelphia, PA",
+        "zipCount": 26
+      },
+      {
+        "city": "Boston, MA",
+        "zipCount": 26
+      },
+      {
+        "city": "Orlando, FL",
+        "zipCount": 23
+      },
+      {
+        "city": "Atlanta, GA",
+        "zipCount": 19
+      },
+      {
+        "city": "Washington, DC",
+        "zipCount": 18
+      },
+      {
+        "city": "Miami Beach, FL",
+        "zipCount": 4
+      },
+      {
+        "city": "Morgantown, WV",
+        "zipCount": 4
+      },
+      {
+        "city": "Harrisburg, PA",
+        "zipCount": 1
+      },
+      {
+        "city": "Dellslow, WV",
+        "zipCount": 1
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "FL",
+        "zipCount": 82
+      },
+      {
+        "state": "CO",
+        "zipCount": 39
+      },
+      {
+        "state": "IN",
+        "zipCount": 36
+      },
+      {
+        "state": "WA",
+        "zipCount": 34
+      },
+      {
+        "state": "OR",
+        "zipCount": 33
+      },
+      {
+        "state": "IL",
+        "zipCount": 30
+      },
+      {
+        "state": "TX",
+        "zipCount": 29
+      },
+      {
+        "state": "PA",
+        "zipCount": 27
+      },
+      {
+        "state": "MA",
+        "zipCount": 26
+      },
+      {
+        "state": "GA",
+        "zipCount": 19
+      },
+      {
+        "state": "DC",
+        "zipCount": 18
+      },
+      {
+        "state": "WV",
+        "zipCount": 5
+      }
+    ]
+  },
+  "Spectrum": {
+    "totalZipCodes": 15120,
+    "totalUniqueCities": 30,
+    "topCities": [
+      {
+        "city": "NEW YORK, NY",
+        "zipCount": 239
+      },
+      {
+        "city": "LOS ANGELES, CA",
+        "zipCount": 215
+      },
+      {
+        "city": "HOUSTON, TX",
+        "zipCount": 179
+      },
+      {
+        "city": "SAN ANTONIO, TX",
+        "zipCount": 114
+      },
+      {
+        "city": "DALLAS, TX",
+        "zipCount": 108
+      },
+      {
+        "city": "SAN DIEGO, CA",
+        "zipCount": 99
+      },
+      {
+        "city": "CHARLOTTE, NC",
+        "zipCount": 94
+      },
+      {
+        "city": "KANSAS CITY, MO",
+        "zipCount": 88
+      },
+      {
+        "city": "AUSTIN, TX",
+        "zipCount": 87
+      },
+      {
+        "city": "ORLANDO, FL",
+        "zipCount": 85
+      },
+      {
+        "city": "BROOKLYN, NY",
+        "zipCount": 82
+      },
+      {
+        "city": "INDIANAPOLIS, IN",
+        "zipCount": 79
+      },
+      {
+        "city": "COLUMBUS, OH",
+        "zipCount": 78
+      },
+      {
+        "city": "TAMPA, FL",
+        "zipCount": 76
+      },
+      {
+        "city": "FORT WORTH, TX",
+        "zipCount": 72
+      },
+      {
+        "city": "SAINT LOUIS, MO",
+        "zipCount": 71
+      },
+      {
+        "city": "CLEVELAND, OH",
+        "zipCount": 68
+      },
+      {
+        "city": "BRONX, NY",
+        "zipCount": 63
+      },
+      {
+        "city": "LEXINGTON, KY",
+        "zipCount": 62
+      },
+      {
+        "city": "CINCINNATI, OH",
+        "zipCount": 60
+      },
+      {
+        "city": "LOUISVILLE, KY",
+        "zipCount": 59
+      },
+      {
+        "city": "BIRMINGHAM, AL",
+        "zipCount": 58
+      },
+      {
+        "city": "GREENSBORO, NC",
+        "zipCount": 57
+      },
+      {
+        "city": "GREENVILLE, SC",
+        "zipCount": 55
+      },
+      {
+        "city": "COLUMBIA, SC",
+        "zipCount": 54
+      },
+      {
+        "city": "ROCHESTER, NY",
+        "zipCount": 53
+      },
+      {
+        "city": "MILWAUKEE, WI",
+        "zipCount": 52
+      },
+      {
+        "city": "BUFFALO, NY",
+        "zipCount": 51
+      },
+      {
+        "city": "SYRACUSE, NY",
+        "zipCount": 49
+      },
+      {
+        "city": "ALBANY, NY",
+        "zipCount": 48
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "NY",
+        "zipCount": 535
+      },
+      {
+        "state": "TX",
+        "zipCount": 488
+      },
+      {
+        "state": "CA",
+        "zipCount": 314
+      },
+      {
+        "state": "OH",
+        "zipCount": 206
+      },
+      {
+        "state": "MO",
+        "zipCount": 159
+      },
+      {
+        "state": "KY",
+        "zipCount": 121
+      },
+      {
+        "state": "NC",
+        "zipCount": 151
+      },
+      {
+        "state": "FL",
+        "zipCount": 161
+      },
+      {
+        "state": "IN",
+        "zipCount": 79
+      },
+      {
+        "state": "SC",
+        "zipCount": 109
+      }
+    ]
+  },
+  "Frontier Fiber": {
+    "totalZipCodes": 2477,
+    "totalUniqueCities": 1934,
+    "topCities": [
+      {
+        "city": "Tampa, FL",
+        "zipCount": 26
+      },
+      {
+        "city": "Rochester, NY",
+        "zipCount": 22
+      },
+      {
+        "city": "Saint Petersburg, FL",
+        "zipCount": 19
+      },
+      {
+        "city": "Sarasota, FL",
+        "zipCount": 17
+      },
+      {
+        "city": "Fort Wayne, IN",
+        "zipCount": 16
+      },
+      {
+        "city": "Charleston, WV",
+        "zipCount": 13
+      },
+      {
+        "city": "Long Beach, CA",
+        "zipCount": 13
+      },
+      {
+        "city": "Lakeland, FL",
+        "zipCount": 12
+      },
+      {
+        "city": "Bradenton, FL",
+        "zipCount": 12
+      },
+      {
+        "city": "Santa Barbara, CA",
+        "zipCount": 11
+      },
+      {
+        "city": "Durham, NC",
+        "zipCount": 10
+      },
+      {
+        "city": "Clearwater, FL",
+        "zipCount": 9
+      },
+      {
+        "city": "Plano, TX",
+        "zipCount": 8
+      },
+      {
+        "city": "Los Angeles, CA",
+        "zipCount": 8
+      },
+      {
+        "city": "Bridgeport, CT",
+        "zipCount": 7
+      },
+      {
+        "city": "Dallas, TX",
+        "zipCount": 7
+      },
+      {
+        "city": "Denton, TX",
+        "zipCount": 7
+      },
+      {
+        "city": "Terre Haute, IN",
+        "zipCount": 7
+      },
+      {
+        "city": "Santa Monica, CA",
+        "zipCount": 7
+      },
+      {
+        "city": "Whittier, CA",
+        "zipCount": 7
+      },
+      {
+        "city": "San Bernardino, CA",
+        "zipCount": 7
+      },
+      {
+        "city": "Hartford, CT",
+        "zipCount": 7
+      },
+      {
+        "city": "Stamford, CT",
+        "zipCount": 6
+      },
+      {
+        "city": "Waterbury, CT",
+        "zipCount": 6
+      },
+      {
+        "city": "Muskegon, MI",
+        "zipCount": 6
+      },
+      {
+        "city": "Huntington, WV",
+        "zipCount": 6
+      },
+      {
+        "city": "Moreno Valley, CA",
+        "zipCount": 6
+      },
+      {
+        "city": "Morgantown, WV",
+        "zipCount": 5
+      },
+      {
+        "city": "Norwalk, CT",
+        "zipCount": 5
+      },
+      {
+        "city": "Toledo, OH",
+        "zipCount": 5
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "CA",
+        "zipCount": 381
+      },
+      {
+        "state": "CT",
+        "zipCount": 275
+      },
+      {
+        "state": "NY",
+        "zipCount": 258
+      },
+      {
+        "state": "TX",
+        "zipCount": 230
+      },
+      {
+        "state": "FL",
+        "zipCount": 219
+      },
+      {
+        "state": "WV",
+        "zipCount": 206
+      },
+      {
+        "state": "PA",
+        "zipCount": 195
+      },
+      {
+        "state": "OH",
+        "zipCount": 167
+      },
+      {
+        "state": "IL",
+        "zipCount": 153
+      },
+      {
+        "state": "MI",
+        "zipCount": 111
+      },
+      {
+        "state": "IN",
+        "zipCount": 101
+      },
+      {
+        "state": "WI",
+        "zipCount": 69
+      },
+      {
+        "state": "MN",
+        "zipCount": 37
+      },
+      {
+        "state": "NC",
+        "zipCount": 23
+      },
+      {
+        "state": "TN",
+        "zipCount": 20
+      },
+      {
+        "state": "SC",
+        "zipCount": 15
+      },
+      {
+        "state": "AZ",
+        "zipCount": 6
+      },
+      {
+        "state": "IA",
+        "zipCount": 4
+      },
+      {
+        "state": "NV",
+        "zipCount": 2
+      },
+      {
+        "state": "UT",
+        "zipCount": 2
+      },
+      {
+        "state": "NM",
+        "zipCount": 2
+      },
+      {
+        "state": "NE",
+        "zipCount": 1
+      }
+    ]
+  },
+  "Frontier Copper": {
+    "totalZipCodes": 3273,
+    "totalUniqueCities": 2920,
+    "topCities": [
+      {
+        "city": "Huntington, WV",
+        "zipCount": 33
+      },
+      {
+        "city": "Charleston, WV",
+        "zipCount": 31
+      },
+      {
+        "city": "Hartford, CT",
+        "zipCount": 28
+      },
+      {
+        "city": "Fort Wayne, IN",
+        "zipCount": 27
+      },
+      {
+        "city": "Tampa, FL",
+        "zipCount": 25
+      },
+      {
+        "city": "New Haven, CT",
+        "zipCount": 20
+      },
+      {
+        "city": "Rochester, NY",
+        "zipCount": 17
+      },
+      {
+        "city": "Long Beach, CA",
+        "zipCount": 10
+      },
+      {
+        "city": "Saint Petersburg, FL",
+        "zipCount": 8
+      },
+      {
+        "city": "Waterbury, CT",
+        "zipCount": 8
+      },
+      {
+        "city": "Stamford, CT",
+        "zipCount": 7
+      },
+      {
+        "city": "San Bernardino, CA",
+        "zipCount": 7
+      },
+      {
+        "city": "Norwalk, CT",
+        "zipCount": 5
+      },
+      {
+        "city": "Bloomington, IL",
+        "zipCount": 4
+      },
+      {
+        "city": "Bullhead City, AZ",
+        "zipCount": 4
+      },
+      {
+        "city": "Statesboro, GA",
+        "zipCount": 4
+      },
+      {
+        "city": "Clearwater, FL",
+        "zipCount": 4
+      },
+      {
+        "city": "Durham, NC",
+        "zipCount": 4
+      },
+      {
+        "city": "Kearney, NE",
+        "zipCount": 4
+      },
+      {
+        "city": "Santa Monica, CA",
+        "zipCount": 4
+      },
+      {
+        "city": "Santa Barbara, CA",
+        "zipCount": 4
+      },
+      {
+        "city": "Garland, TX",
+        "zipCount": 4
+      },
+      {
+        "city": "Irving, TX",
+        "zipCount": 4
+      },
+      {
+        "city": "Rockford, MN",
+        "zipCount": 3
+      },
+      {
+        "city": "Lancaster, CA",
+        "zipCount": 3
+      },
+      {
+        "city": "Cookeville, TN",
+        "zipCount": 3
+      },
+      {
+        "city": "Dayton, OH",
+        "zipCount": 3
+      },
+      {
+        "city": "Jasper, IN",
+        "zipCount": 3
+      },
+      {
+        "city": "Atmore, AL",
+        "zipCount": 3
+      },
+      {
+        "city": "Lake Havasu City, AZ",
+        "zipCount": 3
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "IL",
+        "zipCount": 358
+      },
+      {
+        "state": "WV",
+        "zipCount": 329
+      },
+      {
+        "state": "NY",
+        "zipCount": 293
+      },
+      {
+        "state": "OH",
+        "zipCount": 284
+      },
+      {
+        "state": "CA",
+        "zipCount": 284
+      },
+      {
+        "state": "IN",
+        "zipCount": 263
+      },
+      {
+        "state": "MI",
+        "zipCount": 199
+      },
+      {
+        "state": "MN",
+        "zipCount": 181
+      },
+      {
+        "state": "TX",
+        "zipCount": 179
+      },
+      {
+        "state": "WI",
+        "zipCount": 136
+      },
+      {
+        "state": "CT",
+        "zipCount": 112
+      },
+      {
+        "state": "FL",
+        "zipCount": 91
+      },
+      {
+        "state": "SC",
+        "zipCount": 88
+      },
+      {
+        "state": "IA",
+        "zipCount": 76
+      },
+      {
+        "state": "PA",
+        "zipCount": 68
+      },
+      {
+        "state": "NC",
+        "zipCount": 59
+      },
+      {
+        "state": "NE",
+        "zipCount": 50
+      },
+      {
+        "state": "AZ",
+        "zipCount": 48
+      },
+      {
+        "state": "TN",
+        "zipCount": 44
+      },
+      {
+        "state": "UT",
+        "zipCount": 41
+      },
+      {
+        "state": "NV",
+        "zipCount": 33
+      },
+      {
+        "state": "GA",
+        "zipCount": 20
+      },
+      {
+        "state": "AL",
+        "zipCount": 18
+      },
+      {
+        "state": "NM",
+        "zipCount": 10
+      },
+      {
+        "state": "MS",
+        "zipCount": 9
+      }
+    ]
+  },
+  "BrightSpeed Fiber": {
+    "totalZipCodes": 776,
+    "totalUniqueCities": 705,
+    "topCities": [
+      {
+        "city": "FAYETTEVILLE, NC",
+        "zipCount": 7
+      },
+      {
+        "city": "SPRINGFIELD, MO",
+        "zipCount": 7
+      },
+      {
+        "city": "MANSFIELD, OH",
+        "zipCount": 6
+      },
+      {
+        "city": "KINGSPORT, TN",
+        "zipCount": 4
+      },
+      {
+        "city": "KILLEEN, TX",
+        "zipCount": 4
+      },
+      {
+        "city": "CHARLOTTESVILLE, VA",
+        "zipCount": 4
+      },
+      {
+        "city": "WARREN, OH",
+        "zipCount": 4
+      },
+      {
+        "city": "COLUMBIA, MO",
+        "zipCount": 3
+      },
+      {
+        "city": "ROCKY MOUNT, NC",
+        "zipCount": 3
+      },
+      {
+        "city": "HUMBLE, TX",
+        "zipCount": 3
+      },
+      {
+        "city": "DOTHAN, AL",
+        "zipCount": 3
+      },
+      {
+        "city": "JOHNSON CITY, TN",
+        "zipCount": 3
+      },
+      {
+        "city": "LORAIN, OH",
+        "zipCount": 3
+      },
+      {
+        "city": "LIMA, OH",
+        "zipCount": 3
+      },
+      {
+        "city": "JACKSONVILLE, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "WILSON, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "NEW BERN, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "O FALLON, MO",
+        "zipCount": 2
+      },
+      {
+        "city": "CLAYTON, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "GREENVILLE, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "BUTLER, PA",
+        "zipCount": 2
+      },
+      {
+        "city": "LA CROSSE, WI",
+        "zipCount": 2
+      },
+      {
+        "city": "HENDERSON, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "JEFFERSON CITY, MO",
+        "zipCount": 2
+      },
+      {
+        "city": "CARLISLE, PA",
+        "zipCount": 2
+      },
+      {
+        "city": "KINGWOOD, TX",
+        "zipCount": 2
+      },
+      {
+        "city": "CHAMBERSBURG, PA",
+        "zipCount": 2
+      },
+      {
+        "city": "GREENEVILLE, TN",
+        "zipCount": 2
+      },
+      {
+        "city": "GREENWOOD, SC",
+        "zipCount": 2
+      },
+      {
+        "city": "KINSTON, NC",
+        "zipCount": 2
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "NC",
+        "zipCount": 207
+      },
+      {
+        "state": "OH",
+        "zipCount": 82
+      },
+      {
+        "state": "MO",
+        "zipCount": 60
+      },
+      {
+        "state": "AL",
+        "zipCount": 52
+      },
+      {
+        "state": "PA",
+        "zipCount": 51
+      },
+      {
+        "state": "IN",
+        "zipCount": 51
+      },
+      {
+        "state": "AR",
+        "zipCount": 45
+      },
+      {
+        "state": "TX",
+        "zipCount": 43
+      },
+      {
+        "state": "VA",
+        "zipCount": 39
+      },
+      {
+        "state": "TN",
+        "zipCount": 29
+      },
+      {
+        "state": "WI",
+        "zipCount": 27
+      },
+      {
+        "state": "NJ",
+        "zipCount": 25
+      },
+      {
+        "state": "KS",
+        "zipCount": 19
+      },
+      {
+        "state": "LA",
+        "zipCount": 18
+      },
+      {
+        "state": "SC",
+        "zipCount": 12
+      },
+      {
+        "state": "GA",
+        "zipCount": 5
+      },
+      {
+        "state": "MI",
+        "zipCount": 5
+      },
+      {
+        "state": "IL",
+        "zipCount": 3
+      },
+      {
+        "state": "MS",
+        "zipCount": 2
+      }
+    ]
+  },
+  "BrightSpeed Copper": {
+    "totalZipCodes": 2614,
+    "totalUniqueCities": 2524,
+    "topCities": [
+      {
+        "city": "FAYETTEVILLE, NC",
+        "zipCount": 8
+      },
+      {
+        "city": "MANSFIELD, OH",
+        "zipCount": 6
+      },
+      {
+        "city": "LIMA, OH",
+        "zipCount": 5
+      },
+      {
+        "city": "CHARLOTTESVILLE, VA",
+        "zipCount": 4
+      },
+      {
+        "city": "KINGSPORT, TN",
+        "zipCount": 4
+      },
+      {
+        "city": "WARREN, OH",
+        "zipCount": 4
+      },
+      {
+        "city": "KILLEEN, TX",
+        "zipCount": 4
+      },
+      {
+        "city": "COLUMBIA, MO",
+        "zipCount": 3
+      },
+      {
+        "city": "HUMBLE, TX",
+        "zipCount": 3
+      },
+      {
+        "city": "ROCKY MOUNT, NC",
+        "zipCount": 3
+      },
+      {
+        "city": "BEAUFORT, SC",
+        "zipCount": 3
+      },
+      {
+        "city": "DOTHAN, AL",
+        "zipCount": 3
+      },
+      {
+        "city": "JOHNSON CITY, TN",
+        "zipCount": 3
+      },
+      {
+        "city": "LORAIN, OH",
+        "zipCount": 3
+      },
+      {
+        "city": "HICKORY, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "JACKSONVILLE, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "O FALLON, MO",
+        "zipCount": 2
+      },
+      {
+        "city": "WILSON, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "NEW BERN, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "GREENVILLE, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "KINGWOOD, TX",
+        "zipCount": 2
+      },
+      {
+        "city": "MABANK, TX",
+        "zipCount": 2
+      },
+      {
+        "city": "CLAYTON, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "JEFFERSON CITY, MO",
+        "zipCount": 2
+      },
+      {
+        "city": "HENDERSON, NC",
+        "zipCount": 2
+      },
+      {
+        "city": "CHAMBERSBURG, PA",
+        "zipCount": 2
+      },
+      {
+        "city": "GREENEVILLE, TN",
+        "zipCount": 2
+      },
+      {
+        "city": "PALESTINE, TX",
+        "zipCount": 2
+      },
+      {
+        "city": "ABINGDON, VA",
+        "zipCount": 2
+      },
+      {
+        "city": "GREENWOOD, SC",
+        "zipCount": 2
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "NC",
+        "zipCount": 395
+      },
+      {
+        "state": "MO",
+        "zipCount": 329
+      },
+      {
+        "state": "OH",
+        "zipCount": 254
+      },
+      {
+        "state": "WI",
+        "zipCount": 223
+      },
+      {
+        "state": "VA",
+        "zipCount": 176
+      },
+      {
+        "state": "AR",
+        "zipCount": 169
+      },
+      {
+        "state": "AL",
+        "zipCount": 156
+      },
+      {
+        "state": "PA",
+        "zipCount": 155
+      },
+      {
+        "state": "IN",
+        "zipCount": 137
+      },
+      {
+        "state": "KS",
+        "zipCount": 124
+      },
+      {
+        "state": "TX",
+        "zipCount": 122
+      },
+      {
+        "state": "MI",
+        "zipCount": 112
+      },
+      {
+        "state": "LA",
+        "zipCount": 78
+      },
+      {
+        "state": "TN",
+        "zipCount": 55
+      },
+      {
+        "state": "NJ",
+        "zipCount": 48
+      },
+      {
+        "state": "SC",
+        "zipCount": 42
+      },
+      {
+        "state": "IL",
+        "zipCount": 20
+      },
+      {
+        "state": "GA",
+        "zipCount": 10
+      },
+      {
+        "state": "MS",
+        "zipCount": 6
+      },
+      {
+        "state": "OK",
+        "zipCount": 2
+      }
+    ]
+  },
+  "Altafiber": {
+    "totalZipCodes": 495,
+    "totalUniqueCities": 360,
+    "topCities": [
+      {
+        "city": "Cincinnati, Ohio - OH",
+        "zipCount": 72
+      },
+      {
+        "city": "Covington, Kentucky - KY",
+        "zipCount": 8
+      },
+      {
+        "city": "Newport, Kentucky - KY",
+        "zipCount": 7
+      },
+      {
+        "city": "Groesbeck, Ohio - OH",
+        "zipCount": 4
+      },
+      {
+        "city": "Colerain Township, Ohio - OH",
+        "zipCount": 4
+      },
+      {
+        "city": "Anderson, Ohio - OH",
+        "zipCount": 4
+      },
+      {
+        "city": "Fort Thomas, Kentucky - KY",
+        "zipCount": 3
+      },
+      {
+        "city": "Queen City, Ohio - OH",
+        "zipCount": 3
+      },
+      {
+        "city": "Saint Bernard, Ohio - OH",
+        "zipCount": 3
+      },
+      {
+        "city": "Parkdale, Ohio - OH",
+        "zipCount": 3
+      },
+      {
+        "city": "North College Hl, Ohio - OH",
+        "zipCount": 3
+      },
+      {
+        "city": "Blue Ash, Ohio - OH",
+        "zipCount": 3
+      },
+      {
+        "city": "Sycamore Township, Ohio - OH",
+        "zipCount": 3
+      },
+      {
+        "city": "Fort Mitchell, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "Fort Wright, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "Bromley, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "Edgewood, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "Erlanger, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "Florence, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "Wilder, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "Dayton, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "Bellevue, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "Highland Heights, Kentucky - KY",
+        "zipCount": 2
+      },
+      {
+        "city": "North Bend, Ohio - OH",
+        "zipCount": 2
+      },
+      {
+        "city": "Loveland, Ohio - OH",
+        "zipCount": 2
+      },
+      {
+        "city": "Edenton, Ohio - OH",
+        "zipCount": 2
+      },
+      {
+        "city": "Symmes Township, Ohio - OH",
+        "zipCount": 2
+      },
+      {
+        "city": "Norwood, Ohio - OH",
+        "zipCount": 2
+      },
+      {
+        "city": "Mack, Ohio - OH",
+        "zipCount": 2
+      },
+      {
+        "city": "Taft, Ohio - OH",
+        "zipCount": 2
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "Ohio - OH",
+        "zipCount": 120
+      },
+      {
+        "state": "Kentucky - KY",
+        "zipCount": 42
+      },
+      {
+        "state": "Indiana - IN",
+        "zipCount": 7
+      }
+    ]
+  },
+  "Metronet": {
+    "totalZipCodes": 398,
+    "totalUniqueCities": 247,
+    "topCities": [
+      {
+        "city": "LEXINGTON, KY",
+        "zipCount": 14
+      },
+      {
+        "city": "DES MOINES, IA",
+        "zipCount": 11
+      },
+      {
+        "city": "INDIANAPOLIS, IN",
+        "zipCount": 11
+      },
+      {
+        "city": "TALLAHASSEE, FL",
+        "zipCount": 10
+      },
+      {
+        "city": "GRAND RAPIDS, MI",
+        "zipCount": 9
+      },
+      {
+        "city": "COLORADO SPRINGS, CO",
+        "zipCount": 7
+      },
+      {
+        "city": "LANSING, MI",
+        "zipCount": 7
+      },
+      {
+        "city": "SIOUX CITY, IA",
+        "zipCount": 6
+      },
+      {
+        "city": "DAVENPORT, IA",
+        "zipCount": 6
+      },
+      {
+        "city": "FAYETTEVILLE, NC",
+        "zipCount": 6
+      },
+      {
+        "city": "BRYAN, TX",
+        "zipCount": 6
+      },
+      {
+        "city": "NORFOLK, VA",
+        "zipCount": 6
+      },
+      {
+        "city": "SAINT JOSEPH, MO",
+        "zipCount": 5
+      },
+      {
+        "city": "BEAVERCREEK, OH",
+        "zipCount": 5
+      },
+      {
+        "city": "LAFAYETTE, IN",
+        "zipCount": 4
+      },
+      {
+        "city": "KALAMAZOO, MI",
+        "zipCount": 4
+      },
+      {
+        "city": "ROCHESTER, MN",
+        "zipCount": 4
+      },
+      {
+        "city": "DAYTON, OH",
+        "zipCount": 4
+      },
+      {
+        "city": "WATERLOO, IA",
+        "zipCount": 3
+      },
+      {
+        "city": "BLOOMINGTON, IL",
+        "zipCount": 3
+      },
+      {
+        "city": "CARMEL, IN",
+        "zipCount": 3
+      },
+      {
+        "city": "GREENWOOD, IN",
+        "zipCount": 3
+      },
+      {
+        "city": "OMAHA, NE",
+        "zipCount": 3
+      },
+      {
+        "city": "DAYTONA BEACH, FL",
+        "zipCount": 2
+      },
+      {
+        "city": "PORT ORANGE, FL",
+        "zipCount": 2
+      },
+      {
+        "city": "PALM COAST, FL",
+        "zipCount": 2
+      },
+      {
+        "city": "MAITLAND, FL",
+        "zipCount": 2
+      },
+      {
+        "city": "APOPKA, FL",
+        "zipCount": 2
+      },
+      {
+        "city": "LONGWOOD, FL",
+        "zipCount": 2
+      },
+      {
+        "city": "AMES, IA",
+        "zipCount": 2
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "MN",
+        "zipCount": 76
+      },
+      {
+        "state": "IA",
+        "zipCount": 56
+      },
+      {
+        "state": "IN",
+        "zipCount": 56
+      },
+      {
+        "state": "MI",
+        "zipCount": 40
+      },
+      {
+        "state": "IL",
+        "zipCount": 39
+      },
+      {
+        "state": "FL",
+        "zipCount": 27
+      },
+      {
+        "state": "NC",
+        "zipCount": 26
+      },
+      {
+        "state": "OH",
+        "zipCount": 24
+      },
+      {
+        "state": "KY",
+        "zipCount": 21
+      },
+      {
+        "state": "CO",
+        "zipCount": 7
+      },
+      {
+        "state": "TX",
+        "zipCount": 7
+      },
+      {
+        "state": "VA",
+        "zipCount": 6
+      },
+      {
+        "state": "MO",
+        "zipCount": 5
+      },
+      {
+        "state": "NE",
+        "zipCount": 5
+      },
+      {
+        "state": "WI",
+        "zipCount": 3
+      }
+    ]
+  },
+  "Kinetic": {
+    "totalZipCodes": 2918,
+    "totalUniqueCities": 1367,
+    "topCities": [
+      {
+        "city": "NE-LINCOLN, NE",
+        "zipCount": 26
+      },
+      {
+        "city": "KY-LEXINGTON, KY",
+        "zipCount": 19
+      },
+      {
+        "city": "KY-BARBOURVILLE, KY",
+        "zipCount": 15
+      },
+      {
+        "city": "KY-HAZARD, KY",
+        "zipCount": 14
+      },
+      {
+        "city": "GA-DOUGLAS, GA",
+        "zipCount": 10
+      },
+      {
+        "city": "OH-ELYRIA, OH",
+        "zipCount": 9
+      },
+      {
+        "city": "OH-PAULDING, OH",
+        "zipCount": 9
+      },
+      {
+        "city": "GA-MONROE, GA",
+        "zipCount": 9
+      },
+      {
+        "city": "TX-SUGARLAND, TX",
+        "zipCount": 8
+      },
+      {
+        "city": "OK-TULSA, OK",
+        "zipCount": 8
+      },
+      {
+        "city": "NY-CENTRAL SQUARE, NY",
+        "zipCount": 8
+      },
+      {
+        "city": "NY-WEST WINFIELD, NY",
+        "zipCount": 8
+      },
+      {
+        "city": "NC-CHARLOTTE, NC",
+        "zipCount": 8
+      },
+      {
+        "city": "KY-MANCHESTER, KY",
+        "zipCount": 8
+      },
+      {
+        "city": "PA-BALLY, PA",
+        "zipCount": 7
+      },
+      {
+        "city": "PA-COALPORT, PA",
+        "zipCount": 7
+      },
+      {
+        "city": "OK-BROKEN ARROW, OK",
+        "zipCount": 7
+      },
+      {
+        "city": "KY-LIBERTY, KY",
+        "zipCount": 7
+      },
+      {
+        "city": "IA-APLINGTON, IA",
+        "zipCount": 7
+      },
+      {
+        "city": "GA-CANTON, GA",
+        "zipCount": 7
+      },
+      {
+        "city": "SC-KERSHAW, SC",
+        "zipCount": 6
+      },
+      {
+        "city": "PA-FORD CITY, PA",
+        "zipCount": 6
+      },
+      {
+        "city": "PA-LEWISBURG, PA",
+        "zipCount": 6
+      },
+      {
+        "city": "PA-RURAL VALLEY, PA",
+        "zipCount": 6
+      },
+      {
+        "city": "PA-MORGANTOWN, PA",
+        "zipCount": 6
+      },
+      {
+        "city": "PA-TOPTON, PA",
+        "zipCount": 6
+      },
+      {
+        "city": "OH-KENTON, OH",
+        "zipCount": 6
+      },
+      {
+        "city": "OH-GRATIOT, OH",
+        "zipCount": 6
+      },
+      {
+        "city": "NY-MARCELLUS, NY",
+        "zipCount": 6
+      },
+      {
+        "city": "NY-SHORTSVILLE, NY",
+        "zipCount": 6
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "IA",
+        "zipCount": 532
+      },
+      {
+        "state": "TX",
+        "zipCount": 349
+      },
+      {
+        "state": "GA",
+        "zipCount": 317
+      },
+      {
+        "state": "PA",
+        "zipCount": 315
+      },
+      {
+        "state": "KY",
+        "zipCount": 270
+      },
+      {
+        "state": "NE",
+        "zipCount": 199
+      },
+      {
+        "state": "OH",
+        "zipCount": 153
+      },
+      {
+        "state": "MO",
+        "zipCount": 147
+      },
+      {
+        "state": "OK",
+        "zipCount": 128
+      },
+      {
+        "state": "AR",
+        "zipCount": 122
+      },
+      {
+        "state": "NC",
+        "zipCount": 106
+      },
+      {
+        "state": "NY",
+        "zipCount": 71
+      },
+      {
+        "state": "NM",
+        "zipCount": 64
+      },
+      {
+        "state": "FL",
+        "zipCount": 59
+      },
+      {
+        "state": "MN",
+        "zipCount": 25
+      },
+      {
+        "state": "SC",
+        "zipCount": 22
+      },
+      {
+        "state": "AL",
+        "zipCount": 21
+      },
+      {
+        "state": "MS",
+        "zipCount": 15
+      }
+    ]
+  },
+  "Optimum": {
+    "totalZipCodes": 1903,
+    "totalUniqueCities": 1343,
+    "topCities": [
+      {
+        "city": "Brooklyn, New York",
+        "zipCount": 36
+      },
+      {
+        "city": "Bronx, New York",
+        "zipCount": 25
+      },
+      {
+        "city": "Charleston, Appalachia",
+        "zipCount": 15
+      },
+      {
+        "city": "Lubbock, West Texas",
+        "zipCount": 15
+      },
+      {
+        "city": "Amarillo, West Texas",
+        "zipCount": 14
+      },
+      {
+        "city": "Tyler, Red River",
+        "zipCount": 9
+      },
+      {
+        "city": "Lake Charles, Mid South",
+        "zipCount": 7
+      },
+      {
+        "city": "Conroe, South Texas",
+        "zipCount": 7
+      },
+      {
+        "city": "Saint Joseph, Ozarks",
+        "zipCount": 6
+      },
+      {
+        "city": "Midland, West Texas",
+        "zipCount": 6
+      },
+      {
+        "city": "White Plains, Tri-State",
+        "zipCount": 5
+      },
+      {
+        "city": "Yonkers, Tri-State",
+        "zipCount": 5
+      },
+      {
+        "city": "Bryan, South Texas",
+        "zipCount": 5
+      },
+      {
+        "city": "Abilene, West Texas",
+        "zipCount": 5
+      },
+      {
+        "city": "San Angelo, West Texas",
+        "zipCount": 5
+      },
+      {
+        "city": "Great Neck, New York",
+        "zipCount": 4
+      },
+      {
+        "city": "Nacogdoches, South Texas",
+        "zipCount": 4
+      },
+      {
+        "city": "Lake Havasu City, Pacific",
+        "zipCount": 4
+      },
+      {
+        "city": "New Rochelle, Tri-State",
+        "zipCount": 3
+      },
+      {
+        "city": "Hendersonville, North Carolina",
+        "zipCount": 3
+      },
+      {
+        "city": "Rocky Mount, North Carolina",
+        "zipCount": 3
+      },
+      {
+        "city": "Alexandria, Mid South",
+        "zipCount": 3
+      },
+      {
+        "city": "College Station, South Texas",
+        "zipCount": 3
+      },
+      {
+        "city": "Enid, Red River",
+        "zipCount": 3
+      },
+      {
+        "city": "Georgetown, South Texas",
+        "zipCount": 3
+      },
+      {
+        "city": "Longview, Red River",
+        "zipCount": 3
+      },
+      {
+        "city": "Huntsville, South Texas",
+        "zipCount": 3
+      },
+      {
+        "city": "Baytown, South Texas",
+        "zipCount": 3
+      },
+      {
+        "city": "Stillwater, Red River",
+        "zipCount": 3
+      },
+      {
+        "city": "Mesquite, Red River",
+        "zipCount": 3
+      }
+    ],
+    "stateBreakdown": [
+      {
+        "state": "Appalachia",
+        "zipCount": 395
+      },
+      {
+        "state": "New York",
+        "zipCount": 234
+      },
+      {
+        "state": "Tri-State",
+        "zipCount": 172
+      },
+      {
+        "state": "Red River",
+        "zipCount": 160
+      },
+      {
+        "state": "Mid South",
+        "zipCount": 137
+      },
+      {
+        "state": "Ozarks",
+        "zipCount": 120
+      },
+      {
+        "state": "West Texas",
+        "zipCount": 111
+      },
+      {
+        "state": "South Texas",
+        "zipCount": 94
+      },
+      {
+        "state": "Pacific",
+        "zipCount": 89
+      },
+      {
+        "state": "North Carolina",
+        "zipCount": 72
+      }
+    ]
+  }
+}

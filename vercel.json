@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/fake-sales?secret=agent-form-cron-2025-secure",
+      "schedule": "*/5 * * * *"
+    }
+  ]
+}
