@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
-import { getProviderConfig } from "@/lib/provider-management"
+import { getProviderConfig } from "@/lib/admin-settings"
 import type { ProviderConfig } from "@/lib/supabase"
 
 export interface ProviderData {
@@ -100,9 +100,9 @@ const useZipData = () => {
 
   // Load enabled providers from admin settings
   useEffect(() => {
-    const loadEnabledProviders = () => {
+    const loadEnabledProviders = async () => {
       try {
-        const providers = getProviderConfig()
+        const providers = await getProviderConfig()
         setEnabledProviders(providers.filter(p => p.enabled))
       } catch (error) {
         console.error('Error loading enabled providers:', error)

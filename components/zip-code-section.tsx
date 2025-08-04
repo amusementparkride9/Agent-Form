@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -11,7 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { MapPin, Wifi, AlertTriangle, Settings } from "lucide-react"
 import useZipData, { type ZipResult, type ProviderData } from "@/hooks/use-zip-data"
 import useZipLookup from "@/hooks/use-zip-lookup"
-import { getProviderConfig } from "@/lib/provider-management"
+import { getProviderConfig } from "@/lib/admin-settings"
 
 interface ZipCodeSectionProps {
   onZipResult: (result: ZipResult | null) => void
@@ -24,6 +24,20 @@ const ZipCodeSection: React.FC<ZipCodeSectionProps> = ({ onZipResult, onForcePro
   const { lookupZip } = useZipLookup()
   const [zipResult, setZipResult] = useState<ZipResult | null>(null)
   const [isLookingUp, setIsLookingUp] = useState(false)
+  const [enabledProviders, setEnabledProviders] = useState<Array<{id: string, name: string, enabled: boolean, displayOrder: number}>>([])
+
+  // Load enabled providers from Supabase
+  useEffect(() => {
+    const loadProviders = async () => {
+      try {
+        const providers = await getProviderConfig()
+        setEnabledProviders(providers.filter(p => p.enabled).sort((a, b) => a.displayOrder - b.displayOrder))
+      } catch (error) {
+        console.error('Failed to load provider config:', error)
+      }
+    }
+    loadProviders()
+  }, [])
 
   const providersData: ProviderData[] = [
     xfinityData,
@@ -167,14 +181,11 @@ const ZipCodeSection: React.FC<ZipCodeSectionProps> = ({ onZipResult, onForcePro
                       <SelectValue placeholder="Choose a provider to force enable..." />
                     </SelectTrigger>
                     <SelectContent>
-                      {getProviderConfig()
-                        .filter(provider => provider.enabled)
-                        .sort((a, b) => a.displayOrder - b.displayOrder)
-                        .map((provider) => (
-                          <SelectItem key={provider.id} value={provider.name}>
-                            {provider.name}
-                          </SelectItem>
-                        ))}
+                      {enabledProviders.map((provider) => (
+                        <SelectItem key={provider.id} value={provider.name}>
+                          {provider.name}
+                        </SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                 </div>
